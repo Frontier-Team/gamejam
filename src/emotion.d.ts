@@ -5,8 +5,11 @@ declare module "@emotion/react" {
     colors: {
       teal: string;
       white: string;
+      turquoise: string;
+      turquoiseShade: string;
       red: string;
       lilac: string;
+      lilacShade: string;
       darkPink: string;
     };
     breakpoints: {

@@ -5,8 +5,11 @@ const theme = {
   colors: {
     teal: "#0B3239",
     white: "#FFFFFF",
+    turquoise: "#01CDD1",
+    turquoiseShade: "#00958B",
     red: "#FF222F",
     lilac: "#BA75FF",
+    lilacShade: "#B061FF",
     darkPink: "#FFCCD9",
   },
   breakpoints: {
