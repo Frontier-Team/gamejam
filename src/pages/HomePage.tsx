@@ -1,7 +1,7 @@
 import React from "react";
 import Page from "../components/Page";
 
-const HomePage: React.FC = () => {
+export const HomePage: React.FC = () => {
   return (
     <Page>
       <h1>Welcome to the Game Jam!</h1>
@@ -9,5 +9,3 @@ const HomePage: React.FC = () => {
     </Page>
   );
 };
-
-export default HomePage;
