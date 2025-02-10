@@ -6,7 +6,11 @@ interface PageProps {
 }
 
 const Page: React.FC<PageProps> = ({ children }) => {
-  return <PageContainer>{children}</PageContainer>;
+  return (
+    <PageContainer>
+      <main>{children}</main>
+    </PageContainer>
+  );
 };
 
 export default Page;
