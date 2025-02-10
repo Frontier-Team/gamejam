@@ -127,7 +127,7 @@ Please change the parent <Route path="${Y}"> to <Route path="${Y==="/"?"*":`${Y}
  color: ${({theme:i})=>i.colors.lilac};
 `,xg=vt.div`
   height: 100%;
-  width: ${({isOpen:i})=>i?"200px":"0"};
+  width: ${({isOpen:i})=>i?"220px":"0"};
   position: fixed;
   top: 0;
   right: 0;
