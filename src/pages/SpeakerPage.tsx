@@ -1,7 +1,6 @@
 import { GridItem } from '../components/GridItem';
-import Page from '../components/Page';
 import { Speaker } from '../types';
-import { StyledGrid } from './SpeakerPage.styled';
+import { StyledGrid, StyledPageContainer } from './SpeakerPage.styled';
 
 export const SpeakerPage: React.FC = () => {
   const speakers: Speaker[] = [
@@ -32,13 +31,13 @@ export const SpeakerPage: React.FC = () => {
   ];
 
   return (
-    <Page>
+    <StyledPageContainer>
       <h1>Speakers</h1>
       <StyledGrid>
         {speakers.map((speaker) => (
           <GridItem key={speaker.id} {...speaker}/>
         ))}        
       </StyledGrid>
-    </Page>
+    </StyledPageContainer>
   );
 };

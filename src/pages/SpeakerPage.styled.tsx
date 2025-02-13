@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { containerStyles } from '../styles/sharedStyles';
 
 export const StyledGrid = styled.div`
   display: grid;
@@ -11,4 +12,9 @@ export const StyledGrid = styled.div`
     grid-template-columns: repeat(4, minmax(200px, 1fr));
     width: 100%;
   }
+`;
+
+export const StyledPageContainer = styled.div`
+  ${({ theme }) => containerStyles(theme)}
+
 `;
