@@ -1,7 +1,7 @@
 import { Global, ThemeProvider, css } from "@emotion/react";
 import React from "react";
 
-const theme = {
+export const theme = {
   colors: {
     teal: "#0B3239",
     white: "#FFFFFF",
@@ -19,10 +19,7 @@ const theme = {
   },
 };
 
-const globalStyles = css`
-  @import url("https://fonts.googleapis.com/css2?family=Pixelfy+Sans&display=swap");
-  @import url("https://fonts.googleapis.com/css2?family=GTultra&display=swap");
-
+export const globalStyles = css`
   html,
   body,
   #root {
@@ -31,7 +28,7 @@ const globalStyles = css`
   }
 
   body {
-    font-family: "GTultra", sans-serif;
+    font-family: "Inter", sans-serif;
   }
 
   h1,

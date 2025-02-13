@@ -1,11 +1,25 @@
-import React from "react";
-import Page from "../components/Page";
+import React, { useState } from "react";
+import { Game } from "../components/Game";
+import { Overlay } from "../components/Overlay";
 
 export const HomePage: React.FC = () => {
+  const [showGame, setShowGame] = useState<boolean | null>(null);
+
+  const handlePlayGame = () => {
+    setShowGame(true);
+  };
+
+  const handleSkipGame = () => {
+    setShowGame(false);
+  };
+
   return (
-    <Page>
-      <h1>Welcome to the Game Jam!</h1>
-      <p>Have fun participating in the game jam!</p>
-    </Page>
+    <>
+      {showGame === null && (
+        <Overlay onPlayGame={handlePlayGame} onSkipGame={handleSkipGame} />
+      )}
+      {showGame && <Game />}
+      {!showGame && <div>Other information for the homepage</div>}
+    </>
   );
 };
