@@ -214,4 +214,4 @@ Please change the parent <Route path="${j}"> to <Route path="${j==="/"?"*":`${j}
   a {
     font-family: "Pixelify Sans", sans-serif;
   }
-`,Mv=({children:l})=>b.jsxs(Zy,{theme:zv,children:[b.jsx(rv,{styles:Uv}),l]}),Fv=()=>b.jsx(Mv,{children:b.jsxs(ty,{children:[b.jsx(vv,{}),b.jsx(Im,{children:b.jsx(cd,{path:"/gamejam",element:b.jsx(Ov,{})})})]})});Ah.createRoot(document.getElementById("root")).render(b.jsx(T.StrictMode,{children:b.jsx(Fv,{})}))});export default $v();
+`,Mv=({children:l})=>b.jsxs(Zy,{theme:zv,children:[b.jsx(rv,{styles:Uv}),l]}),Fv=()=>b.jsx(Mv,{children:b.jsxs(ty,{basename:"/gamejam",children:[b.jsx(vv,{}),b.jsx(Im,{children:b.jsx(cd,{path:"/",element:b.jsx(Ov,{})})})]})});Ah.createRoot(document.getElementById("root")).render(b.jsx(T.StrictMode,{children:b.jsx(Fv,{})}))});export default $v();
