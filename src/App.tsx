@@ -6,7 +6,7 @@ import { AppThemeProvider } from "./providers/ThemeProvider";
 export const App = () => {
   return (
     <AppThemeProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/gamejam">
         <NavBar />
         <Routes>
           <Route path="/" element={<HomePage />} />
