@@ -9,6 +9,11 @@ export const StyledGridItem = styled.div`
   cursor: pointer;
   user-select: none;
   position: relative;
+  width: 100%;
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
+    width: 80%;
+  }
 `;
 
 const slideDown = keyframes`
@@ -41,11 +46,7 @@ const slideUp = keyframes`
   }
 `;
 
-interface StyledBioContainerProps {
-  showBio: boolean;
-};
-
-export const StyledBioContainer = styled.div<StyledBioContainerProps>`
+export const StyledBioContainer = styled.div<{showBio: boolean}>`
   position: absolute;
   left: 0;
   top: 100%;

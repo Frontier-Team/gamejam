@@ -5,7 +5,7 @@ export const StyledGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(1, minmax(200px, 1fr));
   width: 50%;
-  gap: 4rem;
+  gap: 2.5rem;
   margin: 0 auto;
 
   @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
