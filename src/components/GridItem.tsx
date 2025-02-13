@@ -9,7 +9,6 @@ interface GridItemProps {
 };
 
 export const GridItem = ({
-  id,
   name,
   role,
   bio,
