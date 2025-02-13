@@ -73,6 +73,7 @@ export const HamburgerIcon = styled.div`
 `;
 
 export const Sidebar = styled.div<{ isOpen: boolean }>`
+  z-index: 1;
   height: 100%;
   width: ${({ isOpen }) => (isOpen ? "220px" : "0")};
   position: fixed;
