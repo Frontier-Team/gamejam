@@ -1,4 +1,5 @@
 import { Unity, useUnityContext } from "react-unity-webgl";
+import { GameContainer } from "./Game.styled";
 
 export const Game = () => {
   const { unityProvider, isLoaded, loadingProgression, initialisationError } =
@@ -23,10 +24,12 @@ export const Game = () => {
           </h3>
         </div>
       )}
-      <Unity
-        unityProvider={unityProvider}
-        style={{ width: "100vw", height: "100vh" }}
-      />
+      <GameContainer>
+        <Unity
+          unityProvider={unityProvider}
+          style={{ width: "100%", height: "100%" }}
+        />
+      </GameContainer>
     </>
   );
 };
