@@ -175,7 +175,7 @@ Please change the parent <Route path="${j}"> to <Route path="${j==="/"?"*":`${j}
   display: flex;
   justify-content: center;
   align-items: center;
-`,Lv=()=>{const{unityProvider:l,isLoaded:u,loadingProgression:a,initialisationError:f}=Jf.useUnityContext({loaderUrl:"../build/mock/unity-react-test.loader.js",dataUrl:"../build/mock/unity-react-test.data",frameworkUrl:"../build/mock/unity-react-test.framework.js",codeUrl:"../build/mock/unity-react-test.wasm"});if(f)return b.jsx("div",{children:"Error loading the game!"});const c=Math.round(a*100);return b.jsxs(b.Fragment,{children:[u===!1&&b.jsx("div",{className:"container",children:b.jsxs("h3",{children:["Loading...",c?`(${c}%)`:null]})}),b.jsx(Rv,{children:b.jsx(Jf.Unity,{unityProvider:l,style:{width:"100%",height:"100%"}})})]})},Nv=Ge.div`
+`,Lv=()=>{const{unityProvider:l,isLoaded:u,loadingProgression:a,initialisationError:f}=Jf.useUnityContext({loaderUrl:"/build/mock/unity-react-test.loader.js",dataUrl:"/build/mock/unity-react-test.data",frameworkUrl:"/build/mock/unity-react-test.framework.js",codeUrl:"/build/mock/unity-react-test.wasm"});if(f)return b.jsx("div",{children:"Error loading the game!"});const c=Math.round(a*100);return b.jsxs(b.Fragment,{children:[u===!1&&b.jsx("div",{className:"container",children:b.jsxs("h3",{children:["Loading...",c?`(${c}%)`:null]})}),b.jsx(Rv,{children:b.jsx(Jf.Unity,{unityProvider:l,style:{width:"100%",height:"100%"}})})]})},Nv=Ge.div`
   position: fixed;
   top: 0;
   left: 0;
