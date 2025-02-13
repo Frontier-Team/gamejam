@@ -15,6 +15,5 @@ export const StyledGrid = styled.div`
 `;
 
 export const StyledPageContainer = styled.div`
-  ${({ theme }) => containerStyles(theme)}
-
+  ${() => containerStyles()}
 `;

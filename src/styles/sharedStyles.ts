@@ -28,6 +28,6 @@ export const buttonAndLinkStyles = (theme: Theme) => css`
   }
 `;
 
-export const containerStyles = (theme: Theme) => css`
+export const containerStyles = () => css`
   margin: 2.5rem;
 `;
