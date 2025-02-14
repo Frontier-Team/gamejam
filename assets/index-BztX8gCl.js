@@ -273,14 +273,14 @@ Please change the parent <Route path="${F}"> to <Route path="${F==="/"?"*":`${F}
   margin: 0;
 `,Wv=({name:l,role:u,bio:a})=>{const[f,c]=T.useState(!1),d=()=>{c(!f)};return K.jsxs(Fv,{onClick:()=>d(),children:[K.jsx("h1",{children:l}),K.jsx("h2",{children:u}),f&&K.jsx(Bv,{showBio:f,children:K.jsx(Hv,{children:a})})]})},Vv=[{id:1,name:"John Doe",role:"Software Engineer",bio:"John is a software engineer who loves to code."},{id:2,name:"Jane Doe",role:"UX Designer",bio:"Jane is a web developer who loves to design."},{id:3,name:"Alice Doe",role:"Product Manager",bio:"Alice is a product manager who loves to manage products."},{id:4,name:"Bob Doe",role:"DevOps Engineer",bio:"Bob is a DevOps engineer who loves to deploy code."}],Qv=Ie.div`
   display: grid;
-  grid-template-columns: repeat(1, minmax(200px, 1fr));
+  grid-template-columns: 1fr;
   width: 50%;
   gap: 2.5rem;
   margin: 0 auto;
 
   @media (min-width: ${({theme:l})=>l.breakpoints.sm}) {
-    grid-template-columns: repeat(4, minmax(200px, 1fr));
-    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 70%;
   }
 `,qv=Ie.div`
   ${()=>dv()}
