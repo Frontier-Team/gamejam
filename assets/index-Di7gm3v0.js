@@ -249,6 +249,7 @@ Please change the parent <Route path="${I}"> to <Route path="${I==="/"?"*":`${I}
   transition: translate(-50%, -50%) scale(1.1);
 
   @media (min-width: ${({theme:n})=>n.breakpoints.sm}) {
+    position: absolute;
     top: 50%;
     right: 20%;
   }
@@ -258,6 +259,7 @@ Please change the parent <Route path="${I}"> to <Route path="${I==="/"?"*":`${I}
   grid-template-columns: 1fr;
   gap: 2.5rem;
   margin: 0 auto;
+  padding-bottom: 2rem;
 
   @media (min-width: ${({theme:n})=>n.breakpoints.sm}) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
