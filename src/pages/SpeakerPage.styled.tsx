@@ -15,4 +15,5 @@ export const StyledGrid = styled.div`
 
 export const StyledPageContainer = styled.div`
   ${() => containerStyles()}
+  margin-bottom: 2rem;
 `;
