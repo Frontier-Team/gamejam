@@ -27,6 +27,7 @@ export const ExpandedCard = styled(motion.div)`
   transition: translate(-50%, -50%) scale(1.1);
 
   @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
+    position: absolute;
     top: 50%;
     right: 20%;
   }

@@ -7,6 +7,7 @@ export const StyledGrid = styled.div`
   grid-template-columns: 1fr;
   gap: 2.5rem;
   margin: 0 auto;
+  padding-bottom: 2rem;
 
   @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
