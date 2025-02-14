@@ -12,7 +12,12 @@ import {
   SidebarList,
 } from "./NavBar.styled";
 
-export const NavBar: React.FC = () => {
+interface NavBarProps {
+  toggleShowGame: () => void;
+  showGame: boolean;
+}
+
+export const NavBar: React.FC<NavBarProps> = ({ toggleShowGame, showGame }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const toggleSidebar = () => {
@@ -34,6 +39,11 @@ export const NavBar: React.FC = () => {
         </NavItem>
         <NavItem>
           <AnimatedLink to="/speakers">Speakers</AnimatedLink>
+        </NavItem>
+        <NavItem>
+          <button onClick={toggleShowGame}>
+            {showGame ? "Hide Game" : "Show Game"}
+          </button>
         </NavItem>
       </NavList>
       <Sidebar isOpen={isSidebarOpen}>
@@ -58,6 +68,11 @@ export const NavBar: React.FC = () => {
             <SidebarLink to="/speakers" onClick={toggleSidebar}>
               Speakers
             </SidebarLink>
+          </SidebarItem>
+          <SidebarItem>
+            <button onClick={toggleShowGame}>
+              {showGame ? "Hide Game" : "Show Game"}
+            </button>
           </SidebarItem>
         </SidebarList>
       </Sidebar>
