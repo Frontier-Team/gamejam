@@ -1,33 +1,48 @@
-import { useState } from "react";
-import { BioContent, StyledBioContainer, StyledGridItem } from "./StyledGridItem.styled";
+import { useState } from 'react';
+import { AnimatePresence, AnimateSharedLayout, motion } from 'framer-motion';
+import { BioContent, StyledBioContainer, StyledGridItem } from './StyledGridItem.styled';
+import { ExpandedCard, MotionCard, Overlay } from './GridItem.styled';
+
 
 interface GridItemProps {
-  id: number;
+  id: string;
   name: string;
   role: string;
   bio: string;
 };
 
 export const GridItem = ({
+  id,
   name,
   role,
   bio,
 }: GridItemProps) => {
   const [showBio, setShowBio] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false);
 
-  const toggleBio = () => {
-    setShowBio(!showBio);
+  const toggleItem = () => {
+    setIsExpanded(!isExpanded);
   };
 
   return (
-    <StyledGridItem onClick={() => toggleBio()}>
-      <h1>{name}</h1>
-      <h2>{role}</h2>
-      {showBio && (
-        <StyledBioContainer showBio={showBio}>
-          <BioContent>{bio}</BioContent>
-        </StyledBioContainer>
-      )}
-    </StyledGridItem>
+    <>
+      <MotionCard
+        layoutId={id}
+        onClick={toggleItem}
+      >
+        <h1>{name}</h1>
+        <h2>{role}</h2>
+      </MotionCard>
+      <AnimatePresence>
+        {isExpanded && (
+          <ExpandedCard
+            layoutId={id}
+            onClick={toggleItem}
+          >
+            {bio}
+          </ExpandedCard>
+        )}
+      </AnimatePresence>
+    </>
   );
 };

@@ -1,5 +1,5 @@
 export interface Speaker {
-  id: number;
+  id: string;
   name: string;
   role: string;
   bio: string; 
