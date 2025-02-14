@@ -7,7 +7,7 @@ import { SpeakerPage } from "./pages/SpeakerPage";
 export const App = () => {
   return (
     <AppThemeProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/gamejam">
         <NavBar />
         <Routes>
           <Route path="/" element={<HomePage />} />
