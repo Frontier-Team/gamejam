@@ -9,28 +9,26 @@ export const MotionCard = styled(motion.div)`
   cursor: pointer;
   user-select: none;
   position: relative;
+  border-radius: 1rem;
   width: 100%;
 
-  @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
-    width: 80%;
-  }
-`;
-
-export const Overlay = styled(motion.div)`
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: ${({ theme }) => theme.colors.turquoiseShade};
-  display: flex;
-  align-items: center;
-  justify-content: center;
 `;
 
 export const ExpandedCard = styled(motion.div)`
   background-color: ${({ theme }) => theme.colors.turquoiseShade};
-  padding-block: 0.5rem;
-  padding-inline: 1rem;
-  margin: 0;
+  position: absolute;
+  top: 0%;
+  right: 20%;
+  padding: 2rem;
+  border-radius: 1rem;
+  z-index: 100;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  width: 50%;
+  max-width: 600px;
+  text-align: center;
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
+    top: 50%;
+    right: 20%;
+  }
 `;

@@ -1,7 +1,5 @@
-import { useState } from 'react';
-import { AnimatePresence, AnimateSharedLayout, motion } from 'framer-motion';
-import { BioContent, StyledBioContainer, StyledGridItem } from './StyledGridItem.styled';
-import { ExpandedCard, MotionCard, Overlay } from './GridItem.styled';
+import { AnimatePresence } from 'framer-motion';
+import { ExpandedCard, MotionCard } from './GridItem.styled';
 
 
 interface GridItemProps {
@@ -9,6 +7,8 @@ interface GridItemProps {
   name: string;
   role: string;
   bio: string;
+  isSelected: boolean;
+  setSelectedItem: (id: string | null) => void;
 };
 
 export const GridItem = ({
@@ -16,30 +16,28 @@ export const GridItem = ({
   name,
   role,
   bio,
+  isSelected,
+  setSelectedItem,
 }: GridItemProps) => {
-  const [showBio, setShowBio] = useState(false);
-  const [isExpanded, setIsExpanded] = useState(false);
-
-  const toggleItem = () => {
-    setIsExpanded(!isExpanded);
-  };
 
   return (
     <>
       <MotionCard
         layoutId={id}
-        onClick={toggleItem}
+        onClick={() => setSelectedItem(isSelected ? null : id)}
       >
         <h1>{name}</h1>
         <h2>{role}</h2>
       </MotionCard>
       <AnimatePresence>
-        {isExpanded && (
+        {isSelected && (
           <ExpandedCard
             layoutId={id}
-            onClick={toggleItem}
+            onClick={() => setSelectedItem(null)}
           >
-            {bio}
+            <h1>{name}</h1>
+            <h2>{role}</h2>
+            <h2>{bio}</h2>
           </ExpandedCard>
         )}
       </AnimatePresence>
