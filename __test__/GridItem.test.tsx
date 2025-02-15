@@ -11,6 +11,10 @@ const mockItemDetails = {
 };
 
 describe('GridItem component', () => {
+  afterEach(() => {
+    jest.clearAllMocks();
+  });
+
   it('should display the name and role', () => {
     renderWithProviders(<GridItem
       {...mockItemDetails}
@@ -36,18 +40,19 @@ describe('GridItem component', () => {
       isSelected={true}
       setSelectedItem={() => {}}
     />);
-    fireEvent.click(screen.getByText('Mock Item'));
+    fireEvent.click(screen.getByTestId('collapsed-card-heading'));
     expect(screen.getByText('This is the biography of Mock Item')).toBeInTheDocument();
   });
 
-  it('should hide the bio when clicked again', () => {
+  it('should hide the bio when clicked again', async () => {
+    const mockCallback = jest.fn();
     renderWithProviders(<GridItem
       {...mockItemDetails}
       isSelected={true}
-      setSelectedItem={() => {}}
+      setSelectedItem={mockCallback}
     />);
-    fireEvent.click(screen.getByText('Mock Item'));
-    fireEvent.click(screen.getByText('Mock Item'));
-    expect(screen.queryByText('This is the biography of Mock Item')).not.toBeInTheDocument();
+    fireEvent.click(screen.getByTestId('collapsed-card-heading'));
+    fireEvent.click(screen.getByTestId('expanded-card-heading'));
+    expect(mockCallback).toHaveBeenCalledWith(null);
   });
 });

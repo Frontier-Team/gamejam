@@ -26,7 +26,7 @@ export const GridItem = ({
         layoutId={id}
         onClick={() => setSelectedItem(isSelected ? null : id)}
       >
-        <h1>{name}</h1>
+        <h1 data-testid='collapsed-card-heading'>{name}</h1>
         <h2>{role}</h2>
       </MotionCard>
       <AnimatePresence>
@@ -35,7 +35,7 @@ export const GridItem = ({
             layoutId={id}
             onClick={() => setSelectedItem(null)}
           >
-            <h1>{name}</h1>
+            <h1 data-testid='expanded-card-heading'>{name}</h1>
             <h2>{role}</h2>
             <StyledBio>{bio}</StyledBio>
           </ExpandedCard>
