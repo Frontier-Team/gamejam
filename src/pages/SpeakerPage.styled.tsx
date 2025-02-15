@@ -18,3 +18,7 @@ export const StyledPageContainer = styled.div`
   ${() => containerStyles()}
   margin-bottom: 2rem;
 `;
+
+export const StyledDiv = styled.div`
+  height: 2rem;
+`;

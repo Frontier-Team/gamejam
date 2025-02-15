@@ -1,5 +1,5 @@
 import { AnimatePresence } from 'framer-motion';
-import { ExpandedCard, MotionCard, StyledMotionCardContainer } from './GridItem.styled';
+import { ExpandedCard, MotionCard, StyledBio, StyledMotionCardContainer } from './GridItem.styled';
 
 
 interface GridItemProps {
@@ -37,7 +37,7 @@ export const GridItem = ({
           >
             <h1>{name}</h1>
             <h2>{role}</h2>
-            <h2>{bio}</h2>
+            <StyledBio>{bio}</StyledBio>
           </ExpandedCard>
         )}
       </AnimatePresence>
