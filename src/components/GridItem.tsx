@@ -1,5 +1,5 @@
 import { AnimatePresence } from 'framer-motion';
-import { ExpandedCard, MotionCard } from './GridItem.styled';
+import { ExpandedCard, MotionCard, StyledMotionCardContainer } from './GridItem.styled';
 
 
 interface GridItemProps {
@@ -21,7 +21,7 @@ export const GridItem = ({
 }: GridItemProps) => {
 
   return (
-    <>
+    <StyledMotionCardContainer>
       <MotionCard
         layoutId={id}
         onClick={() => setSelectedItem(isSelected ? null : id)}
@@ -41,6 +41,6 @@ export const GridItem = ({
           </ExpandedCard>
         )}
       </AnimatePresence>
-    </>
+    </StyledMotionCardContainer>
   );
 };
