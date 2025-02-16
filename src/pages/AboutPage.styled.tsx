@@ -13,7 +13,7 @@ export const TimelineContainer = styled.div`
 export const Line = styled.div`
   position: absolute;
   left: 50%;
-  width: 0.5rem;
+  width: 0.25rem;
   height: 100%;
   background-color: ${({ theme }) => theme.colors.turquoise};
   transform: translateX(-50%);
@@ -52,7 +52,7 @@ export const Card = styled.div`
   width: 45%;
   max-width: 300px;
   word-wrap: break-word;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
   position: relative;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
