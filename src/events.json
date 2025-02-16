@@ -5,84 +5,144 @@
       "date": "March 3, 2025",
       "time": "10:15 - 10:45",
       "description": "Abertay University",
-      "startTime": "10:15"
+      "startTime": "10:15",
+      "location": "Talk Room 1"
     },
     {
       "id": 2,
       "date": "March 3, 2025",
       "time": "10:45 - 11:15",
       "description": "University of Dundee",
-      "startTime": "10:45"
+      "startTime": "10:45",
+      "location": "Talk Room 1"
     },
     {
       "id": 3,
       "date": "March 3, 2025",
       "time": "11:15 - 11:30",
       "description": "Gamification - Brian Baglow",
-      "startTime": "11:15"
+      "startTime": "11:15",
+      "location": "Talk Room 1"
     },
     {
       "id": 4,
       "date": "March 3, 2025",
       "time": "11:30 - 12:00",
       "description": "Background in games - Dave Cook",
-      "startTime": "11:30"
+      "startTime": "11:30",
+      "location": "Talk Room 1"
     },
     {
       "id": 5,
       "date": "March 3, 2025",
       "time": "12:00 - 12:30",
       "description": "Innovation and Games - Dave Mcleay",
-      "startTime": "12:00"
+      "startTime": "12:00",
+      "location": "Talk Room 1"
     },
     {
       "id": 6,
       "date": "March 3, 2025",
       "time": "12:30 - 13:30",
       "description": "Lunch Break",
-      "startTime": "12:30"
+      "startTime": "12:30",
+      "location": "Talk Room 1"
     },
     {
       "id": 7,
       "date": "March 3, 2025",
       "time": "13:30 - 14:00",
       "description": "Game Maker - Russel",
-      "startTime": "13:30"
+      "startTime": "13:30",
+      "location": "Talk Room 1"
     },
     {
       "id": 8,
       "date": "March 3, 2025",
       "time": "14:00 - 14:30",
       "description": "4J?",
-      "startTime": "14:00"
+      "startTime": "14:00",
+      "location": "Talk Room 1"
     },
     {
       "id": 9,
       "date": "March 3, 2025",
       "time": "14:30 - 15:00",
       "description": "Rockstar",
-      "startTime": "14:30"
+      "startTime": "14:30",
+      "location": "Talk Room 1"
     },
     {
       "id": 10,
       "date": "March 3, 2025",
       "time": "15:00 - 15:30",
       "description": "Break",
-      "startTime": "15:00"
+      "startTime": "15:00",
+      "location": "Talk Room 1"
     },
     {
       "id": 11,
       "date": "March 3, 2025",
       "time": "15:30 - 16:30",
       "description": "Presenting back",
-      "startTime": "15:30"
+      "startTime": "15:30",
+      "location": "Talk Room 1"
     },
     {
       "id": 12,
       "date": "March 3, 2025",
       "time": "16:45 - 17:00",
       "description": "Winner announced",
-      "startTime": "16:45"
+      "startTime": "16:45",
+      "location": "Talk Room 1"
+    },
+    {
+      "id": 13,
+      "date": "March 3, 2025",
+      "time": "10:15 - 10:45",
+      "description": "Tech School - Toby Keech",
+      "startTime": "10:15",
+      "location": "Talk Room 2"
+    },
+    {
+      "id": 14,
+      "date": "March 3, 2025",
+      "time": "10:45 - 11:15",
+      "description": "Bad Gamification - Amy Rodger",
+      "startTime": "10:45",
+      "location": "Talk Room 2"
+    },
+    {
+      "id": 15,
+      "date": "March 3, 2025",
+      "time": "11:15 - 11:30",
+      "description": "Customer Waterfront - TBC",
+      "startTime": "11:15",
+      "location": "Talk Room 2"
+    },
+    {
+      "id": 16,
+      "date": "March 3, 2025",
+      "time": "11:30 - 12:00",
+      "description": "Microsoft",
+      "startTime": "11:30",
+      "location": "Talk Room 2"
+    },
+    {
+      "id": 17,
+      "date": "March 3, 2025",
+      "time": "12:00 - 12:30",
+      "description": "Lightning Talks?",
+      "startTime": "12:00",
+      "location": "Talk Room 2"
+    },
+    {
+      "id": 18,
+      "date": "March 3, 2025",
+      "time": "12:30 - 13:00",
+      "description": "Lunch Break",
+      "startTime": "12:30",
+      "location": "Talk Room 2"
     }
   ]
 }

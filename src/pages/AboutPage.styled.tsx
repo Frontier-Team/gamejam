@@ -7,6 +7,7 @@ export const TimelineContainer = styled.div`
   align-items: center;
   position: relative;
   gap: 2.5rem;
+  margin-bottom: 2rem;
 `;
 
 export const Line = styled.div`
@@ -57,4 +58,20 @@ export const Card = styled.div`
   @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
     width: 30%;
   }
+`;
+
+export const StyledForm = styled.form`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-direction: column;
+`;
+
+export const StyledFormElement = styled.div`
+  margin-bottom: 0.5rem;
+`;
+
+export const StyledHeading = styled.h1`
+  text-align: center;
 `;
