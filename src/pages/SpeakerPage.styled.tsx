@@ -9,7 +9,7 @@ export const StyledGrid = styled.div`
   margin: 0 auto;
   padding-bottom: 2rem;
 
-  @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 `;
