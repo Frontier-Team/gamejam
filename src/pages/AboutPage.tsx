@@ -64,7 +64,7 @@ export const AboutPage = () => {
           </select>
         </StyledFormElement>
         <StyledFormElement>
-          <button type='submit'>Submit</button>
+          <button type='submit'>View Schedule</button>
         </StyledFormElement>
       </StyledForm>
       {events.length > 0 && (
