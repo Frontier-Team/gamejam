@@ -1,0 +1,88 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "date": "March 3, 2025",
+      "time": "10:15 - 10:45",
+      "description": "Abertay University",
+      "startTime": "10:15"
+    },
+    {
+      "id": 2,
+      "date": "March 3, 2025",
+      "time": "10:45 - 11:15",
+      "description": "University of Dundee",
+      "startTime": "10:45"
+    },
+    {
+      "id": 3,
+      "date": "March 3, 2025",
+      "time": "11:15 - 11:30",
+      "description": "Gamification - Brian Baglow",
+      "startTime": "11:15"
+    },
+    {
+      "id": 4,
+      "date": "March 3, 2025",
+      "time": "11:30 - 12:00",
+      "description": "Background in games - Dave Cook",
+      "startTime": "11:30"
+    },
+    {
+      "id": 5,
+      "date": "March 3, 2025",
+      "time": "12:00 - 12:30",
+      "description": "Innovation and Games - Dave Mcleay",
+      "startTime": "12:00"
+    },
+    {
+      "id": 6,
+      "date": "March 3, 2025",
+      "time": "12:30 - 13:30",
+      "description": "Lunch Break",
+      "startTime": "12:30"
+    },
+    {
+      "id": 7,
+      "date": "March 3, 2025",
+      "time": "13:30 - 14:00",
+      "description": "Game Maker - Russel",
+      "startTime": "13:30"
+    },
+    {
+      "id": 8,
+      "date": "March 3, 2025",
+      "time": "14:00 - 14:30",
+      "description": "4J?",
+      "startTime": "14:00"
+    },
+    {
+      "id": 9,
+      "date": "March 3, 2025",
+      "time": "14:30 - 15:00",
+      "description": "Rockstar",
+      "startTime": "14:30"
+    },
+    {
+      "id": 10,
+      "date": "March 3, 2025",
+      "time": "15:00 - 15:30",
+      "description": "Break",
+      "startTime": "15:00"
+    },
+    {
+      "id": 11,
+      "date": "March 3, 2025",
+      "time": "15:30 - 16:30",
+      "description": "Presenting back",
+      "startTime": "15:30"
+    },
+    {
+      "id": 12,
+      "date": "March 3, 2025",
+      "time": "16:45 - 17:00",
+      "description": "Winner announced",
+      "startTime": "16:45"
+    }
+  ]
+}
