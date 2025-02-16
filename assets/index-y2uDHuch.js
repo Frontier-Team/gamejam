@@ -276,7 +276,7 @@ Please change the parent <Route path="${I}"> to <Route path="${I==="/"?"*":`${I}
 `,HP=ge.div`
   position: absolute;
   left: 50%;
-  width: 0.5rem;
+  width: 0.25rem;
   height: 100%;
   background-color: ${({theme:t})=>t.colors.turquoise};
   transform: translateX(-50%);
@@ -307,7 +307,7 @@ Please change the parent <Route path="${I}"> to <Route path="${I==="/"?"*":`${I}
   width: 45%;
   max-width: 300px;
   word-wrap: break-word;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
   position: relative;
 
   @media (max-width: ${({theme:t})=>t.breakpoints.md}) {
