@@ -25,6 +25,7 @@ export const GridItem = ({
       <MotionCard
         layoutId={id}
         onClick={() => setSelectedItem(isSelected ? null : id)}
+        aria-expanded={isSelected}
       >
         <h1 data-testid='collapsed-card-heading'>{name}</h1>
         <h2>{role}</h2>
@@ -34,6 +35,8 @@ export const GridItem = ({
           <ExpandedCard
             layoutId={id}
             onClick={() => setSelectedItem(null)}
+            aria-hidden={!isSelected}
+            tabIndex={-1}
           >
             <h1 data-testid='expanded-card-heading'>{name}</h1>
             <h2>{role}</h2>
