@@ -231,7 +231,7 @@ Please change the parent <Route path="${$}"> to <Route path="${$==="/"?"*":`${$}
   th, td {
     padding: 2rem;
     text-align: left;
-    border-bottom: 1px solid #0B3239;
+    border-bottom: ${({theme:l})=>`1px solid ${l.colors.teal}`};
   }
 
   thead tr {
