@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import data from '../events.json';
-import { Card, Line, StyledForm, StyledFormElement, StyledHeading, TimelineContainer, TimelineItem } from './AboutPage.styled';
+import { Button, Card, Line, StyledForm, StyledFormElement, StyledHeading, TimelineContainer, TimelineItem } from './AboutPage.styled';
 import { Event } from '../types';
 
 export const AboutPage = () => {
@@ -64,7 +64,7 @@ export const AboutPage = () => {
           </select>
         </StyledFormElement>
         <StyledFormElement>
-          <button type='submit'>View Schedule</button>
+          <Button type='submit'>View Schedule</Button>
         </StyledFormElement>
       </StyledForm>
       {events.length > 0 && (

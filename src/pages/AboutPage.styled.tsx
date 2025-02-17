@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import styled from '@emotion/styled';
+import { buttonAndLinkStyles } from '../styles/sharedStyles';
 
 export const TimelineContainer = styled.div`
   display: flex;
@@ -74,4 +75,8 @@ export const StyledFormElement = styled.div`
 
 export const StyledHeading = styled.h1`
   text-align: center;
+`;
+
+export const Button = styled.button`
+  ${({ theme }) => buttonAndLinkStyles(theme)}
 `;
