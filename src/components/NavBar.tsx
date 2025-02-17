@@ -35,6 +35,9 @@ export const NavBar: React.FC = () => {
         <NavItem>
           <AnimatedLink to="/speakers">Speakers</AnimatedLink>
         </NavItem>
+        <NavItem>
+          <AnimatedLink to="/rules">Rules/Conduct</AnimatedLink>
+        </NavItem>
       </NavList>
       <Sidebar isOpen={isSidebarOpen}>
         <CloseIcon onClick={toggleSidebar}>&times;</CloseIcon>
@@ -57,6 +60,11 @@ export const NavBar: React.FC = () => {
           <SidebarItem>
             <SidebarLink to="/speakers" onClick={toggleSidebar}>
               Speakers
+            </SidebarLink>
+          </SidebarItem>
+          <SidebarItem>
+            <SidebarLink to="/rules" onClick={toggleSidebar}>
+              Rules/Conduct
             </SidebarLink>
           </SidebarItem>
         </SidebarList>
