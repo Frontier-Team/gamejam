@@ -5,6 +5,14 @@ export const StyledTableContainer = styled.div`
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 
+  .table-heading {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    margin-bottom: 1rem;
+  }
+
   table {
     width: 100%;
     border-collapse: collapse;

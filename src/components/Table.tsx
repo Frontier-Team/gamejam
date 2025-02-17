@@ -17,7 +17,7 @@ export const Table = <T,>({
 }: TableProps<T>) => {
   return (
     <StyledTableContainer>
-      {heading && <h2>{heading}</h2>}
+      {heading && <h2 className='table-heading'>{heading}</h2>}
       <table>
         <thead>
           <tr>
