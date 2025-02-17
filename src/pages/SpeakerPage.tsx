@@ -1,6 +1,7 @@
 import { Table } from '../components/Table';
 import data from '../events.json';
 import { Event } from '../types';
+import { PageContainer } from './SpeakerPage.styled';
 
 export const SpeakerPage = () => {
   const headers = [
@@ -22,7 +23,7 @@ export const SpeakerPage = () => {
   ]
 
   return (
-    <div>
+    <PageContainer>
       <h1>Talk Schedule</h1>
       <Table
         heading='Talk Room 1'
@@ -39,6 +40,6 @@ export const SpeakerPage = () => {
         fieldsToDisplay={fieldsToDisplay}
         largeFields={['description']}
       />
-    </div>
+    </PageContainer>
   );
 };

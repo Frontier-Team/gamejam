@@ -33,11 +33,10 @@ export const Table = <T,>({
                 const isLarge = largeFields.includes(field);
                 return (
                   <td key={fieldIndex} className={isLarge ? 'large' : ''}>
-                    {String(row[field])}
+                    {Array.isArray(row[field]) ? row[field].join(', ') : String(row[field])}
                   </td>
                 )}
               )}
-
             </tr>
           ))}
         </tbody>

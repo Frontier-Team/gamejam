@@ -1,5 +1,9 @@
 import { css, Theme } from "@emotion/react";
 
+export const pageContainerStyles = (theme: Theme) => css`
+  margin: ${theme.spacing.marginDefault};
+`;
+
 export const buttonAndLinkStyles = (theme: Theme) => css`
   margin: 0 10px;
   padding: 10px 20px;

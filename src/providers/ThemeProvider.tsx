@@ -18,7 +18,7 @@ export const theme = {
     lg: "992px",
   },
   spacing: {
-    marginLeft: "2rem"
+    marginDefault: "2rem"
   },
 };
 

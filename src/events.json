@@ -4,63 +4,63 @@
       "id": 1,
       "date": "March 3, 2025",
       "time": "10:15 - 10:45",
-      "title": "Abertay University",
-      "description": "",
+      "title": "Talk 1",
+      "description": "A very interesting talk about talking which covers different aspects of talking",
       "startTime": "10:15",
       "endTime": "10:45",
       "location": "Talk Room 1",
-      "speakers": []
+      "speakers": ["John Doe"]
     },
     {
       "id": 2,
       "date": "March 3, 2025",
       "time": "10:45 - 11:15",
-      "title": "University of Dundee",
-      "description": "",
+      "title": "Talk 2",
+      "description": "Another important talk",
       "startTime": "10:45",
       "endTime": "11:15",
       "location": "Talk Room 1",
-      "speakers": []
+      "speakers": ["Jack Doe", "Alice Doe"]
     },
     {
       "id": 3,
       "date": "March 3, 2025",
       "time": "11:15 - 11:30",
-      "title": "Gamification - Brian Baglow",
-      "description": "",
+      "title": "Talk 3",
+      "description": "As the third talk of the day, this takes a deep dive into the world of talking",
       "startTime": "11:15",
       "endTime": "11:30",
       "location": "Talk Room 1",
-      "speakers": []
+      "speakers": ["Jane Doe"]
     },
     {
       "id": 4,
       "date": "March 3, 2025",
       "time": "11:30 - 12:00",
-      "title": "Background in games",
-      "description": "",
+      "title": "Talk 4",
+      "description": "Yet another deep talk",
       "startTime": "11:30",
       "endTime": "12:00",
       "location": "Talk Room 1",
-      "speakers": ["Dave Cook"]
+      "speakers": ["Bob Doe", "Jimmy Doe"]
     },
     {
       "id": 5,
       "date": "March 3, 2025",
       "time": "12:00 - 12:30",
-      "title": "Innovation and Games",
-      "description": "",
+      "title": "Talk 5",
+      "description": "A deeper talk than all the previous ones",
       "startTime": "12:00",
       "endTime": "12:30",
       "location": "Talk Room 1",
-      "speakers": ["Dave Mcleay"]
+      "speakers": ["Jane Doe"]
     },
     {
       "id": 6,
       "date": "March 3, 2025",
       "time": "12:30 - 13:30",
-      "title": "Lunch Break",
-      "description": "",
+      "title": "Break",
+      "description": "A break from all the talks",
       "startTime": "12:30",
       "endTime": "13:30",
       "location": "Talk Room 1",
@@ -70,41 +70,41 @@
       "id": 7,
       "date": "March 3, 2025",
       "time": "13:30 - 14:00",
-      "title": "Game Maker - Russel",
-      "description": "",
+      "title": "Talk 6",
+      "description": "Back to talking",
       "startTime": "13:30",
       "endTime": "14:00",
       "location": "Talk Room 1",
-      "speakers": []
+      "speakers": ["Alice Doe"]
     },
     {
       "id": 8,
       "date": "March 3, 2025",
       "time": "14:00 - 14:30",
-      "title": "4J?",
-      "description": "",
+      "title": "Talk 7",
+      "description": "This is the seventh talk of the day",
       "startTime": "14:00",
       "endTime": "14:30",
       "location": "Talk Room 1",
-      "speakers": []
+      "speakers": ["Emma Doe"]
     },
     {
       "id": 9,
       "date": "March 3, 2025",
       "time": "14:30 - 15:00",
-      "title": "Rockstar",
-      "description": "",
+      "title": "Talk 8",
+      "description": "A short description about talk 8",
       "startTime": "14:30",
       "endTime": "15:00",
       "location": "Talk Room 1",
-      "speakers": []
+      "speakers": ["Bob Doe", "Alice Doe"]
     },
     {
       "id": 10,
       "date": "March 3, 2025",
       "time": "15:00 - 15:30",
       "title": "Break",
-      "description": "",
+      "description": "A short break",
       "startTime": "15:00",
       "endTime": "15:30",
       "location": "Talk Room 1",
@@ -114,18 +114,18 @@
       "id": 11,
       "date": "March 3, 2025",
       "time": "15:30 - 16:30",
-      "title": "Presenting back",
-      "description": "",
+      "title": "Talk 9",
+      "description": "Back again after a break",
       "startTime": "15:30",
       "endTime": "16:30",
       "location": "Talk Room 1",
-      "speakers": []
+      "speakers": ["Jimmy Doe"]
     },
     {
       "id": 12,
       "date": "March 3, 2025",
       "time": "16:45 - 17:00",
-      "title": "Winner announced",
+      "title": "Final announcements",
       "description": "",
       "startTime": "16:45",
       "endTime": "17:00",
@@ -136,51 +136,51 @@
       "id": 13,
       "date": "March 3, 2025",
       "time": "10:15 - 10:45",
-      "title": "Tech School",
-      "description": "From Fitness Plans to Function Calls: A Journey into Coding Thanks to the Dundee Tech School",
+      "title": "Talk 1",
+      "description": "First talk of the day in this room",
       "startTime": "10:15",
       "endTime": "10:45",
       "location": "Talk Room 2",
-      "speakers": ["Toby Keech"]
+      "speakers": ["Ava Doe"]
     },
     {
       "id": 14,
       "date": "March 3, 2025",
       "time": "10:45 - 11:15",
-      "title": "Bad Gamification",
-      "description": "",
+      "title": "Talk 2",
+      "description": "The second talk of the day covers all the details covered yesterday",
       "startTime": "10:45",
       "endTime": "11:15",
       "location": "Talk Room 2",
-      "speakers": ["Amy Rodger"]
+      "speakers": ["Ethan Doe"]
     },
     {
       "id": 15,
       "date": "March 3, 2025",
       "time": "11:15 - 11:30",
-      "title": "Customer Waterfront",
-      "description": "",
+      "title": "Talk 3",
+      "description": "As we warm up, let's talk about what we are interested in",
       "startTime": "11:15",
       "endTime": "11:30",
       "location": "Talk Room 2",
-      "speakers": []
+      "speakers": ["Albert Doe"]
     },
     {
       "id": 16,
       "date": "March 3, 2025",
       "time": "11:30 - 12:00",
-      "title": "Microsoft",
-      "description": "",
+      "title": "Talk 4",
+      "description": "This is a description for the fourth talk of the day",
       "startTime": "11:30",
       "endTime": "12:00",
       "location": "Talk Room 2",
-      "speakers": []
+      "speakers": ["Ava Doe"]
     },
     {
       "id": 17,
       "date": "March 3, 2025",
-      "time": "12:00 - 12:30",
-      "title": "Lightning Talks?",
+      "time": "12:00 - 13:00",
+      "title": "Break",
       "description": "",
       "startTime": "12:00",
       "endTime": "12:30",
@@ -190,13 +190,13 @@
     {
       "id": 18,
       "date": "March 3, 2025",
-      "time": "12:30 - 13:00",
-      "title": "Lunch Break",
-      "description": "",
+      "time": "13:00 - 14:00",
+      "title": "Talk 5",
+      "description": "Final talk of the day",
       "startTime": "12:30",
       "endTime": "13:00",
       "location": "Talk Room 2",
-      "speakers": []
+      "speakers": ["All the Does"]
     }
   ]
 }
