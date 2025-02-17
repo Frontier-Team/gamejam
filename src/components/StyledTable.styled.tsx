@@ -15,7 +15,7 @@ export const StyledTableContainer = styled.div`
   th, td {
     padding: 2rem;
     text-align: left;
-    border-bottom: 1px solid #0B3239;
+    border-bottom: ${({ theme }) => `1px solid ${theme.colors.teal}`};
   }
 
   thead tr {
