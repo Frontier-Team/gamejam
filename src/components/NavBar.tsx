@@ -31,9 +31,11 @@ export const NavBar: React.FC = () => {
     };
   
     window.addEventListener('hashchange', updateActiveTab);
+    window.addEventListener('pageshow', updateActiveTab);
     updateActiveTab();
     return () => {
       window.removeEventListener('hashchange', updateActiveTab);
+      window.removeEventListener('pageshow', updateActiveTab);
     };
   }, []);
 
