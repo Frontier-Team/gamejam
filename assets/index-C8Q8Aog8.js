@@ -259,7 +259,7 @@ Please change the parent <Route path="${A}"> to <Route path="${A==="/"?"*":`${A}
     border-bottom: ${({theme:l})=>`1px solid ${l.colors.teal}`};
   }
 
-  td:first-child {
+  td:first-of-type {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
