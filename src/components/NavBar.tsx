@@ -26,8 +26,20 @@ export const NavBar: React.FC = () => {
 
   useEffect(() => {
     const currentPath = window.location.hash.split('#')[1];
-    setActiveTab(currentPath);
-  }, []);
+    switch (currentPath) {
+      case '/about':
+        setActiveTab('/about');
+        break;
+      case '/resources':
+        setActiveTab('/resource');
+        break;
+      case '/speakers':
+        setActiveTab('/speakers');
+        break;
+      default:
+        setActiveTab('/');
+    }
+  }, [window.location.hash]);
 
   return (
     <NavContainer>
