@@ -32,7 +32,7 @@ export const StyledTableContainer = styled.div`
   }
 
   td, th {
-    width: 4remrem;
+    width: 8rem;
   }
 
   .large {
