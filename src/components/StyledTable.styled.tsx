@@ -26,17 +26,23 @@ export const StyledTableContainer = styled.div`
     border-bottom: ${({ theme }) => `1px solid ${theme.colors.teal}`};
   }
 
+  td:first-child {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
   thead tr {
     background-color: ${({ theme }) => `${theme.colors.teal}`};
     color: ${({ theme }) => `${theme.colors.white}`};
   }
 
   td, th {
-    width: 10rem;
+    width: 20rem;
   }
 
   .large {
-    width: 30rem;
+    width: 40rem;
     word-wrap: break-word;
   }
 
