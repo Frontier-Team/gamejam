@@ -25,21 +25,17 @@ export const NavBar: React.FC = () => {
   };
 
   useEffect(() => {
-    const currentPath = window.location.hash.split('#')[1];
-    switch (currentPath) {
-      case '/about':
-        setActiveTab('/about');
-        break;
-      case '/resources':
-        setActiveTab('/resources');
-        break;
-      case '/speakers':
-        setActiveTab('/speakers');
-        break;
-      default:
-        setActiveTab('/');
-    }
-  }, [window.location.hash]);
+    const updateActiveTab = () => {
+      const currentPath = window.location.hash.replace('#', '') || '/';
+      setActiveTab(currentPath);
+    };
+  
+    window.addEventListener('hashchange', updateActiveTab);
+    updateActiveTab();
+    return () => {
+      window.removeEventListener('hashchange', updateActiveTab);
+    };
+  }, []);
 
   return (
     <NavContainer>
