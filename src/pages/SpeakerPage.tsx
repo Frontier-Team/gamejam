@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { Table } from '../components/Table';
 import data from '../events.json';
 import { Event } from '../types';
