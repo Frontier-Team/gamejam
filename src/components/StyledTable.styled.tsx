@@ -32,11 +32,11 @@ export const StyledTableContainer = styled.div`
   }
 
   td, th {
-    width: 2rem;
+    width: 4remrem;
   }
 
   .large {
-    width: 20rem;
+    width: 30rem;
     word-wrap: break-word;
   }
 `;

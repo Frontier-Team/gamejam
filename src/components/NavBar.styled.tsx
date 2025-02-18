@@ -27,6 +27,11 @@ export const NavItem = styled.li`
   @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
     margin: 1rem;
   }
+
+
+  .active-link {
+    background-color: ${({ theme }) => theme.colors.lilac};
+  }
 `;
 
 export const AnimatedLink = styled(Link)`
@@ -49,7 +54,8 @@ export const HamburgerIcon = styled.div`
 
   &:hover,
   &:focus {
- color: ${({ theme }) => theme.colors.lilac};
+    color: ${({ theme }) => theme.colors.lilac}
+  };
 `;
 
 export const Sidebar = styled.div<{ isOpen: boolean }>`
@@ -63,6 +69,7 @@ export const Sidebar = styled.div<{ isOpen: boolean }>`
   overflow-x: hidden;
   transition: 0.3s;
   padding-top: 60px;
+  z-index: 100;
 
   @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
     display: none;
@@ -79,7 +86,8 @@ export const CloseIcon = styled.div`
 
   &:hover,
   &:focus {
- color: ${({ theme }) => theme.colors.lilac};
+    color: ${({ theme }) => theme.colors.lilac}
+  };
 `;
 
 export const SidebarList = styled.ul`
