@@ -105,7 +105,7 @@ export const SidebarItem = styled.li`
 `;
 
 export const SidebarLink = styled(Link)`
-  color: ${({ theme }) => theme.colors.turquoise};
+  color: ${({ theme }) => theme.colors.white};
   text-decoration: none;
   font-family: "Pixelify Sans", sans-serif;
   font-size: 2rem;
@@ -115,5 +115,9 @@ export const SidebarLink = styled(Link)`
   &:hover,
   &:focus {
     color: ${({ theme }) => theme.colors.lilac};
+  }
+
+  .active-link {
+    background-color: ${({ theme }) => theme.colors.lilac};
   }
 `;
