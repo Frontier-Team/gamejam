@@ -16,7 +16,7 @@ export default function HeroComponent() {
     <Wrapper>
       <Content>
         <LeftColumn>
-          <Title>Welcome to the Dundee Game Jam 2025</Title>
+          <Title>Welcome to Game Jam Dundee</Title>
           <Subtitle>
             Join us for an exciting event full of creativity and innovation!
           </Subtitle>
