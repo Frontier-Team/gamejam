@@ -14,10 +14,10 @@ export const RulesPage: React.FC = () => {
       <Section>
         <Title>Code of Conduct</Title>
         <Paragraph>
-          At Reboot we aim to provide a friendly and supportive environment for
-          colleagues. Please follow this Code of Conduct to ensure everyone gets
-          the most from the day. If you see or experience inappropriate
-          behaviour, ask respectfully for it to stop.
+          At Game Jam Dundee we aim to provide a friendly and supportive
+          environment for colleagues. Please follow this Code of Conduct to
+          ensure everyone gets the most from the day. If you see or experience
+          inappropriate behaviour, ask respectfully for it to stop.
         </Paragraph>
 
         <SubTitle>What we ask of you</SubTitle>
@@ -78,7 +78,10 @@ export const RulesPage: React.FC = () => {
         </ul>
 
         <SubTitle>Quiet Space</SubTitle>
-        <Paragraph>Upper Level - Exchange 6</Paragraph>
+        <Paragraph>
+          A quiet room is available if you need time away from the hustle and
+          bustle of the museum.
+        </Paragraph>
       </Section>
 
       <Section id="briefing-pack">
