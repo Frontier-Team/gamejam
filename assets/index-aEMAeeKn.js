@@ -253,17 +253,23 @@ Please change the parent <Route path="${F}"> to <Route path="${F==="/"?"*":`${F}
     border-bottom: ${({theme:l})=>`1px solid ${l.colors.teal}`};
   }
 
+  td:first-child {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
   thead tr {
     background-color: ${({theme:l})=>`${l.colors.teal}`};
     color: ${({theme:l})=>`${l.colors.white}`};
   }
 
   td, th {
-    width: 10rem;
+    width: 20rem;
   }
 
   .large {
-    width: 30rem;
+    width: 40rem;
     word-wrap: break-word;
   }
 
