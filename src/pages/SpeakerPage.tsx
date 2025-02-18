@@ -30,7 +30,7 @@ export const SpeakerPage = () => {
         headers={headers}
         rows={data.events.filter((event) => event.location === 'Talk Room 1')}
         fieldsToDisplay={fieldsToDisplay}
-        largeFields={['description']}
+        largeFields={['date', 'description']}
       />
 
       <Table
@@ -38,7 +38,7 @@ export const SpeakerPage = () => {
         headers={headers}
         rows={data.events.filter((event) => event.location === 'Talk Room 2')}
         fieldsToDisplay={fieldsToDisplay}
-        largeFields={['description']}
+        largeFields={['date', 'description']}
       />
     </PageContainer>
   );
