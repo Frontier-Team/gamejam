@@ -13,9 +13,10 @@
     <script>
       (function() {
         const pathname = window.location.pathname;
-        const base = '/gamejam'
+        const base = '/gamejam';
+        const newUrl = base + '/#' + pathname.replace(base, '');
         if (pathname !== base && path !== base + '/') {
-          window.location.replace(base + '/' + pathname);
+          window.location.replace(base + '/#' + pathname);
         }
       })();
     </script>
