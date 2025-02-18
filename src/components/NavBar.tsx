@@ -91,7 +91,7 @@ export const NavBar: React.FC = () => {
           </SidebarItem>
           <SidebarItem>
             <SidebarLink to="/game" onClick={toggleSidebar}>
-              Speakers
+              Game
             </SidebarLink>
           </SidebarItem>
         </SidebarList>
