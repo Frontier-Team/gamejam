@@ -25,7 +25,6 @@ export const Title = styled.h1`
 
 export const SubTitle = styled.h3`
   font-size: 1.25rem;
-  color: ${({ theme }) => theme.colors.lilac};
   margin-top: 1.5rem;
   margin-bottom: 1rem;
   font-weight: bold;
@@ -38,5 +37,5 @@ export const Paragraph = styled.p`
 
 export const Highlight = styled.span`
   font-weight: bold;
-  color: ${({ theme }) => theme.colors.turquoise};
+  color: ${({ theme }) => theme.colors.lilac};
 `;
