@@ -9,15 +9,20 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Pixelify+Sans:wght@400..700&display=swap"
       rel="stylesheet"
     />
-    <title>Game Jam</title>
+    <title>Page not found</title>
+    <script>
+      (function() {
+        const pathname = window.location.pathname;
+        const base = '/gamejam'
+        if (pathname !== base && path !== base + '/') {
+          window.location.replace(base + '/' + pathname);
+        }
+      })();
+    </script>
   </head>
   <body>
-    <div id="root"></div>
-    <script>
-      const pathname = window.location.pathname;
-      if (pathname !== '/gamejam') {
-        window.location.replace('/gamejam' + pathname);
-      }
-    </script>
+    <h1>Page Not Found</h1>
+    <p>Oops! The page you are looking for doesn't exist!</p>
+    <p><a href='/gamejam'>Go back to Home</a></p>
   </body>
 </html>

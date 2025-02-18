@@ -5,5 +5,5 @@ import { defineConfig } from "vite";
 export default defineConfig({
   plugins: [react()],
   assetsInclude: ["**/*.gz"],
-  base: "/gamejam/",
+  base: "/gamejam",
 });
