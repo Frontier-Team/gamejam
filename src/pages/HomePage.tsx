@@ -7,38 +7,47 @@ export const HomePage: React.FC = () => {
     <Wrapper>
       <HeroComponent></HeroComponent>
       <Content>
-        <Title>Welcome to the Dundee Game Jam 2025</Title>
+        <Title>Welcome to Game Jam Dundee</Title>
         <Subtitle>
-          Thank you for joining us for the Dundee Game Jam 2025! The Chief
-          Technology Office is thrilled to have you here and extend a warm
-          welcome to all of you.
+          Thank you for joining us for Game Jam Dundee! The Scottish Widows team
+          are thrilled to have you here and extend a warm welcome to all of you.
+        </Subtitle>
+        <Subtitle>What's a Game Jam</Subtitle>
+        <Text>
+          Think of Reboot (who are supporting the event) but with a focus on
+          games and gamification. It's a super fun event where we come together
+          to brainstorm, design, and develop a game or gamified app from scratch
+          - all within a limited time frame.
+        </Text>
+        <Text>
+          Whether you're a coding wizard, design guru, or just someone with a
+          wild imagination and an interest in games, there's a place for you in
+          this adventure. 60 attendees will word to solve challenges using games
+          or gamification techniques over a 2-day period at the V&A museum in
+          Dundee.
+        </Text>
+        <Text>
+          This is a fantastic way to unleash creativity and explore new
+          possibilities in game design by bringing together developers,
+          designers, and other creatives to rapidly prototype and experiment
+          with new ideas, mechanics, and art styles.
+        </Text>
+        <Subtitle>
+          Not wanting to compete but still want to come along?
         </Subtitle>
         <Text>
-          This event promises to be a key moment in your 2025 learning calendar.
-          Our action-packed Game Jam schedule includes the opportunity to find
-          out more about some of the local platform teams. In-between the
-          sessions, interact with a variety of our suppliers, all providing
-          ideas for you to explore and learn. We also have 180 competitors
-          taking part in our hackathon, competing for a selection of prizes
-          against three business challenges.
+          On Tuesday 4th March, we will host inspiring Tech Talks, Workshops and
+          Exhibits! With carefully curated content focusing on game development,
+          design, and engineering, we know it will be a valuable opportunity for
+          you to learn more and meet people from across disciplines of LBG and
+          external collaborations such as the Founder of Scottish Games Network,
+          Product Director from Opera, Abertay & Dundee University Games
+          Departments and much more!
         </Text>
-        <Text>
-          You and also hear from event sponsors Microsoft, who are hosting out
-          Hackathon competition, and Publicis Sapient, who have designed the
-          day's fantastic branding.
-        </Text>
-        <Text>Reboot Manchester 2024 has two main themes:</Text>
-
         <Subtitle>
-          Engineering Excellence and a showcase & celebration on what we've
-          acheived in 2024.
+          Let's make this Game Jam an unforgettable experience! Ready, set,
+          create! 🚀
         </Subtitle>
-        <Text>
-          So, what are you waiting for? Get ready to immerse yourself in the
-          latest technologies, ignite your creativity, stay curious, learn
-          something new, and most importantly, have some fun.
-        </Text>
-        <Subtitle>#EngineertheFuture</Subtitle>
       </Content>
     </Wrapper>
   );
