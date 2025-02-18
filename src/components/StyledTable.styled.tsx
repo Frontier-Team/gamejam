@@ -32,11 +32,11 @@ export const StyledTableContainer = styled.div`
   }
 
   td, th {
-    width: 8rem;
+    width: 10rem;
   }
 
   .large {
-    width: 26rem;
+    width: 30rem;
     word-wrap: break-word;
   }
 

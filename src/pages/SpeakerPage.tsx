@@ -31,7 +31,7 @@ export const SpeakerPage = () => {
         window.location.reload();
       }
     };
-  
+
     window.addEventListener('pageshow', handlePageShow);
     return () => window.removeEventListener('pageshow', handlePageShow);
   }, []);
