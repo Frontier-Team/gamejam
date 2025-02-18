@@ -36,7 +36,7 @@ export const StyledTableContainer = styled.div`
   }
 
   .large {
-    width: 24rem;
+    width: 26rem;
     word-wrap: break-word;
   }
 
