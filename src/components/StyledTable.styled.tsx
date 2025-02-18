@@ -5,7 +5,7 @@ export const StyledTableContainer = styled.div`
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 
-  .table-heading {
+  .table-heading, .info-text {
     position: sticky;
     top: 0;
     left: 0;
@@ -38,5 +38,11 @@ export const StyledTableContainer = styled.div`
   .large {
     width: 30rem;
     word-wrap: break-word;
+  }
+
+  .info-text {
+    @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
+      display: none;
+    }
   }
 `;

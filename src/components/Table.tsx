@@ -18,6 +18,7 @@ export const Table = <T,>({
   return (
     <StyledTableContainer>
       {heading && <h2 className='table-heading'>{heading}</h2>}
+      <h3 className='info-text'>{'Scroll horizontally for more information'}</h3>
       <table>
         <thead>
           <tr>
