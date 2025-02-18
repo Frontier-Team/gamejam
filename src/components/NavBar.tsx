@@ -31,7 +31,7 @@ export const NavBar: React.FC = () => {
         setActiveTab('/about');
         break;
       case '/resources':
-        setActiveTab('/resource');
+        setActiveTab('/resources');
         break;
       case '/speakers':
         setActiveTab('/speakers');
