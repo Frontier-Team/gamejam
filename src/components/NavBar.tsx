@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   AnimatedLink,
   CloseIcon,
@@ -14,53 +14,58 @@ import {
 
 export const NavBar: React.FC = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const [activeTab, setActiveTab] = useState(0);
+  const [activeTab, setActiveTab] = useState('');
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
 
-  const getLinkCls = (index: number) => {
-    return (activeTab === index ? 'active-link' : '')
+  const getLinkCls = (pathname: string) => {
+    return (activeTab === pathname ? 'active-link' : '')
   };
+
+  useEffect(() => {
+    const currentPath = window.location.hash.split('#')[1];
+    setActiveTab(currentPath);
+  }, []);
 
   return (
     <NavContainer>
       <HamburgerIcon onClick={toggleSidebar}>&#9776;</HamburgerIcon>
       <NavList>
         <NavItem>
-          <AnimatedLink to="/" onClick={() => setActiveTab(0)} className={getLinkCls(0)}>Home</AnimatedLink>
+          <AnimatedLink to="/" onClick={() => setActiveTab('/')} className={getLinkCls('/')}>Home</AnimatedLink>
         </NavItem>
         <NavItem>
-          <AnimatedLink to="/about" onClick={() => setActiveTab(1)} className={getLinkCls(1)}>About</AnimatedLink>
+          <AnimatedLink to="/about" onClick={() => setActiveTab('/about')} className={getLinkCls('/about')}>About</AnimatedLink>
         </NavItem>
         <NavItem>
-          <AnimatedLink to="/resources" onClick={() => setActiveTab(2)} className={getLinkCls(2)}>Resources</AnimatedLink>
+          <AnimatedLink to="/resources" onClick={() => setActiveTab('/resources')} className={getLinkCls('/resources')}>Resources</AnimatedLink>
         </NavItem>
         <NavItem>
-          <AnimatedLink to="/speakers" onClick={() => setActiveTab(3)} className={getLinkCls(3)}>Speakers</AnimatedLink>
+          <AnimatedLink to="/speakers" onClick={() => setActiveTab('/speakers')} className={getLinkCls('/speakers')}>Speakers</AnimatedLink>
         </NavItem>
       </NavList>
       <Sidebar isOpen={isSidebarOpen}>
         <CloseIcon onClick={toggleSidebar}>&times;</CloseIcon>
         <SidebarList>
           <SidebarItem>
-            <SidebarLink to="/" onClick={toggleSidebar} className={getLinkCls(0)}>
+            <SidebarLink to="/" onClick={toggleSidebar}>
               Home
             </SidebarLink>
           </SidebarItem>
           <SidebarItem>
-            <SidebarLink to="/about" onClick={toggleSidebar} className={getLinkCls(0)}>
+            <SidebarLink to="/about" onClick={toggleSidebar}>
               About
             </SidebarLink>
           </SidebarItem>
           <SidebarItem>
-            <SidebarLink to="/resources" onClick={toggleSidebar} className={getLinkCls(0)}>
+            <SidebarLink to="/resources" onClick={toggleSidebar}>
               Resources
             </SidebarLink>
           </SidebarItem>
           <SidebarItem>
-            <SidebarLink to="/speakers" onClick={toggleSidebar} className={getLinkCls(0)}>
+            <SidebarLink to="/speakers" onClick={toggleSidebar}>
               Speakers
             </SidebarLink>
           </SidebarItem>
