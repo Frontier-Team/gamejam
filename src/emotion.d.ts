@@ -17,5 +17,8 @@ declare module "@emotion/react" {
       md: string;
       lg: string;
     };
+    spacing: {
+      marginDefault: string;
+    };
   }
 }
