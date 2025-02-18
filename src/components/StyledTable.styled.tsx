@@ -30,7 +30,7 @@ export const TableContainer = styled.div`
     border-bottom: ${({ theme }) => `1px solid ${theme.colors.teal}`};
   }
 
-  td:first-child {
+  td:first-of-type {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
