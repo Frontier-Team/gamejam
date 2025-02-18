@@ -76,8 +76,7 @@ Please change the parent <Route path="${F}"> to <Route path="${F==="/"?"*":`${F}
   transition: background-color 0.3s ease, border-color 0.3s ease,
     box-shadow 0.3s ease;
 
-  &:hover,
-  &:focus {
+  &:hover {
     background-color: ${l.colors.lilac};
     border: 2px solid ${l.colors.lilacShade};
     border-top: 1px solid rgba(176, 97, 255, 0.8);
