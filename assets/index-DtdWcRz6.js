@@ -263,7 +263,7 @@ Please change the parent <Route path="${F}"> to <Route path="${F==="/"?"*":`${F}
   }
 
   .large {
-    width: 24rem;
+    width: 26rem;
     word-wrap: break-word;
   }
 
