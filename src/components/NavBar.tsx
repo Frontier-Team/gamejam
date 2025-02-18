@@ -25,17 +25,24 @@ export const NavBar: React.FC = () => {
   };
 
   useEffect(() => {
+    const isEdge = () => /Edg/.test(navigator.userAgent);
+    const handlePageShow = (event: PageTransitionEvent) => {
+      if (isEdge() && event.persisted) {
+        window.location.reload();
+      }
+    };
+
     const updateActiveTab = () => {
       const currentPath = window.location.hash.replace('#', '') || '/';
       setActiveTab(currentPath);
     };
   
     window.addEventListener('hashchange', updateActiveTab);
-    window.addEventListener('pageshow', updateActiveTab);
+    window.addEventListener('pageshow', handlePageShow);
     updateActiveTab();
     return () => {
       window.removeEventListener('hashchange', updateActiveTab);
-      window.removeEventListener('pageshow', updateActiveTab);
+      window.removeEventListener('pageshow', handlePageShow);
     };
   }, []);
 
