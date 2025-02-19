@@ -8,7 +8,7 @@ export default function HeroComponent() {
   // don't render image until loaded
   useEffect(() => {
     const img = new Image();
-    img.src = "src/assets/logo-optimized.gif";
+    img.src = "/gamejam/src/assets/logo-optimized.gif";
     img.onload = () => setIsImageLoaded(true);
   }, []);
 
@@ -23,7 +23,7 @@ export default function HeroComponent() {
         </LeftColumn>
         <RightColumn>
           <GifImage
-            src="src/assets/logo-optimized.gif"
+            src="/gamejam/src/assets/logo-optimized.gif"
             alt="Game Jam Animation"
             className={isImageLoaded ? "loaded" : ""}
           />
