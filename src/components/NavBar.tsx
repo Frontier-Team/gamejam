@@ -95,6 +95,9 @@ export const NavBar: React.FC = () => {
             Rules/Conduct
           </AnimatedLink>
         </NavItem>
+        <NavItem>
+          <AnimatedLink to="/rules">Rules/Conduct</AnimatedLink>
+        </NavItem>
       </NavList>
       <Sidebar isOpen={isSidebarOpen}>
         <CloseIcon onClick={toggleSidebar}>&times;</CloseIcon>
