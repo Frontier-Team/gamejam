@@ -69,9 +69,8 @@ export const RulesPage: React.FC = () => {
           </li>
           <li>
             <Paragraph>
-              If you need any more information, see our{" "}
-              <a href="#briefing-pack">Inclusive Briefing Pack</a>, available at
-              reception.
+              If you need any more information, see our Inclusive Briefing Pack,
+              available at reception.
             </Paragraph>
           </li>
         </ul>
