@@ -23,7 +23,7 @@ export const SchedulePage = () => {
         Schedule of the Day
       </Heading>
       <SubHeading>
-        March 3 2025 - Hackathon for participating teams
+        March 3 2025 - GameJam for participating teams
       </SubHeading>
       <SubHeading>
         Find below the running order for March 4, 2025.
