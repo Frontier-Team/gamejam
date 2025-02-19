@@ -26,6 +26,6 @@ describe("HeroComponent", () => {
     renderWithProviders(<HeroComponent />);
     const gifImage = screen.getByAltText("Game Jam Animation");
     expect(gifImage).toBeInTheDocument();
-    expect(gifImage).toHaveAttribute("src", "src/assets/GameJam Motion 8.gif");
+    expect(gifImage).toHaveAttribute("src", "src/assets/logo-optimized.gif");
   });
 });
