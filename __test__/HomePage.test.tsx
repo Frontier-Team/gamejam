@@ -1,4 +1,4 @@
-import { fireEvent, screen } from "@testing-library/react";
+import { screen } from "@testing-library/react";
 import React from "react";
 import { HomePage } from "../src/pages/HomePage";
 import { renderWithProviders } from "./test-utils";
@@ -6,5 +6,68 @@ import { renderWithProviders } from "./test-utils";
 describe("HomePage", () => {
   test("renders without crashing", () => {
     renderWithProviders(<HomePage />);
+  });
+
+  test("renders the HeroComponent", () => {
+    renderWithProviders(<HomePage />);
+    expect(
+      screen.getAllByText("Welcome to Game Jam Dundee")[0]
+    ).toBeInTheDocument();
+  });
+
+  test("renders the main title", () => {
+    renderWithProviders(<HomePage />);
+    expect(
+      screen.getAllByText("Welcome to Game Jam Dundee")[1]
+    ).toBeInTheDocument();
+  });
+
+  test("renders the main subtitle", () => {
+    renderWithProviders(<HomePage />);
+    expect(
+      screen.getByText(
+        "Thank you for joining us for Game Jam Dundee! The Scottish Widows team are thrilled to have you here and extend a warm welcome to all of you."
+      )
+    ).toBeInTheDocument();
+  });
+
+  test("renders the 'What's a Game Jam' section", () => {
+    renderWithProviders(<HomePage />);
+    expect(screen.getByText("What's a Game Jam")).toBeInTheDocument();
+    expect(
+      screen.getByText(
+        "Think of Reboot (who are supporting the event) but with a focus on games and gamification. It's a super fun event where we come together to brainstorm, design, and develop a game or gamified app from scratch - all within a limited time frame."
+      )
+    ).toBeInTheDocument();
+    expect(
+      screen.getByText(
+        "Whether you're a coding wizard, design guru, or just someone with a wild imagination and an interest in games, there's a place for you in this adventure. 60 attendees will word to solve challenges using games or gamification techniques over a 2-day period at the V&A museum in Dundee."
+      )
+    ).toBeInTheDocument();
+    expect(
+      screen.getByText(
+        "This is a fantastic way to unleash creativity and explore new possibilities in game design by bringing together developers, designers, and other creatives to rapidly prototype and experiment with new ideas, mechanics, and art styles."
+      )
+    ).toBeInTheDocument();
+  });
+
+  test("renders the 'Not wanting to compete but still want to come along?' section", () => {
+    renderWithProviders(<HomePage />);
+    expect(
+      screen.getByText("Not wanting to compete but still want to come along?")
+    ).toBeInTheDocument();
+    expect(
+      screen.getByText(
+        "On Tuesday 4th March, we will host inspiring Tech Talks, Workshops and Exhibits! With carefully curated content focusing on game development, design, and engineering, we know it will be a valuable opportunity for you to learn more and meet people from across disciplines of LBG and external collaborations such as the Founder of Scottish Games Network, Product Director from Opera, Abertay & Dundee University Games Departments and much more!"
+      )
+    ).toBeInTheDocument();
+  });
+
+  test("renders the closing subtitles", () => {
+    renderWithProviders(<HomePage />);
+    expect(
+      screen.getByText("Let's make this Game Jam an unforgettable experience!")
+    ).toBeInTheDocument();
+    expect(screen.getByText("Ready, Set, Create! 🚀")).toBeInTheDocument();
   });
 });
