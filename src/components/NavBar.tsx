@@ -65,6 +65,9 @@ export const NavBar: React.FC = () => {
         <NavItem>
           <AnimatedLink to="/game">Game</AnimatedLink>
         </NavItem>
+        <NavItem>
+          <AnimatedLink to="/game">Game</AnimatedLink>
+        </NavItem>
       </NavList>
       <Sidebar isOpen={isSidebarOpen}>
         <CloseIcon onClick={toggleSidebar}>&times;</CloseIcon>
