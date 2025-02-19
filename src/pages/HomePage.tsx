@@ -67,7 +67,6 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
   margin-top: 5rem;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -94,17 +93,17 @@ const Content = styled.div`
 const Section = styled.div``;
 
 const Title = styled.h1`
-  font-size: 2.8rem;
+  font-size: 2.4rem;
   text-align: center;
   margin-bottom: 5rem;
 `;
 
 const Subtitle = styled.h2`
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin-bottom: 2rem;
   line-height: 1.8;
 `;
 
 const Text = styled.p`
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 `;

@@ -79,7 +79,7 @@ const Content = styled.div`
   width: 100%;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
-    flex-direction: column;
+    flex-direction: column-reverse;
     padding-bottom: 50px;
   }
 `;
