@@ -19,7 +19,7 @@ describe('Accessibility tests', () => {
   it('renders assistance dogs information', () => {
     renderWithProviders(<AccessibilityPage />);
     expect(screen.getByText('Assistance dogs')).toBeInTheDocument();
-    expect(screen.getByText(/You are welcome to bring dogs and other recognised assistance dogs/i)).toBeInTheDocument();
+    expect(screen.getByText(/You are welcome to bring guide dogs and other recognised assistance dogs/i)).toBeInTheDocument();
   });
 
   it('renders wheelchairs for hire information', () => {

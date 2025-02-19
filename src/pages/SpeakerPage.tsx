@@ -1,5 +1,5 @@
 import { Table } from '../components/Table';
-import data from '../events.json';
+import data from '../db.json';
 import { Event } from '../types';
 import { Heading } from './AccessibilityPage.styled';
 import { PageContainer } from './SpeakerPage.styled';
