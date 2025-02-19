@@ -19,7 +19,7 @@ export const AccessibilityPage = () => {
 
       <h2>Assistance dogs</h2>
       <Paragraph>
-        You are welcome to bring dogs and other recognised assistance dogs into the museum.
+        You are welcome to bring guide dogs and other recognised assistance dogs into the museum.
         Drinking bowls are available from our information desk.
       </Paragraph>
 
