@@ -14,7 +14,6 @@ export const App = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/game" element={<GamePage />} />
           <Route path="/speakers" element={<SpeakerPage />} />
-          <Route path="/game" element={<GamePage />} />
         </Routes>
       </HashRouter>
     </AppThemeProvider>
