@@ -4,17 +4,25 @@ import { buttonAndLinkStyles } from "../styles/sharedStyles";
 
 export const NavContainer = styled.nav`
   background-color: ${({ theme }) => theme.colors.teal};
-  padding: 2rem;
+  padding: 1rem 2rem;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+    justify-content: space-between;
+  }
 `;
 
 export const NavList = styled.ul`
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   list-style: none;
   margin: 0;
   padding: 0;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-grow: 1;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
     display: none;
@@ -22,15 +30,46 @@ export const NavList = styled.ul`
 `;
 
 export const NavItem = styled.li`
-  margin: 0.5rem;
-
-  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
-    margin: 1rem;
-  }
-
+  margin: 0 0.5rem;
 
   .active-link {
     background-color: ${({ theme }) => theme.colors.lilac};
+  }
+`;
+
+export const HomeLink = styled.a`
+  color: ${({ theme }) => theme.colors.turquoise};
+  background-color: ${({ theme }) => theme.colors.teal};
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: auto;
+
+  &.active-home-link {
+    text-decoration: underline;
+  }
+
+  &:hover,
+  &:focus {
+    color: ${({ theme }) => theme.colors.lilac};
+  }
+`;
+
+export const NavBarLogo = styled.p`
+  color: ${({ theme }) => theme.colors.turquoise};
+  font-family: "Pixelify Sans", sans-serif;
+  background-color: ${({ theme }) => theme.colors.teal};
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 24px;
+  display: none;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
   }
 `;
 
@@ -45,8 +84,8 @@ export const AnimatedLink = styled(Link)`
 export const HamburgerIcon = styled.div`
   display: none;
   cursor: pointer;
+  font-size: 1.5rem;
   color: ${({ theme }) => theme.colors.white};
-  font-size: 2rem;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
     display: block;
@@ -54,8 +93,8 @@ export const HamburgerIcon = styled.div`
 
   &:hover,
   &:focus {
-    color: ${({ theme }) => theme.colors.lilac}
-  };
+    color: ${({ theme }) => theme.colors.lilac};
+  }
 `;
 
 export const Sidebar = styled.div<{ isOpen: boolean }>`
@@ -77,7 +116,7 @@ export const Sidebar = styled.div<{ isOpen: boolean }>`
 `;
 
 export const CloseIcon = styled.div`
- color: ${({ theme }) => theme.colors.white};
+  color: ${({ theme }) => theme.colors.white};
   position: absolute;
   top: 20px;
   right: 25px;
@@ -86,8 +125,8 @@ export const CloseIcon = styled.div`
 
   &:hover,
   &:focus {
-    color: ${({ theme }) => theme.colors.lilac}
-  };
+    color: ${({ theme }) => theme.colors.lilac};
+  }
 `;
 
 export const SidebarList = styled.ul`
