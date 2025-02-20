@@ -1,9 +1,9 @@
-import { HashRouter, Route, Routes } from "react-router-dom";
-import { NavBar } from "./components/NavBar";
-import { HomePage } from "./pages/HomePage";
-import { AppThemeProvider } from "./providers/ThemeProvider";
-import { ConductPage } from "./pages/ConductPage";
-import { SpeakerPage } from "./pages/SpeakerPage";
+import { HashRouter, Route, Routes } from 'react-router-dom';
+import { NavBar } from './components/NavBar';
+import { HomePage } from './pages/HomePage';
+import { AppThemeProvider } from './providers/ThemeProvider';
+import { ConductPage } from './pages/ConductPage';
+import { SpeakerPage } from './pages/SpeakerPage';
 
 export const App = () => {
   return (
@@ -11,9 +11,9 @@ export const App = () => {
       <HashRouter>
         <NavBar />
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/speakers" element={<SpeakerPage />} />
-          <Route path="/conduct" element={<ConductPage />} />
+          <Route path='/' element={<HomePage />} />
+          <Route path='/speakers' element={<SpeakerPage />} />
+          <Route path='/conduct' element={<ConductPage />} />
         </Routes>
       </HashRouter>
     </AppThemeProvider>
