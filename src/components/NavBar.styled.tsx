@@ -43,8 +43,8 @@ export const HomeIcon = styled.a`
   text-decoration: none;
   cursor: pointer;
   font-size: 2rem;
-  position: absolute; /* Add absolute positioning */
-  left: 1.5rem; /* Position it on the left */
+  position: absolute;
+  left: 1.5rem;
   top: 50%;
   transform: translateY(-50%);
 
@@ -72,13 +72,14 @@ export const HamburgerIcon = styled.div`
   cursor: pointer;
   font-size: 1.5rem;
   color: ${({ theme }) => theme.colors.white};
-  position: absolute; 
-  right: 1.5rem; 
+  position: absolute;
+  right: 1.5rem;
   top: 50%;
-  transform: translateY(-50%); 
+  transform: translateY(-50%);
 
   @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
-    display: block; 
+    display: block;
+  }
 
   &:hover,
   &:focus {

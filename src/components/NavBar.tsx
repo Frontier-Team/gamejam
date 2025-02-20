@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import {
-  AnimatedLink,
   CloseIcon,
   HamburgerIcon,
   HomeIcon,
@@ -12,11 +11,11 @@ import {
   SidebarLink,
   SidebarList,
 } from "./NavBar.styled";
+import NavLink from "./NavLink";
 
 export const NavBar: React.FC = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [activeTab, setActiveTab] = useState("");
-  console.log(activeTab);
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
@@ -48,6 +47,15 @@ export const NavBar: React.FC = () => {
     };
   }, []);
 
+  const links = [
+    { to: "/schedule", label: "Schedule" },
+    { to: "/speakers", label: "Speakers" },
+    { to: "/conduct", label: "Conduct" },
+    { to: "/map", label: "Map" },
+    { to: "/game", label: "Game" },
+    { to: "/accessibility", label: "Accessibility" },
+  ];
+
   return (
     <NavContainer>
       {activeTab !== "/" && (
@@ -56,131 +64,35 @@ export const NavBar: React.FC = () => {
         </HomeIcon>
       )}
       <NavList>
-        <NavItem>
-          <AnimatedLink
-            to="/schedule"
-            onClick={() => setActiveTab("/schedule")}
-            className={getLinkCls("/schedule")}
-          >
-            Schedule
-          </AnimatedLink>
-        </NavItem>
-        <NavItem>
-          <AnimatedLink
-            to="/speakers"
-            onClick={() => setActiveTab("/speakers")}
-            className={getLinkCls("/speakers")}
-          >
-            Speakers
-          </AnimatedLink>
-        </NavItem>
-        <NavItem>
-          <AnimatedLink
-            to="/conduct"
-            onClick={() => setActiveTab("/conduct")}
-            className={getLinkCls("/conduct")}
-          >
-            Conduct
-          </AnimatedLink>
-        </NavItem>
-        <NavItem>
-          <AnimatedLink
-            to="/map"
-            onClick={() => setActiveTab("/map")}
-            className={getLinkCls("/map")}
-          >
-            Map
-          </AnimatedLink>
-        </NavItem>
-        <NavItem>
-          <AnimatedLink
-            to="/game"
-            onClick={() => setActiveTab("/game")}
-            className={getLinkCls("/game")}
-          >
-            Game
-          </AnimatedLink>
-        </NavItem>
-        <NavItem>
-          <AnimatedLink
-            to="/accessibility"
-            onClick={() => setActiveTab("/accessibility")}
-            className={getLinkCls("/accessibility")}
-          >
-            Accessibility
-          </AnimatedLink>
-        </NavItem>
+        {links.map((link) => (
+          <NavItem key={link.to}>
+            <NavLink
+              to={link.to}
+              onClick={() => setActiveTab(link.to)}
+              className={getLinkCls(link.to)}
+            >
+              {link.label}
+            </NavLink>
+          </NavItem>
+        ))}
       </NavList>
       <HamburgerIcon onClick={toggleSidebar}>&#9776;</HamburgerIcon>
       <Sidebar isOpen={isSidebarOpen}>
         <CloseIcon onClick={toggleSidebar}>&times;</CloseIcon>
         <SidebarList>
-          <SidebarItem>
-            <SidebarLink
-              to="/schedule"
-              onClick={() => {
-                setActiveTab("/schedule");
-                toggleSidebar();
-              }}
-            >
-              Schedule
-            </SidebarLink>
-          </SidebarItem>
-          <SidebarItem>
-            <SidebarLink
-              to="/speakers"
-              onClick={() => {
-                setActiveTab("/speakers");
-                toggleSidebar();
-              }}
-            >
-              Speakers
-            </SidebarLink>
-          </SidebarItem>
-          <SidebarItem>
-            <SidebarLink
-              to="/conduct"
-              onClick={() => {
-                setActiveTab("/conduct");
-                toggleSidebar();
-              }}
-            >
-              Conduct
-            </SidebarLink>
-          </SidebarItem>
-          <SidebarItem>
-            <SidebarLink
-              to="/map"
-              onClick={() => {
-                setActiveTab("/map");
-                toggleSidebar();
-              }}
-            >
-              Map
-            </SidebarLink>
-          </SidebarItem>
-          <SidebarItem>
-            <SidebarLink
-              to="/game"
-              onClick={() => {
-                setActiveTab("/game");
-                toggleSidebar();
-              }}
-            >
-              Game
-            </SidebarLink>
-          </SidebarItem>
-          <SidebarItem>
-            <SidebarLink
-              to="/accessibility"
-              onClick={() => {
-                setActiveTab("/accessibility");
-                toggleSidebar();
-              }}
-            >
-              Accessibility
-            </SidebarLink>
-          </SidebarItem>
+          {links.map((link) => (
+            <SidebarItem key={link.to}>
+              <SidebarLink
+                to={link.to}
+                onClick={() => {
+                  setActiveTab(link.to);
+                  toggleSidebar();
+                }}
+              >
+                {link.label}
+              </SidebarLink>
+            </SidebarItem>
+          ))}
         </SidebarList>
       </Sidebar>
     </NavContainer>
