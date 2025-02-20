@@ -8,7 +8,7 @@ describe('SchedulePage component', () => {
   it('renders correct headings on page', () => {
     renderWithProviders(<SchedulePage />);
     expect(screen.getByText('Schedule of the Day')).toBeInTheDocument();
-    expect(screen.getByText('March 3 2025 - Hackathon for participating teams')).toBeInTheDocument();
+    expect(screen.getByText('March 3 2025 - GameJam for participating teams')).toBeInTheDocument();
     expect(screen.getByText('Find below the running order for March 4, 2025.')).toBeInTheDocument();
   });
 
