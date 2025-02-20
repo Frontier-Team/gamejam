@@ -1,7 +1,6 @@
 import styled from "@emotion/styled";
 
 export const Content = styled.div`
-  font-family: Arial, sans-serif;
   color: #333;
   line-height: 1.6;
   max-width: 1000px;

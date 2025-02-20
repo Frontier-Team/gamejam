@@ -1,5 +1,6 @@
-import Map from "../components/Map";
+
 import styled from "@emotion/styled";
+import Map from "../components/Map";
 
 export default function MapPage() {
   return (

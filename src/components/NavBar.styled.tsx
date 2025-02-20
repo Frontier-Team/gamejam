@@ -4,17 +4,25 @@ import { buttonAndLinkStyles } from "../styles/sharedStyles";
 
 export const NavContainer = styled.nav`
   background-color: ${({ theme }) => theme.colors.teal};
-  padding: 2rem;
-  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  flex-wrap: wrap;
+  justify-content: center; /* Center content */
+  position: relative; /* Add relative positioning */
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+    justify-content: center;
+    padding-bottom: 2rem;
+  }
 `;
 
 export const NavList = styled.ul`
   display: flex;
-  flex-wrap: wrap;
   list-style: none;
-  margin: 0;
-  padding: 0;
+  flex-wrap: wrap;
   justify-content: center;
+  width: 100%;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
     display: none;
@@ -23,19 +31,36 @@ export const NavList = styled.ul`
 
 export const NavItem = styled.li`
   margin: 0.5rem;
-
-  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
-    margin: 1rem;
-  }
-
+  margin-bottom: 2rem;
 
   .active-link {
     background-color: ${({ theme }) => theme.colors.lilac};
   }
 `;
 
+export const HomeIcon = styled.a`
+  color: ${({ theme }) => theme.colors.white};
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 2rem;
+  position: absolute;
+  left: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+
+  &:hover,
+  &:focus {
+    color: ${({ theme }) => theme.colors.lilac};
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+    display: block;
+  }
+`;
+
 export const AnimatedLink = styled(Link)`
   ${({ theme }) => buttonAndLinkStyles(theme)}
+  margin: 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
     font-size: 1rem;
@@ -45,8 +70,12 @@ export const AnimatedLink = styled(Link)`
 export const HamburgerIcon = styled.div`
   display: none;
   cursor: pointer;
+  font-size: 1.5rem;
   color: ${({ theme }) => theme.colors.white};
-  font-size: 2rem;
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
 
   @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
     display: block;
@@ -54,8 +83,8 @@ export const HamburgerIcon = styled.div`
 
   &:hover,
   &:focus {
-    color: ${({ theme }) => theme.colors.lilac}
-  };
+    color: ${({ theme }) => theme.colors.lilac};
+  }
 `;
 
 export const Sidebar = styled.div<{ isOpen: boolean }>`
@@ -77,7 +106,7 @@ export const Sidebar = styled.div<{ isOpen: boolean }>`
 `;
 
 export const CloseIcon = styled.div`
- color: ${({ theme }) => theme.colors.white};
+  color: ${({ theme }) => theme.colors.white};
   position: absolute;
   top: 20px;
   right: 25px;
@@ -86,8 +115,8 @@ export const CloseIcon = styled.div`
 
   &:hover,
   &:focus {
-    color: ${({ theme }) => theme.colors.lilac}
-  };
+    color: ${({ theme }) => theme.colors.lilac};
+  }
 `;
 
 export const SidebarList = styled.ul`
