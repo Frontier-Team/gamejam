@@ -51,7 +51,13 @@ export const NavBar: React.FC = () => {
       <HamburgerIcon onClick={toggleSidebar}>&#9776;</HamburgerIcon>
       <NavList>
         <NavItem>
-          <AnimatedLink to='/' onClick={() => setActiveTab('/')} className={getLinkCls('/')}>Home</AnimatedLink>
+          <AnimatedLink
+            to='/'
+            onClick={() => setActiveTab("/")}
+            className={getLinkCls("/")}
+          >
+            Home
+          </AnimatedLink>
         </NavItem>
         <NavItem>
           <AnimatedLink to='/schedule' onClick={() => setActiveTab('/schedule')} className={getLinkCls('/schedule')}>Schedule</AnimatedLink>
@@ -60,7 +66,22 @@ export const NavBar: React.FC = () => {
           <AnimatedLink to='/accessibility' onClick={() => setActiveTab('/accessibility')} className={getLinkCls('/accessibility')}>Accessibility</AnimatedLink>
         </NavItem>
         <NavItem>
-          <AnimatedLink to='/speakers' onClick={() => setActiveTab('/speakers')} className={getLinkCls('/speakers')}>Speakers</AnimatedLink>
+          <AnimatedLink
+            to='/speakers'
+            onClick={() => setActiveTab("/speakers")}
+            className={getLinkCls("/speakers")}
+          >
+            Speakers
+          </AnimatedLink>
+        </NavItem>
+        <NavItem>
+          <AnimatedLink
+            to='/map'
+            onClick={() => setActiveTab("/map")}
+            className={getLinkCls("/map")}
+          >
+            Map
+          </AnimatedLink>
         </NavItem>
       </NavList>
       <Sidebar isOpen={isSidebarOpen}>
@@ -84,6 +105,11 @@ export const NavBar: React.FC = () => {
           <SidebarItem>
             <SidebarLink to='/speakers' onClick={toggleSidebar}>
               Speakers
+            </SidebarLink>
+          </SidebarItem>
+          <SidebarItem>
+            <SidebarLink to='/map' onClick={toggleSidebar}>
+              Map
             </SidebarLink>
           </SidebarItem>
         </SidebarList>
