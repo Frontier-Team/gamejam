@@ -1,4 +1,4 @@
-import { StyledTableContainer } from "./StyledTable.styled";
+import { TableContainer } from "./StyledTable.styled";
 
 interface TableProps<T> {
   heading?: string;
@@ -16,7 +16,7 @@ export const Table = <T,>({
   rows,
 }: TableProps<T>) => {
   return (
-    <StyledTableContainer>
+    <TableContainer>
       {heading && <h2 className='table-heading'>{heading}</h2>}
       <h3 className='info-text'>{'Scroll horizontally for more information'}</h3>
       <table>
@@ -42,6 +42,6 @@ export const Table = <T,>({
           ))}
         </tbody>
       </table>
-    </StyledTableContainer>
+    </TableContainer>
   );
 };

@@ -69,13 +69,7 @@ export const NavBar: React.FC = () => {
           </AnimatedLink>
         </NavItem>
         <NavItem>
-          <AnimatedLink
-            to='/resources'
-            onClick={() => setActiveTab("/resources")}
-            className={getLinkCls("/resources")}
-          >
-            Resources
-          </AnimatedLink>
+          <AnimatedLink to='/accessibility' onClick={() => setActiveTab('/accessibility')} className={getLinkCls('/accessibility')}>Accessibility</AnimatedLink>
         </NavItem>
         <NavItem>
           <AnimatedLink
@@ -110,8 +104,8 @@ export const NavBar: React.FC = () => {
             </SidebarLink>
           </SidebarItem>
           <SidebarItem>
-            <SidebarLink to='/resources' onClick={toggleSidebar}>
-              Resources
+            <SidebarLink to='/accessibility' onClick={toggleSidebar}>
+              Accessibility
             </SidebarLink>
           </SidebarItem>
           <SidebarItem>

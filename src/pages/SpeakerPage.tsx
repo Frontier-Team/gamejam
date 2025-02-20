@@ -1,6 +1,7 @@
 import { Table } from '../components/Table';
 import data from '../events.json';
 import { Event } from '../types';
+import { Heading } from './AccessibilityPage.styled';
 import { PageContainer } from './SpeakerPage.styled';
 
 export const SpeakerPage = () => {
@@ -24,13 +25,13 @@ export const SpeakerPage = () => {
 
   return (
     <PageContainer>
-      <h1>Talk Schedule</h1>
+      <Heading>Talk Schedule</Heading>
       <Table
         heading='Talk Room 1'
         headers={headers}
         rows={data.events.filter((event) => event.location === 'Talk Room 1')}
         fieldsToDisplay={fieldsToDisplay}
-        largeFields={['date', 'description']}
+        largeFields={['description']}
       />
 
       <Table
@@ -38,7 +39,7 @@ export const SpeakerPage = () => {
         headers={headers}
         rows={data.events.filter((event) => event.location === 'Talk Room 2')}
         fieldsToDisplay={fieldsToDisplay}
-        largeFields={['date', 'description']}
+        largeFields={['description']}
       />
     </PageContainer>
   );
