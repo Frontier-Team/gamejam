@@ -56,8 +56,8 @@ export const RulesPage: React.FC = () => {
       <Section>
         <Title>Accessibility - Supporting Information</Title>
         <Paragraph>
-          As per our code of conduct, please be inclusive in your actions by
-          putting people-first:
+          As per our Code of Conduct, please <strong>be inclusive</strong> in
+          your actions <strong>by putting people-first</strong>:
         </Paragraph>
 
         <ul>
@@ -69,8 +69,8 @@ export const RulesPage: React.FC = () => {
           </li>
           <li>
             <Paragraph>
-              If you need any more information, see our Inclusive Briefing Pack,
-              available at reception.
+              If you need any more information, see our{" "}
+              <strong>Inclusive Briefing Pack</strong>, available at reception.
             </Paragraph>
           </li>
         </ul>
@@ -82,7 +82,7 @@ export const RulesPage: React.FC = () => {
         </Paragraph>
       </Section>
 
-      <Section id="briefing-pack">
+      <Section>
         <Title>Dundee Game Jam Inclusive Briefing Pack</Title>
         <Paragraph>
           We have prepared a Dundee Game Jam Inclusive Briefing Pack which
