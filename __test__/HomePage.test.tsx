@@ -1,32 +1,32 @@
-import { screen } from "@testing-library/react";
-import React from "react";
-import { HomePage } from "../src/pages/HomePage";
-import { renderWithProviders } from "./test-utils";
+import { screen } from '@testing-library/react';
+import React from 'react';
+import { HomePage } from '../src/pages/HomePage';
+import { renderWithProviders } from './test-utils';
 
-describe("HomePage", () => {
-  test("renders without crashing", () => {
+describe('HomePage', () => {
+  test('renders without crashing', () => {
     renderWithProviders(<HomePage />);
   });
 
-  test("renders the HeroComponent", () => {
+  test('renders the HeroComponent', () => {
     renderWithProviders(<HomePage />);
     expect(
-      screen.getAllByText("Welcome to Game Jam Dundee")[0]
+      screen.getAllByText('Welcome to Game Jam Dundee')[0]
     ).toBeInTheDocument();
   });
 
-  test("renders the main title", () => {
+  test('renders the main title', () => {
     renderWithProviders(<HomePage />);
     expect(
-      screen.getAllByText("Welcome to Game Jam Dundee")[1]
+      screen.getAllByText('Welcome to Game Jam Dundee')[1]
     ).toBeInTheDocument();
   });
 
-  test("renders the main subtitle", () => {
+  test('renders the main subtitle', () => {
     renderWithProviders(<HomePage />);
     expect(
       screen.getByText(
-        "Thank you for joining us for Game Jam Dundee! The Scottish Widows team are thrilled to have you here and extend a warm welcome to all of you."
+        'Thank you for joining us for Game Jam Dundee! The Scottish Widows team are thrilled to have you here and extend a warm welcome to all of you.'
       )
     ).toBeInTheDocument();
   });
@@ -46,7 +46,7 @@ describe("HomePage", () => {
     ).toBeInTheDocument();
     expect(
       screen.getByText(
-        "This is a fantastic way to unleash creativity and explore new possibilities in game design by bringing together developers, designers, and other creatives to rapidly prototype and experiment with new ideas, mechanics, and art styles."
+        'This is a fantastic way to unleash creativity and explore new possibilities in game design by bringing together developers, designers, and other creatives to rapidly prototype and experiment with new ideas, mechanics, and art styles.'
       )
     ).toBeInTheDocument();
   });
@@ -54,20 +54,20 @@ describe("HomePage", () => {
   test("renders the 'Not wanting to compete but still want to come along?' section", () => {
     renderWithProviders(<HomePage />);
     expect(
-      screen.getByText("Not wanting to compete but still want to come along?")
+      screen.getByText('Not wanting to compete but still want to come along?')
     ).toBeInTheDocument();
     expect(
       screen.getByText(
-        "On Tuesday 4th March, we will host inspiring Tech Talks, Workshops and Exhibits! With carefully curated content focusing on game development, design, and engineering, we know it will be a valuable opportunity for you to learn more and meet people from across disciplines of LBG and external collaborations such as the Founder of Scottish Games Network, Product Director from Opera, Abertay & Dundee University Games Departments and much more!"
+        'On Tuesday 4th March, we will host inspiring Tech Talks, Workshops and Exhibits! With carefully curated content focusing on game development, design, and engineering, we know it will be a valuable opportunity for you to learn more and meet people from across disciplines of LBG and external collaborations such as the Founder of Scottish Games Network, Product Director from Opera, Abertay & Dundee University Games Departments and much more!'
       )
     ).toBeInTheDocument();
   });
 
-  test("renders the closing subtitles", () => {
+  test('renders the closing subtitles', () => {
     renderWithProviders(<HomePage />);
     expect(
       screen.getByText("Let's make this Game Jam an unforgettable experience!")
     ).toBeInTheDocument();
-    expect(screen.getByText("Ready, Set, Create! 🚀")).toBeInTheDocument();
+    expect(screen.getByText('Ready, Set, Create! 🚀')).toBeInTheDocument();
   });
 });
