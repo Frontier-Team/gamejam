@@ -1,4 +1,46 @@
 {
+  "schedule": [
+    {
+      "time": "9.00am",
+      "description": "Door open for General Registration. Tea, coffee and pastries served."
+    },
+    {
+      "time": "9.30am",
+      "description": "Welcome and announcements"
+    },
+    {
+      "time": "10.15am",
+      "description": "Talk schedule begins. Game Jam continues. Judges can walk around and chat."
+    },
+    {
+      "time": "12.30pm",
+      "description": "Lunch is served"
+    },
+    {
+      "time": "1.30pm",
+      "description": "Talk schedule continues"
+    },
+    {
+      "time": "3.00pm",
+      "description": "Tea, coffee and snacks served. Judges gather for judging."
+    },
+    {
+      "time": "3.30pm",
+      "description": "Time to present"
+    },
+    {
+      "time": "4.45pm",
+      "description": "Winners announced. Closing speech."
+    },
+    {
+      "time": "5.00pm",
+      "description": "Networking"
+    },
+    {
+      "time": "7.00pm",
+      "description": "Exhibits and speakers pack up. Venue closes."
+    }
+  ],
   "events": [
     {
       "id": 1,

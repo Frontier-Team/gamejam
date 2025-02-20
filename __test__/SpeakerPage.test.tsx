@@ -1,9 +1,7 @@
 import React from 'react';
 import { screen } from '@testing-library/react';
 import { SpeakerPage } from '../src/pages/SpeakerPage';
-import data from '../src/events.json';
 import { renderWithProviders } from './test-utils'; 
-
 
 describe('SpeakerPage component', () => {
   it('renders the page title', () => {
@@ -20,4 +18,3 @@ describe('SpeakerPage component', () => {
     expect(talkRoom2Heading).toBeInTheDocument();
   });
 });
-
