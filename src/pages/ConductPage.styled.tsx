@@ -19,6 +19,7 @@ export const Section = styled.div`
 
 export const Title = styled.h1`
   margin-bottom: 1.5rem;
+  text-align: center;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
     font-size: 1.8rem;

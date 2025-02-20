@@ -25,7 +25,7 @@ describe('PortfolioPage', () => {
     data.portfolio.forEach((portfolioItem) => {
       expect(screen.getByText(portfolioItem.name)).toBeInTheDocument();
       expect(screen.getByText(portfolioItem.details)).toBeInTheDocument();
-      expect(screen.getByText(portfolioItem.contact)).toBeInTheDocument();
+      expect(screen.getByText(portfolioItem.contact.join(', '))).toBeInTheDocument();
     });
   });
 });
