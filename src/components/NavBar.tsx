@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 import {
   AnimatedLink,
   CloseIcon,
@@ -10,18 +10,18 @@ import {
   SidebarItem,
   SidebarLink,
   SidebarList,
-} from "./NavBar.styled";
+} from './NavBar.styled';
 
 export const NavBar: React.FC = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const [activeTab, setActiveTab] = useState("");
+  const [activeTab, setActiveTab] = useState('');
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
 
   const getLinkCls = (pathname: string) => {
-    return activeTab === pathname ? "active-link" : "";
+    return (activeTab === pathname ? 'active-link' : '')
   };
 
   useEffect(() => {
@@ -33,16 +33,16 @@ export const NavBar: React.FC = () => {
     };
 
     const updateActiveTab = () => {
-      const currentPath = window.location.hash.replace("#", "") || "/";
+      const currentPath = window.location.hash.replace('#', '') || '/';
       setActiveTab(currentPath);
     };
-
-    window.addEventListener("hashchange", updateActiveTab);
-    window.addEventListener("pageshow", handlePageShow);
+  
+    window.addEventListener('hashchange', updateActiveTab);
+    window.addEventListener('pageshow', handlePageShow);
     updateActiveTab();
     return () => {
-      window.removeEventListener("hashchange", updateActiveTab);
-      window.removeEventListener("pageshow", handlePageShow);
+      window.removeEventListener('hashchange', updateActiveTab);
+      window.removeEventListener('pageshow', handlePageShow);
     };
   }, []);
 
@@ -52,7 +52,7 @@ export const NavBar: React.FC = () => {
       <NavList>
         <NavItem>
           <AnimatedLink
-            to="/"
+            to='/'
             onClick={() => setActiveTab("/")}
             className={getLinkCls("/")}
           >
@@ -60,26 +60,14 @@ export const NavBar: React.FC = () => {
           </AnimatedLink>
         </NavItem>
         <NavItem>
-          <AnimatedLink
-            to="/about"
-            onClick={() => setActiveTab("/about")}
-            className={getLinkCls("/about")}
-          >
-            About
-          </AnimatedLink>
+          <AnimatedLink to='/schedule' onClick={() => setActiveTab('/schedule')} className={getLinkCls('/schedule')}>Schedule</AnimatedLink>
+        </NavItem>
+        <NavItem>
+          <AnimatedLink to='/accessibility' onClick={() => setActiveTab('/accessibility')} className={getLinkCls('/accessibility')}>Accessibility</AnimatedLink>
         </NavItem>
         <NavItem>
           <AnimatedLink
-            to="/resources"
-            onClick={() => setActiveTab("/resources")}
-            className={getLinkCls("/resources")}
-          >
-            Resources
-          </AnimatedLink>
-        </NavItem>
-        <NavItem>
-          <AnimatedLink
-            to="/speakers"
+            to='/speakers'
             onClick={() => setActiveTab("/speakers")}
             className={getLinkCls("/speakers")}
           >
@@ -88,11 +76,20 @@ export const NavBar: React.FC = () => {
         </NavItem>
         <NavItem>
           <AnimatedLink
-            to="/conduct"
+            to='/conduct'
             onClick={() => setActiveTab("/conduct")}
             className={getLinkCls("/conduct")}
           >
             Conduct
+          </AnimatedLink>
+        </NavItem>
+        <NavItem>
+          <AnimatedLink
+            to='/map'
+            onClick={() => setActiveTab("/map")}
+            className={getLinkCls("/map")}
+          >
+            Map
           </AnimatedLink>
         </NavItem>
       </NavList>
@@ -100,28 +97,33 @@ export const NavBar: React.FC = () => {
         <CloseIcon onClick={toggleSidebar}>&times;</CloseIcon>
         <SidebarList>
           <SidebarItem>
-            <SidebarLink to="/" onClick={toggleSidebar}>
+            <SidebarLink to='/' onClick={toggleSidebar}>
               Home
             </SidebarLink>
           </SidebarItem>
           <SidebarItem>
-            <SidebarLink to="/about" onClick={toggleSidebar}>
-              About
+            <SidebarLink to='/schedule' onClick={toggleSidebar}>
+              Schedule
             </SidebarLink>
           </SidebarItem>
           <SidebarItem>
-            <SidebarLink to="/resources" onClick={toggleSidebar}>
-              Resources
+            <SidebarLink to='/accessibility' onClick={toggleSidebar}>
+              Accessibility
             </SidebarLink>
           </SidebarItem>
           <SidebarItem>
-            <SidebarLink to="/speakers" onClick={toggleSidebar}>
+            <SidebarLink to='/speakers' onClick={toggleSidebar}>
               Speakers
             </SidebarLink>
           </SidebarItem>
           <SidebarItem>
-            <SidebarLink to="/conduct" onClick={toggleSidebar}>
+            <SidebarLink to='/conduct' onClick={toggleSidebar}>
               Conduct
+            </SidebarLink>
+          </SidebarItem>
+          <SidebarItem>
+            <SidebarLink to='/map' onClick={toggleSidebar}>
+              Map
             </SidebarLink>
           </SidebarItem>
         </SidebarList>
