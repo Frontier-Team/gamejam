@@ -88,7 +88,7 @@ export const NavBar: React.FC = () => {
         </NavItem>
         <NavItem>
           <AnimatedLink
-            to="/rules"
+            to="/conduct"
             onClick={() => setActiveTab("/conduct")}
             className={getLinkCls("/conduct")}
           >

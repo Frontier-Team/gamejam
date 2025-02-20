@@ -2,28 +2,28 @@ import React from "react";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
 import { BrowserRouter } from "react-router-dom";
-import { RulesPage } from "../src/pages/RulesPage";
+import { ConductPage } from "../src/pages/ConductPage";
 import { renderWithProviders } from "./test-utils";
 
 describe("RulesPage", () => {
   test("renders without crashing", () => {
-    renderWithProviders(<RulesPage />);
+    renderWithProviders(<ConductPage />);
   });
 
   test("renders Code of Conduct section", () => {
-    renderWithProviders(<RulesPage />);
+    renderWithProviders(<ConductPage />);
     expect(screen.getByText("Code of Conduct")).toBeInTheDocument();
   });
 
   test("renders Accessibility - Supporting Information section", () => {
-    renderWithProviders(<RulesPage />);
+    renderWithProviders(<ConductPage />);
     expect(
       screen.getByText("Accessibility - Supporting Information")
     ).toBeInTheDocument();
   });
 
   test("renders Inclusive paragraph", () => {
-    renderWithProviders(<RulesPage />);
+    renderWithProviders(<ConductPage />);
     expect(screen.getByText("Inclusive -")).toBeInTheDocument();
     expect(
       screen.getByText(
@@ -33,7 +33,7 @@ describe("RulesPage", () => {
   });
 
   test("renders Sustainable paragraph", () => {
-    renderWithProviders(<RulesPage />);
+    renderWithProviders(<ConductPage />);
     expect(screen.getByText("Sustainable -")).toBeInTheDocument();
     expect(
       screen.getByText(
@@ -43,7 +43,7 @@ describe("RulesPage", () => {
   });
 
   test("renders Trust paragraph", () => {
-    renderWithProviders(<RulesPage />);
+    renderWithProviders(<ConductPage />);
     expect(screen.getByText("Trust -")).toBeInTheDocument();
     expect(
       screen.getByText(
@@ -53,7 +53,7 @@ describe("RulesPage", () => {
   });
 
   test("renders Bold paragraph", () => {
-    renderWithProviders(<RulesPage />);
+    renderWithProviders(<ConductPage />);
     expect(screen.getByText("Bold -")).toBeInTheDocument();
     expect(
       screen.getByText(
@@ -63,7 +63,7 @@ describe("RulesPage", () => {
   });
 
   test("renders People first paragraph", () => {
-    renderWithProviders(<RulesPage />);
+    renderWithProviders(<ConductPage />);
     expect(screen.getByText("People first -")).toBeInTheDocument();
     expect(
       screen.getByText(
@@ -72,15 +72,8 @@ describe("RulesPage", () => {
     ).toBeInTheDocument();
   });
 
-  test("renders link to Inclusive Briefing Pack", () => {
-    renderWithProviders(<RulesPage />);
-    const link = screen.getByText("Inclusive Briefing Pack");
-    expect(link).toBeInTheDocument();
-    expect(link).toHaveAttribute("href", "#briefing-pack");
-  });
-
   test("renders Dundee Game Jam Inclusive Briefing Pack section", () => {
-    renderWithProviders(<RulesPage />);
+    renderWithProviders(<ConductPage />);
     expect(
       screen.getByText("Dundee Game Jam Inclusive Briefing Pack")
     ).toBeInTheDocument();

@@ -5,9 +5,9 @@ import {
   Section,
   SubTitle,
   Title,
-} from "./RulesPage.styled";
+} from "./ConductPage.styled";
 
-export const RulesPage: React.FC = () => {
+export const ConductPage: React.FC = () => {
   return (
     <Content>
       <Section>
