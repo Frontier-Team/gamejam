@@ -1,4 +1,4 @@
-import { PageContainer, Heading, Paragraph, SubHeading } from './AccessibilityPage.styled';
+import { Heading, PageContainer, Paragraph, SubHeading } from '../styles/sharedStyles';
 
 export const AccessibilityPage = () => {
   return (

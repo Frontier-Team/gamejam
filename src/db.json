@@ -1,4 +1,54 @@
 {
+  "portfolio": [
+    {
+      "name": "Jack Doe",
+      "occupation": "Student",
+      "details": "Studying animation at University of Eednud",
+      "contact": ["https://jackdoe.com"]
+    },
+    {
+      "name": "Jill Doe",
+      "occupation": "Graphic Designer",
+      "details": "Working at Jill Doe Inc.",
+      "contact": ["in/jilldoe203"]
+    },
+    {
+      "name": "Alice Doe",
+      "occupation": "Student",
+      "details": "Studying History at Yatreba University",
+      "contact": ["in/alicedoe203"]
+    },
+    {
+      "name": "Bob Doe",
+      "occupation": "Software Engineer",
+      "details": "Working at Tech Solutions",
+      "contact": ["https://bobdoe.com"]
+    },
+    {
+      "name": "Emma Doe",
+      "occupation": "Data Scientist",
+      "details": "Researching at Data Corp",
+      "contact": ["https://emmadatacorp.com"]
+    },
+    {
+      "name": "John Doe",
+      "occupation": "Product Manager",
+      "details": "Managing products at Innovate Inc.",
+      "contact": ["https://johndoe.com"]
+    },
+    {
+      "name": "Jane Doe",
+      "occupation": "UX Designer",
+      "details": "Designing at Creative Minds",
+      "contact": ["https://janedoe.com"]
+    },
+    {
+      "name": "Ethan Doe",
+      "occupation": "DevOps Engineer",
+      "details": "Ensuring smooth operations at Cloud Services",
+      "contact": ["https://ethandoe.com"]
+    }
+  ],
   "schedule": [
     {
       "time": "9.00am",

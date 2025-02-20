@@ -31,11 +31,6 @@ export const SubTitle = styled.h2`
   font-weight: bold;
 `;
 
-export const Paragraph = styled.p`
-  font-size: 1rem;
-  margin-bottom: 1rem;
-`;
-
 export const Highlight = styled.span`
   font-weight: bold;
   color: ${({ theme }) => theme.colors.lilacShade};

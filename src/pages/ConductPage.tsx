@@ -1,7 +1,7 @@
+import { Paragraph } from "../styles/sharedStyles";
 import {
   Content,
   Highlight,
-  Paragraph,
   Section,
   SubTitle,
   Title,

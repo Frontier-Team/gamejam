@@ -1,6 +1,6 @@
-import { Card, Connector, Line, PageContainer, TimelineContainer, TimelineItem } from './SchedulePage.styled';
+import { Card, Connector, Line, TimelineContainer, TimelineItem } from './SchedulePage.styled';
 import data from '../db.json';
-import { Heading, SubHeading } from './SchedulePage.styled';
+import { Heading, PageContainer, SubHeading } from '../styles/sharedStyles';
 
 export const SchedulePage = () => {
   const timelineVariants = {
