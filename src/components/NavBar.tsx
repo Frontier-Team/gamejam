@@ -62,9 +62,6 @@ export const NavBar: React.FC = () => {
         <NavItem>
           <AnimatedLink to='/speakers' onClick={() => setActiveTab('/speakers')} className={getLinkCls('/speakers')}>Speakers</AnimatedLink>
         </NavItem>
-        <NavItem>
-          <AnimatedLink to="/map">Map</AnimatedLink>
-        </NavItem>
       </NavList>
       <Sidebar isOpen={isSidebarOpen}>
         <CloseIcon onClick={toggleSidebar}>&times;</CloseIcon>
@@ -87,11 +84,6 @@ export const NavBar: React.FC = () => {
           <SidebarItem>
             <SidebarLink to='/speakers' onClick={toggleSidebar}>
               Speakers
-            </SidebarLink>
-          </SidebarItem>
-          <SidebarItem>
-            <SidebarLink to="/map" onClick={toggleSidebar}>
-              Map
             </SidebarLink>
           </SidebarItem>
         </SidebarList>
