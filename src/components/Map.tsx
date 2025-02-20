@@ -4,7 +4,7 @@ import styled from "@emotion/styled";
 export default function Map() {
   return (
     <ImageContainer>
-      <ResponsiveImage src="src/assets/map.png" alt="Map" />
+      <ResponsiveImage src="/gamejam/src/assets/map.png" alt="Map" />
     </ImageContainer>
   );
 }
