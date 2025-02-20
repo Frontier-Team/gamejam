@@ -1,5 +1,9 @@
 import { css, Theme } from "@emotion/react";
 
+export const pageContainerStyles = (theme: Theme) => css`
+  margin: ${theme.spacing.marginDefault};
+`;
+
 export const buttonAndLinkStyles = (theme: Theme) => css`
   margin: 0 10px;
   padding: 10px 20px;
@@ -19,8 +23,7 @@ export const buttonAndLinkStyles = (theme: Theme) => css`
   transition: background-color 0.3s ease, border-color 0.3s ease,
     box-shadow 0.3s ease;
 
-  &:hover,
-  &:focus {
+  &:hover {
     background-color: ${theme.colors.lilac};
     border: 2px solid ${theme.colors.lilacShade};
     border-top: 1px solid rgba(176, 97, 255, 0.8);
