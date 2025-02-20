@@ -1,7 +1,11 @@
 import { css, Theme } from "@emotion/react";
 
-export const pageContainerStyles = (theme: Theme) => css`
-  margin: ${theme.spacing.marginDefault};
+export const pageContainerStyles = () => css`
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: auto;
+  max-width: 1000px;
+  padding: 2.5rem;
 `;
 
 export const buttonAndLinkStyles = (theme: Theme) => css`

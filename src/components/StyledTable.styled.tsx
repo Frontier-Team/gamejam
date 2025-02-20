@@ -1,7 +1,10 @@
 import styled from '@emotion/styled';
 
-export const StyledTableContainer = styled.div`
-  width: 100%;
+export const Heading = styled.div`
+  text-align: center;
+`;
+
+export const TableContainer = styled.div`
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 
@@ -11,6 +14,7 @@ export const StyledTableContainer = styled.div`
     left: 0;
     z-index: 10;
     margin-bottom: 1rem;
+    text-align: center;
   }
 
   table {
@@ -26,7 +30,7 @@ export const StyledTableContainer = styled.div`
     border-bottom: ${({ theme }) => `1px solid ${theme.colors.teal}`};
   }
 
-  td:first-child {
+  td:first-of-type {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

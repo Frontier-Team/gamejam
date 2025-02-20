@@ -51,19 +51,55 @@ export const NavBar: React.FC = () => {
       <HamburgerIcon onClick={toggleSidebar}>&#9776;</HamburgerIcon>
       <NavList>
         <NavItem>
-          <AnimatedLink to='/' onClick={() => setActiveTab('/')} className={getLinkCls('/')}>Home</AnimatedLink>
+          <AnimatedLink
+            to='/'
+            onClick={() => setActiveTab("/")}
+            className={getLinkCls("/")}
+          >
+            Home
+          </AnimatedLink>
         </NavItem>
         <NavItem>
-          <AnimatedLink to='/about' onClick={() => setActiveTab('/about')} className={getLinkCls('/about')}>About</AnimatedLink>
+          <AnimatedLink to='/schedule' onClick={() => setActiveTab('/schedule')} className={getLinkCls('/schedule')}>Schedule</AnimatedLink>
         </NavItem>
         <NavItem>
-          <AnimatedLink to='/resources' onClick={() => setActiveTab('/resources')} className={getLinkCls('/resources')}>Resources</AnimatedLink>
+          <AnimatedLink to='/accessibility' onClick={() => setActiveTab('/accessibility')} className={getLinkCls('/accessibility')}>Accessibility</AnimatedLink>
         </NavItem>
         <NavItem>
-          <AnimatedLink to='/speakers' onClick={() => setActiveTab('/speakers')} className={getLinkCls('/speakers')}>Speakers</AnimatedLink>
+          <AnimatedLink
+            to='/speakers'
+            onClick={() => setActiveTab("/speakers")}
+            className={getLinkCls("/speakers")}
+          >
+            Speakers
+          </AnimatedLink>
         </NavItem>
         <NavItem>
-          <AnimatedLink to="/game">Game</AnimatedLink>
+          <AnimatedLink
+            to='/conduct'
+            onClick={() => setActiveTab("/conduct")}
+            className={getLinkCls("/conduct")}
+          >
+            Conduct
+          </AnimatedLink>
+        </NavItem>
+        <NavItem>
+          <AnimatedLink
+            to='/map'
+            onClick={() => setActiveTab("/map")}
+            className={getLinkCls("/map")}
+          >
+            Map
+          </AnimatedLink>
+        </NavItem>
+        <NavItem>
+          <AnimatedLink
+            to='/game'
+            onClick={() => setActiveTab("/game")}
+            className={getLinkCls("/game")}
+          >
+            Game
+          </AnimatedLink>
         </NavItem>
       </NavList>
       <Sidebar isOpen={isSidebarOpen}>
@@ -75,13 +111,13 @@ export const NavBar: React.FC = () => {
             </SidebarLink>
           </SidebarItem>
           <SidebarItem>
-            <SidebarLink to='/about' onClick={toggleSidebar}>
-              About
+            <SidebarLink to='/schedule' onClick={toggleSidebar}>
+              Schedule
             </SidebarLink>
           </SidebarItem>
           <SidebarItem>
-            <SidebarLink to='/resources' onClick={toggleSidebar}>
-              Resources
+            <SidebarLink to='/accessibility' onClick={toggleSidebar}>
+              Accessibility
             </SidebarLink>
           </SidebarItem>
           <SidebarItem>
@@ -90,7 +126,17 @@ export const NavBar: React.FC = () => {
             </SidebarLink>
           </SidebarItem>
           <SidebarItem>
-            <SidebarLink to="/game" onClick={toggleSidebar}>
+            <SidebarLink to='/conduct' onClick={toggleSidebar}>
+              Conduct
+            </SidebarLink>
+          </SidebarItem>
+          <SidebarItem>
+            <SidebarLink to='/map' onClick={toggleSidebar}>
+              Map
+            </SidebarLink>
+          </SidebarItem>
+          <SidebarItem>
+            <SidebarLink to='/game' onClick={toggleSidebar}>
               Game
             </SidebarLink>
           </SidebarItem>

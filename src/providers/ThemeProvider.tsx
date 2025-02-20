@@ -17,9 +17,6 @@ export const theme = {
     md: "768px",
     lg: "992px",
   },
-  spacing: {
-    marginDefault: "2rem"
-  },
 };
 
 export const globalStyles = css`
