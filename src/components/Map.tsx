@@ -1,9 +1,10 @@
 import styled from "@emotion/styled";
+import mapImage from "../assets/map.png";
 
 export default function Map() {
   return (
     <ImageContainer>
-      <ResponsiveImage src="/gamejam/src/assets/map.png" alt="Map" />
+      <ResponsiveImage src={mapImage} alt="Map" />
     </ImageContainer>
   );
 }

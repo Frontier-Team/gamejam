@@ -63,12 +63,15 @@ export const NavBar: React.FC = () => {
       <NavList>
         <NavItem>
           <AnimatedLink
-            to="/about"
-            onClick={() => setActiveTab("/about")}
-            className={getLinkCls("/about")}
+            to='/'
+            onClick={() => setActiveTab("/")}
+            className={getLinkCls("/")}
           >
-            About
+            Home
           </AnimatedLink>
+        </NavItem>
+        <NavItem>
+          <AnimatedLink to='/schedule' onClick={() => setActiveTab('/schedule')} className={getLinkCls('/schedule')}>Schedule</AnimatedLink>
         </NavItem>
         <NavItem>
           <AnimatedLink
@@ -90,11 +93,29 @@ export const NavBar: React.FC = () => {
         </NavItem>
         <NavItem>
           <AnimatedLink
+            to='/conduct'
+            onClick={() => setActiveTab("/conduct")}
+            className={getLinkCls("/conduct")}
+          >
+            Conduct
+          </AnimatedLink>
+        </NavItem>
+        <NavItem>
+          <AnimatedLink
             to="/map"
             onClick={() => setActiveTab("/map")}
             className={getLinkCls("/map")}
           >
             Map
+          </AnimatedLink>
+        </NavItem>
+        <NavItem>
+          <AnimatedLink
+            to='/game'
+            onClick={() => setActiveTab("/game")}
+            className={getLinkCls("/game")}
+          >
+            Game
           </AnimatedLink>
         </NavItem>
       </NavList>
@@ -108,8 +129,8 @@ export const NavBar: React.FC = () => {
             </SidebarLink>
           </SidebarItem>
           <SidebarItem>
-            <SidebarLink to="/about" onClick={toggleSidebar}>
-              About
+            <SidebarLink to='/schedule' onClick={toggleSidebar}>
+              Schedule
             </SidebarLink>
           </SidebarItem>
           <SidebarItem>
@@ -123,8 +144,18 @@ export const NavBar: React.FC = () => {
             </SidebarLink>
           </SidebarItem>
           <SidebarItem>
+            <SidebarLink to='/conduct' onClick={toggleSidebar}>
+              Conduct
+            </SidebarLink>
+          </SidebarItem>
+          <SidebarItem>
             <SidebarLink to="/map" onClick={toggleSidebar}>
               Map
+            </SidebarLink>
+          </SidebarItem>
+          <SidebarItem>
+            <SidebarLink to='/game' onClick={toggleSidebar}>
+              Game
             </SidebarLink>
           </SidebarItem>
         </SidebarList>
