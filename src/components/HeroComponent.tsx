@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
-import styled from "@emotion/styled";
-import { keyframes } from "@emotion/react";
+import React, { useEffect, useState } from 'react';
+import styled from '@emotion/styled';
+import { keyframes } from '@emotion/react';
+import logoOptimized from '../assets/logo-optimized.gif';
 
 export default function HeroComponent() {
   const [isImageLoaded, setIsImageLoaded] = useState(false);
@@ -8,7 +9,7 @@ export default function HeroComponent() {
   // don't render image until loaded
   useEffect(() => {
     const img = new Image();
-    img.src = "/gamejam/src/assets/logo-optimized.gif";
+    img.src = logoOptimized;
     img.onload = () => setIsImageLoaded(true);
   }, []);
 
@@ -23,9 +24,9 @@ export default function HeroComponent() {
         </LeftColumn>
         <RightColumn>
           <GifImage
-            src="/gamejam/src/assets/logo-optimized.gif"
-            alt="Game Jam Animation"
-            className={isImageLoaded ? "loaded" : ""}
+            src={logoOptimized}
+            alt='Game Jam Animation'
+            className={isImageLoaded ? 'loaded' : ''}
           />
         </RightColumn>
       </Content>
