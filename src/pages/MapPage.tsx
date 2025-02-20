@@ -1,5 +1,3 @@
-import React from "react";
-import { Theme } from "@emotion/react";
 import Map from "../components/Map";
 import styled from "@emotion/styled";
 
