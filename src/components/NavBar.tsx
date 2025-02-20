@@ -92,6 +92,15 @@ export const NavBar: React.FC = () => {
             Map
           </AnimatedLink>
         </NavItem>
+        <NavItem>
+          <AnimatedLink
+            to='/game'
+            onClick={() => setActiveTab("/game")}
+            className={getLinkCls("/game")}
+          >
+            Game
+          </AnimatedLink>
+        </NavItem>
       </NavList>
       <Sidebar isOpen={isSidebarOpen}>
         <CloseIcon onClick={toggleSidebar}>&times;</CloseIcon>
@@ -124,6 +133,11 @@ export const NavBar: React.FC = () => {
           <SidebarItem>
             <SidebarLink to='/map' onClick={toggleSidebar}>
               Map
+            </SidebarLink>
+          </SidebarItem>
+          <SidebarItem>
+            <SidebarLink to='/game' onClick={toggleSidebar}>
+              Game
             </SidebarLink>
           </SidebarItem>
         </SidebarList>

@@ -1,6 +1,7 @@
 import { HashRouter, Route, Routes } from "react-router-dom";
 import { NavBar } from "./components/NavBar";
 import { HomePage } from "./pages/HomePage";
+import GamePage from "./pages/GamePage";
 import MapPage from "./pages/MapPage";
 import { AppThemeProvider } from "./providers/ThemeProvider";
 import { ConductPage } from './pages/ConductPage';
@@ -21,6 +22,7 @@ export const App = () => {
           <Route path='/speakers' element={<SpeakerPage />} />
           <Route path='/speakers' element={<SpeakerPage />} />
           <Route path='/map' element={<MapPage />} />
+          <Route path="/game" element={<GamePage />} />
         </Routes>
       </HashRouter>
     </AppThemeProvider>
