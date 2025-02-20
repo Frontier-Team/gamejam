@@ -9,8 +9,6 @@ export const Content = styled.div`
 `;
 
 export const Section = styled.div`
-  padding: 1.5rem;
-
   @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
     padding: 0;
     margin-bottom: 5rem;
