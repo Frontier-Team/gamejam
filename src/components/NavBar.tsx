@@ -59,7 +59,7 @@ export const NavBar: React.FC = () => {
   return (
     <NavContainer>
       {activeTab !== "/" && (
-        <HomeIcon href="/" onClick={() => setActiveTab("/")}>
+        <HomeIcon href="/gamejam/" onClick={() => setActiveTab("/")}>
           &#8962;
         </HomeIcon>
       )}
