@@ -4,25 +4,25 @@ import { buttonAndLinkStyles } from "../styles/sharedStyles";
 
 export const NavContainer = styled.nav`
   background-color: ${({ theme }) => theme.colors.teal};
-  padding: 1rem 2rem;
-  position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  padding: 1rem;
+  flex-wrap: wrap;
+  justify-content: center; /* Center content */
+  position: relative; /* Add relative positioning */
 
   @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
-    justify-content: space-between;
+    justify-content: center;
+    padding-bottom: 2rem;
   }
 `;
 
 export const NavList = styled.ul`
   display: flex;
-  flex-wrap: nowrap;
   list-style: none;
-  margin: 0;
-  padding: 0;
-  justify-content: flex-start;
-  flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
     display: none;
@@ -30,51 +30,37 @@ export const NavList = styled.ul`
 `;
 
 export const NavItem = styled.li`
-  margin: 0 0.5rem;
+  margin: 0.5rem;
+  margin-bottom: 2rem;
 
   .active-link {
     background-color: ${({ theme }) => theme.colors.lilac};
   }
 `;
 
-export const HomeLink = styled.a`
-  color: ${({ theme }) => theme.colors.turquoise};
-  background-color: ${({ theme }) => theme.colors.teal};
+export const HomeIcon = styled.a`
+  color: ${({ theme }) => theme.colors.white};
   text-decoration: none;
   cursor: pointer;
-  font-size: 16px;
-  margin-right: auto;
-
-  &.active-home-link {
-    text-decoration: underline;
-  }
+  font-size: 2rem;
+  position: absolute; /* Add absolute positioning */
+  left: 1.5rem; /* Position it on the left */
+  top: 50%;
+  transform: translateY(-50%);
 
   &:hover,
   &:focus {
     color: ${({ theme }) => theme.colors.lilac};
   }
-`;
-
-export const NavBarLogo = styled.p`
-  color: ${({ theme }) => theme.colors.turquoise};
-  font-family: "Pixelify Sans", sans-serif;
-  background-color: ${({ theme }) => theme.colors.teal};
-  text-decoration: none;
-  cursor: pointer;
-  font-size: 24px;
-  display: none;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
     display: block;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 18px;
   }
 `;
 
 export const AnimatedLink = styled(Link)`
   ${({ theme }) => buttonAndLinkStyles(theme)}
+  margin: 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
     font-size: 1rem;
@@ -86,10 +72,13 @@ export const HamburgerIcon = styled.div`
   cursor: pointer;
   font-size: 1.5rem;
   color: ${({ theme }) => theme.colors.white};
+  position: absolute; 
+  right: 1.5rem; 
+  top: 50%;
+  transform: translateY(-50%); 
 
   @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
-    display: block;
-  }
+    display: block; 
 
   &:hover,
   &:focus {
