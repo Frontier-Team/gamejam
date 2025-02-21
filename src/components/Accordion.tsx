@@ -47,6 +47,8 @@ const AccordionContent = styled.div<{ isOpen: boolean }>`
   transition: max-height 0.3s ease, padding 0.3s ease;
   padding: ${({ isOpen }) => (isOpen ? "1rem" : "0 1rem")};
   background: ${({ theme }) => theme.colors.grey};
+  display: ${({ isOpen }) =>
+    isOpen ? "block" : "none"}; /* Ensure content is hidden initially */
 `;
 
 interface AccordionProps {
@@ -70,7 +72,11 @@ const Accordion: React.FC<AccordionProps> = ({ title, children }) => {
         id={`accordion-title-${title}`}
       >
         {title}
-        {isOpen ? <FaChevronUp /> : <FaChevronDown />}
+        {isOpen ? (
+          <FaChevronUp data-testid="chevron-up" />
+        ) : (
+          <FaChevronDown data-testid="chevron-down" />
+        )}
       </AccordionTitle>
       <AccordionContent
         isOpen={isOpen}
