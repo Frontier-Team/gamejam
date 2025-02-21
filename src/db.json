@@ -297,17 +297,17 @@
       "welcomeDescription": "Here are some details of what to expect on the day. We can't wait to see what you create!",
       "challengeTitle": "The Challenge",
       "challengeDescription": "Your team will create a game based on a theme that will be announced at the start of the game jam. You can use any tools or technology you like.",
-      "internalColleagues": "For internal employee teams your challenge is...",
+      "internalColleagues": "For internal employee teams",
       "challengeInternal": "To build a game or gamified app to help promote and educate customers on a particular topic (this will be allocated to your team at random). You must focus on a relevant age group",
       "challengeTopics": "Investments, Budgeting, Protections, General Insurance, Building Your Pension, Taking out your pension",
-      "externalColleagues": "For external student teams your challenge is...",
+      "externalColleagues": "For external student teams",
       "challengeExternal": "PLACEHOLDER FOR EXTERNAL CHALLENGE",
       "judgingTitle": "Judging Criteria",
       "judgingDescription": "Our judges will be considering the following when casting their vote: ",
       "judgingCriteria": {
         "criteria": [
           {
-            "title": "Fun & Enganging",
+            "title": "Fun & Engaging",
             "description": "We want to prioritise a fun, player-first experience when creating games. Does it convey the core idea well? Does it stand out? Would you play it again and again?"
           },
           {
@@ -331,23 +331,23 @@
       "Awards": {
         "awards": [
           {
-            "title": "🥇 1st Prize (Judge's Choice)",
+            "title": "🥇 1st Prize\n(Judge's Choice)",
             "prizes": {
-              "all": "The winning team will receive a Geek Crate with items to the value of £160 and...",
+              "all": "A team Geek Crate with items to the value of £160 &",
               "Internal": "a Microsoft trip",
               "External": "a Game Maker License"
             }
           },
           {
-            "title": "🥈 2nd Prize (Audience Choice)",
+            "title": "🥈 2nd Prize\n(Audience Choice)",
             "prizes": {
-              "all": "The winning team will receive a Geek Crate with items to the value of £160"
+              "all": "A team will receive a Geek Crate with items to the value of £160"
             }
           },
           {
-            "title": "🥉 3rd Prize (Judge's Choice)",
+            "title": "🥉 3rd Prize\n(Judge's Choice)",
             "prizes": {
-              "all": "The winning team will receive a Geek Crate with items to the value of £80"
+              "all": "A Geek Crate with items to the value of £80"
             }
           }
         ]

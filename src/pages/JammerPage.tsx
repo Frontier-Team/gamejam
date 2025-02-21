@@ -1,4 +1,5 @@
 import React from "react";
+import Accordion from "../components/Accordion";
 import db from "../db.json";
 import {
   CenteredParagraph,
@@ -22,23 +23,22 @@ export const JammerPage: React.FC = () => {
 
         <Title>{jammer.challengeTitle}</Title>
         <Paragraph>{jammer.challengeDescription}</Paragraph>
-        <SubHeading>{jammer.internalColleagues}</SubHeading>
         <StyledCard>
+          <SubHeading>{jammer.internalColleagues}</SubHeading>
           <CenteredParagraph>{jammer.challengeInternal}</CenteredParagraph>
         </StyledCard>
 
-        <SubHeading>{jammer.externalColleagues}</SubHeading>
         <StyledCard>
+          <SubHeading>{jammer.externalColleagues}</SubHeading>
           <CenteredParagraph>{jammer.challengeExternal}</CenteredParagraph>
         </StyledCard>
         <Title>{jammer.judgingTitle}</Title>
         <CenteredParagraph>{jammer.judgingDescription}</CenteredParagraph>
         <JudgingContainer>
           {jammer.judgingCriteria.criteria.map((criteria, index) => (
-            <StyledCard key={index}>
-              <SubHeading>{criteria.title}</SubHeading>
-              <Paragraph>{criteria.description}</Paragraph>
-            </StyledCard>
+            <Accordion key={index} title={criteria.title}>
+              <CenteredParagraph>{criteria.description}</CenteredParagraph>
+            </Accordion>
           ))}
         </JudgingContainer>
       </>
@@ -47,13 +47,20 @@ export const JammerPage: React.FC = () => {
         <PrizesContainer>
           {jammer.Awards.awards.map((award, index) => (
             <StyledCard key={index}>
-              <SubHeading>{award.title}</SubHeading>
-              <Paragraph style={{ marginBottom: "0" }}>
+              <SubHeading>
+                {award.title.split("\n").map((line, i) => (
+                  <React.Fragment key={i}>
+                    {line}
+                    <br />
+                  </React.Fragment>
+                ))}
+              </SubHeading>
+              <CenteredParagraph style={{ marginBottom: "0" }}>
                 {award.prizes.all}
-              </Paragraph>
+              </CenteredParagraph>
               {award.prizes.Internal && (
                 <>
-                  <SubHeading style={{ marginTop: "0", marginBottom: "0" }}>
+                  <SubHeading style={{ marginBottom: "0" }}>
                     Internal{" "}
                   </SubHeading>
                   <CenteredParagraph style={{ marginTop: "0" }}>
