@@ -25,6 +25,7 @@ export const buttonAndLinkStyles = (theme: Theme) => css`
     box-shadow 0.3s ease;
 
   &:hover,
+  &:focus,
   &.active-link {
     background-color: ${theme.colors.lilac};
     border: 2px solid ${theme.colors.lilacShade};
