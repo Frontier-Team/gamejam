@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "@emotion/styled";
-import HeroComponent from "../components/HeroComponent";
-import { Paragraph } from "../styles/sharedStyles";
+import React from 'react';
+import styled from '@emotion/styled';
+import HeroComponent from '../components/HeroComponent';
+import { Paragraph } from '../styles/sharedStyles';
 
 export const HomePage: React.FC = () => {
   return (
@@ -27,9 +27,9 @@ export const HomePage: React.FC = () => {
           <Paragraph>
             Whether you're a coding wizard, design guru, or just someone with a
             wild imagination and an interest in games, there's a place for you
-            in this adventure. 60 attendees will word to solve challenges using
-            games or gamification techniques over a 2-day period at the V&A
-            museum in Dundee.
+            in this adventure. In the game jam 60 attendees will work to solve
+            challenges using games or gamification techniques over a 2-day
+            period at the V&A Museum in Dundee.
           </Paragraph>
           <Paragraph>
             This is a fantastic way to unleash creativity and explore new
@@ -43,19 +43,20 @@ export const HomePage: React.FC = () => {
             Not wanting to compete but still want to come along?
           </Subtitle>
           <Paragraph>
-            On Tuesday 4th March, we will host inspiring Tech Talks, Workshops
-            and Exhibits! With carefully curated content focusing on game
-            development, design, and engineering, we know it will be a valuable
-            opportunity for you to learn more and meet people from across
-            disciplines of LBG and external collaborations such as the Founder
-            of Scottish Games Network, Product Director from Opera, Abertay &
-            Dundee University Games Departments and much more!
+            On <strong>Tuesday 4th March</strong>, we will host inspiring{' '}
+            <strong>Tech Talks, Workshops and Exhibits!</strong> With carefully
+            curated content focusing on game development, design, and
+            engineering, we know it will be a valuable opportunity for you to
+            learn more and meet people from across disciplines of LBG and
+            external collaborations such as the Founder of Scottish Games
+            Network, Product Director from Opera, Abertay & Dundee University
+            Games Departments and much more!
           </Paragraph>
         </Section>
-        <Subtitle style={{ textAlign: "center" }}>
+        <Subtitle style={{ textAlign: 'center' }}>
           Let's make this Game Jam an unforgettable experience!
         </Subtitle>
-        <Subtitle style={{ textAlign: "center" }}>
+        <Subtitle style={{ textAlign: 'center' }}>
           Ready, Set, Create! 🚀
         </Subtitle>
       </Content>
