@@ -5,10 +5,10 @@ import { HomePage } from "./pages/HomePage";
 import { ConductPage } from "./pages/ConductPage";
 import { SchedulePage } from "./pages/SchedulePage";
 import { AccessibilityPage } from "./pages/AccessibilityPage";
-import { AboutPage } from "./pages/AboutPage";
 import { SpeakerPage } from "./pages/SpeakerPage";
 import MapPage from "./pages/MapPage";
 import GamePage from "./pages/GamePage";
+import { AuctionPage } from "./pages/AuctionPage";
 
 
 export const App = () => {
@@ -21,8 +21,8 @@ export const App = () => {
           <Route path="/conduct" element={<ConductPage />} />
           <Route path="/schedule" element={<SchedulePage />} />
           <Route path="/accessibility" element={<AccessibilityPage />} />
-          <Route path="/about" element={<AboutPage />} />
           <Route path="/speakers" element={<SpeakerPage />} />
+          <Route path="/auction" element={<AuctionPage />} />
           <Route path="/map" element={<MapPage />} />
           <Route path="/game" element={<GamePage />} />
         </Routes>
