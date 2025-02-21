@@ -1,11 +1,11 @@
-import { Paragraph } from "../styles/sharedStyles";
+import { Paragraph } from '../styles/sharedStyles';
 import {
   Content,
   Highlight,
   Section,
   SubTitle,
   Title,
-} from "./ConductPage.styled";
+} from './ConductPage.styled';
 
 export const ConductPage: React.FC = () => {
   return (
@@ -69,7 +69,7 @@ export const ConductPage: React.FC = () => {
           </li>
           <li>
             <Paragraph>
-              If you need any more information, see our{" "}
+              If you need any more information, see our{' '}
               <strong>Inclusive Briefing Pack</strong>, available at reception.
             </Paragraph>
           </li>
@@ -83,11 +83,11 @@ export const ConductPage: React.FC = () => {
       </Section>
 
       <Section>
-        <Title>Dundee Game Jam Inclusive Briefing Pack</Title>
+        <Title>Game Jam Dundee Inclusive Briefing Pack</Title>
         <Paragraph>
-          We have prepared a Dundee Game Jam Inclusive Briefing Pack which
+          We have prepared a Game Jam Dundee Inclusive Briefing Pack which
           describes what you will experience at the event and includes
-          accessibility information. A copy is stored on the Dundee Game Jam
+          accessibility information. A copy is stored on the Game Jam Dundee
           event SharePoint site and some printed copies are available at the
           event reception.
         </Paragraph>
