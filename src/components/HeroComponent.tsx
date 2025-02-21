@@ -120,7 +120,7 @@ const Title = styled.h1`
     display: block;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
     .welcome {
       display: block;
     }
