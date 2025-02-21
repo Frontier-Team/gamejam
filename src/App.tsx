@@ -1,15 +1,15 @@
 import { HashRouter, Route, Routes } from "react-router-dom";
-import { AppThemeProvider } from "./providers/ThemeProvider";
 import { NavBar } from "./components/NavBar";
-import { HomePage } from "./pages/HomePage";
-import { ConductPage } from "./pages/ConductPage";
-import { SchedulePage } from "./pages/SchedulePage";
 import { AccessibilityPage } from "./pages/AccessibilityPage";
-import { SpeakerPage } from "./pages/SpeakerPage";
-import MapPage from "./pages/MapPage";
-import GamePage from "./pages/GamePage";
 import { AuctionPage } from "./pages/AuctionPage";
-
+import { ConductPage } from "./pages/ConductPage";
+import GamePage from "./pages/GamePage";
+import { HomePage } from "./pages/HomePage";
+import { JammerPage } from "./pages/JammerPage";
+import MapPage from "./pages/MapPage";
+import { SchedulePage } from "./pages/SchedulePage";
+import { SpeakerPage } from "./pages/SpeakerPage";
+import { AppThemeProvider } from "./providers/ThemeProvider";
 
 export const App = () => {
   return (
@@ -25,6 +25,7 @@ export const App = () => {
           <Route path="/auction" element={<AuctionPage />} />
           <Route path="/map" element={<MapPage />} />
           <Route path="/game" element={<GamePage />} />
+          <Route path="/jammers" element={<JammerPage />} />
         </Routes>
       </HashRouter>
     </AppThemeProvider>
