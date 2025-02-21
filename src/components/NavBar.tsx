@@ -50,10 +50,11 @@ export const NavBar: React.FC = () => {
   const links = [
     { to: "/schedule", label: "Schedule" },
     { to: "/speakers", label: "Speakers" },
+    { to: "/auction", label: "Auction" },
     { to: "/conduct", label: "Conduct" },
     { to: "/map", label: "Map" },
     { to: "/game", label: "Game" },
-    { to: "/accessibility", label: "Accessibility" },
+    { to: "/accessibility", label: "Accessibility" }
   ];
 
   return (

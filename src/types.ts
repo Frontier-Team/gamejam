@@ -9,3 +9,10 @@ export interface Event {
   location: string;
   speakers: string[];
 };
+
+export interface Portfolio {
+  name: string;
+  occupation: string;
+  details: string;
+  contact: string;
+};

@@ -1,6 +1,6 @@
-import { Card, Connector, Line, PageContainer, TimelineContainer, TimelineItem } from './SchedulePage.styled';
+import { Card, Connector, Line, TimelineContainer, TimelineItem } from './SchedulePage.styled';
 import data from '../db.json';
-import { Heading, SubHeading } from './SchedulePage.styled';
+import { CenteredParagraph, Heading, PageContainer, Paragraph } from '../styles/sharedStyles';
 
 export const SchedulePage = () => {
   const timelineVariants = {
@@ -22,12 +22,12 @@ export const SchedulePage = () => {
       <Heading>
         Schedule of the Day
       </Heading>
-      <SubHeading>
+      <CenteredParagraph>
         March 3 2025 - GameJam for participating teams
-      </SubHeading>
-      <SubHeading>
+      </CenteredParagraph>
+      <CenteredParagraph>
         Find below the running order for March 4, 2025.
-      </SubHeading>
+      </CenteredParagraph>
       <TimelineContainer>
         <Line />
         {data.schedule.length > 0 && data.schedule.map((event, index) => (
@@ -40,8 +40,8 @@ export const SchedulePage = () => {
           >
             <Connector side={index % 2 === 0 ? 'left' : 'right'} />
             <Card>
-              <h3>{event.time}</h3>
-              <h3>{event.description}</h3>
+              <Paragraph>{event.time}</Paragraph>
+              <Paragraph>{event.description}</Paragraph>
             </Card>
           </TimelineItem>
         ))}

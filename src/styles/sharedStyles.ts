@@ -1,4 +1,5 @@
 import { css, Theme } from "@emotion/react";
+import styled from "@emotion/styled";
 
 export const pageContainerStyles = () => css`
   line-height: 1.6;
@@ -30,4 +31,37 @@ export const buttonAndLinkStyles = (theme: Theme) => css`
     border-top: 1px solid rgba(176, 97, 255, 0.8);
     box-shadow: 0 4px 0 ${theme.colors.lilacShade}, 0 4px 6px rgba(0, 0, 0, 0.1);
   }
+`;
+
+export const PageContainer = styled.div`
+  ${() => pageContainerStyles()}
+`;
+
+export const Heading = styled.h1`
+  text-align: center;
+`;
+
+export const Paragraph = styled.p`
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+`;
+
+export const CenteredParagraph = styled(Paragraph)`
+  text-align: center;
+`;
+
+export const Title = styled.h1`
+  margin-bottom: 1.5rem;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+    font-size: 1.8rem;
+  }
+`;
+
+export const SubHeading = styled.h2`
+  font-size: 1.25rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-align: center;
 `;

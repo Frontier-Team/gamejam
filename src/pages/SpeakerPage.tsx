@@ -1,8 +1,7 @@
 import { Table } from '../components/Table';
 import data from '../db.json';
+import { Heading, PageContainer } from '../styles/sharedStyles';
 import { Event } from '../types';
-import { Heading } from './AccessibilityPage.styled';
-import { PageContainer } from './SpeakerPage.styled';
 
 export const SpeakerPage = () => {
   const headers = [
