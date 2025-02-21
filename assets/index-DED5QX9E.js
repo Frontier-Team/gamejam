@@ -98,6 +98,7 @@ Please change the parent <Route path="${I}"> to <Route path="${I==="/"?"*":`${I}
     box-shadow 0.3s ease;
 
   &:hover,
+  &:focus,
   &.active-link {
     background-color: ${t.colors.lilac};
     border: 2px solid ${t.colors.lilacShade};
