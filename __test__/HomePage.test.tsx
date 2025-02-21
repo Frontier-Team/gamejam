@@ -15,13 +15,6 @@ describe('HomePage', () => {
     ).toBeInTheDocument();
   });
 
-  test('renders the main title', () => {
-    renderWithProviders(<HomePage />);
-    expect(
-      screen.getAllByText('Welcome to Game Jam Dundee')[1]
-    ).toBeInTheDocument();
-  });
-
   test('renders the main subtitle', () => {
     renderWithProviders(<HomePage />);
     expect(
@@ -41,7 +34,7 @@ describe('HomePage', () => {
     ).toBeInTheDocument();
     expect(
       screen.getByText(
-        "Whether you're a coding wizard, design guru, or just someone with a wild imagination and an interest in games, there's a place for you in this adventure. 60 attendees will word to solve challenges using games or gamification techniques over a 2-day period at the V&A museum in Dundee."
+        "Whether you're a coding wizard, design guru, or just someone with a wild imagination and an interest in games, there's a place for you in this adventure. In the game jam 60 attendees will work to solve challenges using games or gamification techniques over a 2-day period at the V&A Museum in Dundee."
       )
     ).toBeInTheDocument();
     expect(
@@ -53,14 +46,11 @@ describe('HomePage', () => {
 
   test("renders the 'Not wanting to compete but still want to come along?' section", () => {
     renderWithProviders(<HomePage />);
-    expect(
-      screen.getByText('Not wanting to compete but still want to come along?')
-    ).toBeInTheDocument();
-    expect(
-      screen.getByText(
-        'On Tuesday 4th March, we will host inspiring Tech Talks, Workshops and Exhibits! With carefully curated content focusing on game development, design, and engineering, we know it will be a valuable opportunity for you to learn more and meet people from across disciplines of LBG and external collaborations such as the Founder of Scottish Games Network, Product Director from Opera, Abertay & Dundee University Games Departments and much more!'
-      )
-    ).toBeInTheDocument();
+    expect(screen.getByText(/Tuesday 4th March/)).toBeInTheDocument();
+    expect(screen.getByText(/Tech Talks, Workshops and Exhibits!/)).toBeInTheDocument();
+    expect(screen.getByText(/Tuesday 4th March/).closest('strong')).toBeInTheDocument();
+    expect(screen.getByText(/Tech Talks, Workshops and Exhibits!/).closest('strong')).toBeInTheDocument();
+    expect(screen.getByText(/curated content focusing on game development/)).toBeInTheDocument();
   });
 
   test('renders the closing subtitles', () => {

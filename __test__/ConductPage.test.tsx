@@ -71,14 +71,14 @@ describe("RulesPage", () => {
     ).toBeInTheDocument();
   });
 
-  test("renders Dundee Game Jam Inclusive Briefing Pack section", () => {
+  test("renders Game Jam Inclusive Briefing Pack section", () => {
     renderWithProviders(<ConductPage />);
     expect(
-      screen.getByText("Dundee Game Jam Inclusive Briefing Pack")
+      screen.getByText("Game Jam Dundee Inclusive Briefing Pack")
     ).toBeInTheDocument();
     expect(
       screen.getByText(
-        "We have prepared a Dundee Game Jam Inclusive Briefing Pack which describes what you will experience at the event and includes accessibility information. A copy is stored on the Dundee Game Jam event SharePoint site and some printed copies are available at the event reception."
+        "We have prepared a Game Jam Dundee Inclusive Briefing Pack which describes what you will experience at the event and includes accessibility information. A copy is stored on the Game Jam Dundee event SharePoint site and some printed copies are available at the event reception."
       )
     ).toBeInTheDocument();
   });
