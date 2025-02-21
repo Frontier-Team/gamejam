@@ -8,7 +8,7 @@ import { AccessibilityPage } from "./pages/AccessibilityPage";
 import { SpeakerPage } from "./pages/SpeakerPage";
 import MapPage from "./pages/MapPage";
 import GamePage from "./pages/GamePage";
-import { PortfolioPage } from "./pages/PortfolioPage";
+import { AuctionPage } from "./pages/AuctionPage";
 
 
 export const App = () => {
@@ -22,7 +22,7 @@ export const App = () => {
           <Route path="/schedule" element={<SchedulePage />} />
           <Route path="/accessibility" element={<AccessibilityPage />} />
           <Route path="/speakers" element={<SpeakerPage />} />
-          <Route path="/portfolio" element={<PortfolioPage />} />
+          <Route path="/auction" element={<AuctionPage />} />
           <Route path="/map" element={<MapPage />} />
           <Route path="/game" element={<GamePage />} />
         </Routes>

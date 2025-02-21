@@ -1,4 +1,4 @@
-import { Heading, PageContainer, Paragraph, SubHeading } from '../styles/sharedStyles';
+import { CenteredParagraph, Heading, PageContainer, Paragraph } from '../styles/sharedStyles';
 
 export const AccessibilityPage = () => {
   return (
@@ -6,9 +6,9 @@ export const AccessibilityPage = () => {
       <Heading>
         V&A Accessibility
       </Heading>
-      <SubHeading>
+      <CenteredParagraph>
         1 Riverside Esplanade, Dundee, DD1 4EZ, Scotland
-      </SubHeading>
+      </CenteredParagraph>
 
       <h2>Parking</h2>
       <Paragraph>

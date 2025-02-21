@@ -46,6 +46,10 @@ export const Paragraph = styled.p`
   margin-bottom: 1rem;
 `;
 
+export const CenteredParagraph = styled(Paragraph)`
+  text-align: center;
+`;
+
 export const Title = styled.h1`
   margin-bottom: 1.5rem;
 

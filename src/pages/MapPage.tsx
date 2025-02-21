@@ -1,14 +1,17 @@
 
 import styled from "@emotion/styled";
 import Map from "../components/Map";
-import { Heading } from "../styles/sharedStyles";
+import { Heading, PageContainer } from "../styles/sharedStyles";
 
 export default function MapPage() {
   return (
-    <Wrapper>
+    <PageContainer>
       <Heading>Map/Floor plan</Heading>
-      <Map />
-    </Wrapper>
+      <Wrapper>
+        <Map />
+      </Wrapper>
+    </PageContainer>
+
   );
 }
 
