@@ -1,6 +1,5 @@
 import styled from '@emotion/styled';
 import { motion } from 'framer-motion';
-import { Paragraph } from '../styles/sharedStyles';
 
 export const TimelineContainer = styled.div`
   display: flex;

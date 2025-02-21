@@ -1,7 +1,7 @@
 import { Portfolio } from '../types';
 import data from '../db.json';
 import { Table } from '../components/Table';
-import { Heading, PageContainer, Paragraph, SubHeading } from '../styles/sharedStyles';
+import { Heading, PageContainer, Paragraph } from '../styles/sharedStyles';
 
 export const AuctionPage = () => {
   const headers = [
