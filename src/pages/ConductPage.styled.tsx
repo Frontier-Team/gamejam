@@ -1,7 +1,6 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 export const Content = styled.div`
-  color: #333;
   line-height: 1.6;
   max-width: 1000px;
   margin: auto;

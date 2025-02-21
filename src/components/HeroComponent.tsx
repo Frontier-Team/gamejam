@@ -17,7 +17,10 @@ export default function HeroComponent() {
     <Wrapper>
       <Content>
         <LeftColumn>
-          <Title>Welcome to Game Jam Dundee</Title>
+          <Title>
+            <span className='welcome'>Welcome to</span>
+            <span className='game-jam-dundee'>Game Jam Dundee</span>
+          </Title>
           <Subtitle>
             Join us for an exciting event full of creativity and innovation!
           </Subtitle>
@@ -46,13 +49,14 @@ const slideDownWithFade = keyframes`
 `;
 
 const scaleIn = keyframes`
-    from {
-        transform: scale(0.9);
-        opacity: 0;
-    } to {
-        transform: scale(1);
-        opacity: 1;
-    }
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 `;
 
 const Wrapper = styled.div`
@@ -106,6 +110,26 @@ const Title = styled.h1`
   margin-bottom: 1rem;
   animation: ${slideDownWithFade} 1.2s cubic-bezier(0.25, 0.1, 0.25, 1) 0.2s;
   animation-fill-mode: backwards;
+  text-align: left;
+
+  .welcome {
+    display: block;
+  }
+
+  .game-jam-dundee {
+    display: block;
+  }
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
+    .welcome {
+      display: block;
+    }
+
+    .game-jam-dundee {
+      display: block;
+      margin-top: 0.5rem;
+    }
+  }
 `;
 
 const Subtitle = styled.h2`

@@ -1,17 +1,15 @@
-
-import styled from "@emotion/styled";
-import Map from "../components/Map";
-import { Heading, PageContainer } from "../styles/sharedStyles";
+import styled from '@emotion/styled';
+import Map from '../components/Map';
+import { Heading, PageContainer } from '../styles/sharedStyles';
 
 export default function MapPage() {
   return (
     <PageContainer>
-      <Heading>Map/Floor plan</Heading>
+      <Heading>V&A Museum Map/Floor Plan</Heading>
       <Wrapper>
         <Map />
       </Wrapper>
     </PageContainer>
-
   );
 }
 
