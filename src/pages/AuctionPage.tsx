@@ -21,7 +21,7 @@ export const AuctionPage = () => {
   return (
     <PageContainer>
       <Heading>Auction</Heading>
-      <Paragraph>During the event there will be an auction of several pieces from a select group of artists. All proceeds of the auction will go to support the V&A.</Paragraph>
+      <Paragraph>During the event there will be an auction of several pieces from a select group of artists. All proceeds of the auction will go to support the V&A Museum.</Paragraph>
       <Table
         heading='Here are some details of the artists we are showcasing.'
         headers={headers}

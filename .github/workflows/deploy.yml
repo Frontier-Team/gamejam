@@ -1,7 +1,9 @@
 name: Test and Deploy to GitHub Pages
-
 on:
   push:
+    branches:
+      - main
+  pull_request:
     branches:
       - main
 
@@ -41,6 +43,7 @@ jobs:
         run: git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
 
       - name: Deploy to GitHub Pages
+        if: env.is_merge == 'true' || github.event_name == 'push'
         run: npm run deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
