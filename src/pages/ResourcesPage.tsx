@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import { SetStateAction, useState } from "react";
 import data from "../db.json";
-import { PageContainer } from "./SchedulePage.styled";
+import { pageContainerStyles } from "../styles/sharedStyles";
 
 export default function ResourcesPage() {
   const [activeFilter, setActiveFilter] = useState("all");
@@ -18,8 +18,10 @@ export default function ResourcesPage() {
   return (
     <PageContainer>
       <Wrapper>
-        <h1>Resources</h1>
+        <h1 style={{ textAlign: "center"}}>Resources</h1>
         <h2>Template Repo</h2>
+
+        <Spacer />
         <h2>Free tools for making games</h2>
 
         <ResourcesWrapper>
@@ -156,6 +158,8 @@ export default function ResourcesPage() {
           </ResourceWrapper>
         </ResourcesWrapper>
 
+        <Spacer />
+
         <h2>Links to Tutorials</h2>
         <FilterButtons>
           <FilterButton
@@ -190,11 +194,14 @@ export default function ResourcesPage() {
           </Tutorial>
         ))}
 
+        <Spacer />
+
         <h2>Topics</h2>
         <p>
           Your team will be given a random finance-related topic from the list
           below. Click the topic to learn more about it.
         </p>
+        <Spacer />
         <TopicsList>
           <TopicCard>
             <TopicIcon>💰</TopicIcon>
@@ -226,6 +233,10 @@ export default function ResourcesPage() {
   );
 }
 
+const PageContainer = styled.div`
+  ${() => pageContainerStyles()}
+`;
+
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -234,8 +245,11 @@ const Wrapper = styled.div`
   margin: auto;
 `;
 
+const Spacer = styled.div`
+  margin-bottom: 3rem;
+`;
+
 const CardTitle = styled.h3`
-  margin-bottom: 1rem;
 `;
 
 const ResourcesWrapper = styled.div`
@@ -274,7 +288,7 @@ const Resource = styled.div`
 
 const ResourceTitle = styled.a`
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: ${({ theme }) => theme.colors.lilacShade};
   text-decoration: none;
 
