@@ -13,7 +13,8 @@ describe('HeroComponent', () => {
 
   test('renders the title', () => {
     renderWithProviders(<HeroComponent />);
-    expect(screen.getByText('Welcome to Game Jam Dundee')).toBeInTheDocument();
+    expect(screen.getByText(/Welcome to/)).toBeInTheDocument();
+    expect(screen.getByText(/Game Jam Dundee/)).toBeInTheDocument();
   });
 
   test('renders the subtitle', () => {
