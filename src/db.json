@@ -290,5 +290,68 @@
       "location": "Talk Room 2",
       "speakers": ["All the Does"]
     }
+  ],
+  "jammers": [
+    {
+      "welcome": "Hello Jammers! 👋",
+      "welcomeDescription": "Here are some details of what to expect on the day. We can't wait to see what you create!",
+      "challengeTitle": "The Challenge",
+      "challengeDescription": "Your team will create a game based on a theme that will be announced at the start of the game jam. You can use any tools or technology you like.",
+      "internalColleagues": "For internal employee teams",
+      "challengeInternal": "To build a game or gamified app to help promote and educate customers on a particular topic (this will be allocated to your team at random). You must focus on a relevant age group",
+      "challengeTopics": "Investments, Budgeting, Protections, General Insurance, Building Your Pension, Taking out your pension",
+      "externalColleagues": "For external student teams",
+      "challengeExternal": "PLACEHOLDER",
+      "judgingTitle": "Judging Criteria",
+      "judgingDescription": "Our judges will be considering the following when casting their vote: ",
+      "judgingCriteria": {
+        "criteria": [
+          {
+            "title": "Fun & Engaging",
+            "description": "We want to prioritise a fun, player-first experience when creating games. Does it convey the core idea well? Does it stand out? Would you play it again and again?"
+          },
+          {
+            "title": "Approachability & Accessibility",
+            "description": "Is your game easy to pick up and play? Can anyone play it? Have you taken into consideration different people's needs?"
+          },
+          {
+            "title": "Theme Interpretation & Creativity",
+            "description": "There is a challenge to solve, but it's up to you and your team on how you appreach it. Does your game fit with the theme? Is your concept unique?"
+          },
+          {
+            "title": "Learning & Adaptability",
+            "description": "Whether you're a first-timer or seasoned pro, there's always something new to learn. Did you try out a new skill or go out of your comfort zone? Did your team adapt and improve as the day went on?"
+          },
+          {
+            "title": "Technical Execution & Polish",
+            "description": "While the focus is on the process, we still want to showcase technical excellence. Does your game run smoothly? Are there any bugs? Have you solved a tricky technical problem?"
+          }
+        ]
+      },
+      "Awards": {
+        "awards": [
+          {
+            "title": "🥇 1st Prize\n(Judge's Choice)",
+            "prizes": {
+              "all": "A team Geek Crate with items to the value of £160 &",
+              "Internal": "a Microsoft trip",
+              "External": "a Game Maker License"
+            }
+          },
+          {
+            "title": "🥈 2nd Prize\n(Audience Choice)",
+            "prizes": {
+              "all": "A team will receive a Geek Crate with items to the value of £160"
+            }
+          },
+          {
+            "title": "🥉 3rd Prize\n(Judge's Choice)",
+            "prizes": {
+              "all": "A Geek Crate with items to the value of £80"
+            }
+          }
+        ]
+      }
+    }
   ]
 }
