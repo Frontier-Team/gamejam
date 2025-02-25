@@ -17,22 +17,35 @@ export default function HeroComponent() {
 
   // hide arrow after scrolling past it
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setShowArrow(entry.isIntersecting);
-      },
-      { threshold: 0.1 }
-    );
+    if (typeof window !== 'undefined' && 'IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          setShowArrow(entry.isIntersecting);
+        },
+        { threshold: 0.1 }
+      );
 
-    if (arrowRef.current) {
-      observer.observe(arrowRef.current);
-    }
-
-    return () => {
       if (arrowRef.current) {
-        observer.unobserve(arrowRef.current);
+        observer.observe(arrowRef.current);
       }
-    };
+
+      return () => {
+        if (arrowRef.current) {
+          observer.unobserve(arrowRef.current);
+        }
+      };
+    } else {
+      // Fallback for environments without IntersectionObserver
+      const handleScroll = () => {
+        if (arrowRef.current) {
+          const rect = arrowRef.current.getBoundingClientRect();
+          setShowArrow(rect.top >= 0 && rect.bottom <= window.innerHeight);
+        }
+      };
+
+      window.addEventListener('scroll', handleScroll);
+      return () => window.removeEventListener('scroll', handleScroll);
+    }
   }, []);
 
   return (
