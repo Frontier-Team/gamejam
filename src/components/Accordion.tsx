@@ -24,6 +24,8 @@ const AccordionTitle = styled.button`
   outline: none;
   transition: background 0.3s ease;
 
+  &:focus {
+    color: ${({ theme }) => theme.colors.lilacShade};
   &:hover {
     color: ${({ theme }) => theme.colors.lilac};
 
