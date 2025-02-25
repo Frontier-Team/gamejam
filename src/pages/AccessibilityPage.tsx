@@ -4,7 +4,7 @@ export const AccessibilityPage = () => {
   return (
     <PageContainer>
       <Heading>
-        V&A Accessibility
+        V&A Museum Accessibility
       </Heading>
       <CenteredParagraph>
         1 Riverside Esplanade, Dundee, DD1 4EZ, Scotland
