@@ -66,3 +66,18 @@ export const SubHeading = styled.h2`
   font-weight: bold;
   text-align: center;
 `;
+
+export const StyledCard = styled.div`
+  background-color: ${({ theme }) => theme.colors.grey};
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  flex: 1;
+  margin: 0.5rem;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+    margin: 0.5rem 0;
+  }
+`;
