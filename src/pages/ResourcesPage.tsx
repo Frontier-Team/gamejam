@@ -1,233 +1,250 @@
-import styled from "@emotion/styled";
-import { SetStateAction, useState } from "react";
-import data from "../db.json";
-import { pageContainerStyles } from "../styles/sharedStyles";
+import styled from '@emotion/styled';
+import { SetStateAction, useState } from 'react';
+import data from '../db.json';
+import { pageContainerStyles } from '../styles/sharedStyles';
 
 export default function ResourcesPage() {
-  const [activeFilter, setActiveFilter] = useState("all");
+  const [activeFilter, setActiveFilter] = useState('all');
 
   const handleFilterChange = (filter: SetStateAction<string>) => {
     setActiveFilter(filter);
   };
 
   const filteredTutorials = data.tutorials.filter((tutorial) => {
-    if (activeFilter === "all") return true;
+    if (activeFilter === 'all') return true;
     return tutorial.type === activeFilter;
   });
 
   return (
     <PageContainer>
       <Wrapper>
-        <h1 style={{ textAlign: "center"}}>Resources</h1>
-        <h2>Template Repo</h2>
+        <Title>Resources</Title>
 
-        <Spacer />
-        <h2>Free tools for making games</h2>
+        <Section>
+          <SubTitle>Free tools for making games</SubTitle>
 
-        <ResourcesWrapper>
-          <ResourceWrapper>
-            <CardTitle>Game Engines</CardTitle>
-            <ResourceContainer>
-              {data.resources
-                .filter((resource) => resource.type === "game-engine")
-                .map((resource, index) => (
-                  <Resource key={index}>
-                    <ResourceTitle
-                      href={resource.link}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      {resource.title}
-                    </ResourceTitle>
-                    <ResourceDescription>
-                      {resource.description}
-                    </ResourceDescription>
-                  </Resource>
-                ))}
-            </ResourceContainer>
-          </ResourceWrapper>
+          <ResourcesWrapper>
+            <ResourceWrapper>
+              <CardTitle>Game Engines</CardTitle>
+              <ResourceContainer>
+                {data.resources
+                  .filter((resource) => resource.type === 'game-engine')
+                  .map((resource, index) => (
+                    <Resource key={index}>
+                      <ResourceTitle
+                        href={resource.link}
+                        target='_blank'
+                        rel='noopener noreferrer'
+                      >
+                        {resource.title}
+                      </ResourceTitle>
+                      <ResourceDescription>
+                        {resource.description}
+                      </ResourceDescription>
+                    </Resource>
+                  ))}
+              </ResourceContainer>
+            </ResourceWrapper>
 
-          <ResourceWrapper>
-            <CardTitle>Art Tools</CardTitle>
-            <ResourceContainer>
-              {data.resources
-                .filter((resource) => resource.type === "art")
-                .map((resource, index) => (
-                  <Resource key={index}>
-                    <ResourceTitle
-                      href={resource.link}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      {resource.title}
-                    </ResourceTitle>
-                    <ResourceDescription>
-                      {resource.description}
-                    </ResourceDescription>
-                  </Resource>
-                ))}
-            </ResourceContainer>
-          </ResourceWrapper>
+            <ResourceWrapper>
+              <CardTitle>Art Tools</CardTitle>
+              <ResourceContainer>
+                {data.resources
+                  .filter((resource) => resource.type === 'art')
+                  .map((resource, index) => (
+                    <Resource key={index}>
+                      <ResourceTitle
+                        href={resource.link}
+                        target='_blank'
+                        rel='noopener noreferrer'
+                      >
+                        {resource.title}
+                      </ResourceTitle>
+                      <ResourceDescription>
+                        {resource.description}
+                      </ResourceDescription>
+                    </Resource>
+                  ))}
+              </ResourceContainer>
+            </ResourceWrapper>
 
-          <ResourceWrapper>
-            <CardTitle>Audio</CardTitle>
-            <ResourceContainer>
-              {data.resources
-                .filter((resource) => resource.type === "audio")
-                .map((resource, index) => (
-                  <Resource key={index}>
-                    <ResourceTitle
-                      href={resource.link}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      {resource.title}
-                    </ResourceTitle>
-                    <ResourceDescription>
-                      {resource.description}
-                    </ResourceDescription>
-                  </Resource>
-                ))}
-            </ResourceContainer>
-          </ResourceWrapper>
+            <ResourceWrapper>
+              <CardTitle>Audio</CardTitle>
+              <ResourceContainer>
+                {data.resources
+                  .filter((resource) => resource.type === 'audio')
+                  .map((resource, index) => (
+                    <Resource key={index}>
+                      <ResourceTitle
+                        href={resource.link}
+                        target='_blank'
+                        rel='noopener noreferrer'
+                      >
+                        {resource.title}
+                      </ResourceTitle>
+                      <ResourceDescription>
+                        {resource.description}
+                      </ResourceDescription>
+                    </Resource>
+                  ))}
+              </ResourceContainer>
+            </ResourceWrapper>
 
-          <ResourceWrapper>
-            <CardTitle>Programming & Scripting</CardTitle>
-            <ResourceContainer>
-              {data.resources
-                .filter((resource) => resource.type === "scripting")
-                .map((resource, index) => (
-                  <Resource key={index}>
-                    <ResourceTitle
-                      href={resource.link}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      {resource.title}
-                    </ResourceTitle>
-                    <ResourceDescription>
-                      {resource.description}
-                    </ResourceDescription>
-                  </Resource>
-                ))}
-            </ResourceContainer>
-          </ResourceWrapper>
+            <ResourceWrapper>
+              <CardTitle>Programming & Scripting</CardTitle>
+              <ResourceContainer>
+                {data.resources
+                  .filter((resource) => resource.type === 'scripting')
+                  .map((resource, index) => (
+                    <Resource key={index}>
+                      <ResourceTitle
+                        href={resource.link}
+                        target='_blank'
+                        rel='noopener noreferrer'
+                      >
+                        {resource.title}
+                      </ResourceTitle>
+                      <ResourceDescription>
+                        {resource.description}
+                      </ResourceDescription>
+                    </Resource>
+                  ))}
+              </ResourceContainer>
+            </ResourceWrapper>
 
-          <ResourceWrapper>
-            <CardTitle>Assets Resources</CardTitle>
-            <ResourceContainer>
-              {data.resources
-                .filter((resource) => resource.type === "assets")
-                .map((resource, index) => (
-                  <Resource key={index}>
-                    <ResourceTitle
-                      href={resource.link}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      {resource.title}
-                    </ResourceTitle>
-                    <ResourceDescription>
-                      {resource.description}
-                    </ResourceDescription>
-                  </Resource>
-                ))}
-            </ResourceContainer>
-          </ResourceWrapper>
+            <ResourceWrapper>
+              <CardTitle>Assets Resources</CardTitle>
+              <ResourceContainer>
+                {data.resources
+                  .filter((resource) => resource.type === 'assets')
+                  .map((resource, index) => (
+                    <Resource key={index}>
+                      <ResourceTitle
+                        href={resource.link}
+                        target='_blank'
+                        rel='noopener noreferrer'
+                      >
+                        {resource.title}
+                      </ResourceTitle>
+                      <ResourceDescription>
+                        {resource.description}
+                      </ResourceDescription>
+                    </Resource>
+                  ))}
+              </ResourceContainer>
+            </ResourceWrapper>
 
-          <ResourceWrapper>
-            <CardTitle>Additional Tools</CardTitle>
-            <ResourceContainer>
-              {data.resources
-                .filter((resource) => resource.type === "additional")
-                .map((resource, index) => (
-                  <Resource key={index}>
-                    <ResourceTitle
-                      href={resource.link}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      {resource.title}
-                    </ResourceTitle>
-                    <ResourceDescription>
-                      {resource.description}
-                    </ResourceDescription>
-                  </Resource>
-                ))}
-            </ResourceContainer>
-          </ResourceWrapper>
-        </ResourcesWrapper>
+            <ResourceWrapper>
+              <CardTitle>Additional Tools</CardTitle>
+              <ResourceContainer>
+                {data.resources
+                  .filter((resource) => resource.type === 'additional')
+                  .map((resource, index) => (
+                    <Resource key={index}>
+                      <ResourceTitle
+                        href={resource.link}
+                        target='_blank'
+                        rel='noopener noreferrer'
+                      >
+                        {resource.title}
+                      </ResourceTitle>
+                      <ResourceDescription>
+                        {resource.description}
+                      </ResourceDescription>
+                    </Resource>
+                  ))}
+              </ResourceContainer>
+            </ResourceWrapper>
+          </ResourcesWrapper>
+        </Section>
 
-        <Spacer />
+        <Section>
+          <TemplateSection>
+            <SubTitle>Template Repo</SubTitle>
+            <Paragraph>
+              The Game Jam Dundee team have put together a template Github repo
+              to help you get started!{' '}
+            </Paragraph>
 
-        <h2>Links to Tutorials</h2>
-        <FilterButtons>
-          <FilterButton
-            active={activeFilter === "all"}
-            onClick={() => handleFilterChange("all")}
-          >
-            All
-          </FilterButton>
-          <FilterButton
-            active={activeFilter === "react"}
-            onClick={() => handleFilterChange("react")}
-          >
-            React
-          </FilterButton>
-          <FilterButton
-            active={activeFilter === "javascript"}
-            onClick={() => handleFilterChange("javascript")}
-          >
-            JavaScript
-          </FilterButton>
-        </FilterButtons>
-        <p>Use the following tutorials to learn how to make a simple game.</p>
-        {filteredTutorials.map((tutorial, index) => (
-          <Tutorial key={index}>
-            <ResourceTitle
-              href={tutorial.link}
+            <TemplateRepoButton
+              href='https://github.com/your-template-repo'
               target='_blank'
               rel='noopener noreferrer'
             >
-              {tutorial.title}
-            </ResourceTitle>
-          </Tutorial>
-        ))}
+              View Template Repo
+            </TemplateRepoButton>
+          </TemplateSection>
+        </Section>
 
-        <Spacer />
+        <Section>
+          <SubTitle>Topics</SubTitle>
+          <Paragraph>
+            Your team will be given a random finance-related topic from the list
+            below.
+          </Paragraph>
+          <TopicsGrid>
+            <TopicCard>
+              <TopicNumber>1</TopicNumber>
+              <TopicTitle>Investments</TopicTitle>
+            </TopicCard>
+            <TopicCard>
+              <TopicNumber>2</TopicNumber>
+              <TopicTitle>Budgeting</TopicTitle>
+            </TopicCard>
+            <TopicCard>
+              <TopicNumber>3</TopicNumber>
+              <TopicTitle>Protection</TopicTitle>
+            </TopicCard>
+            <TopicCard>
+              <TopicNumber>4</TopicNumber>
+              <TopicTitle>GI</TopicTitle>
+            </TopicCard>
+            <TopicCard>
+              <TopicNumber>5</TopicNumber>
+              <TopicTitle>Pensions - Paying In</TopicTitle>
+            </TopicCard>
+            <TopicCard>
+              <TopicNumber>6</TopicNumber>
+              <TopicTitle>Pensions - Getting Out</TopicTitle>
+            </TopicCard>
+          </TopicsGrid>
+        </Section>
 
-        <h2>Topics</h2>
-        <p>
-          Your team will be given a random finance-related topic from the list
-          below. Click the topic to learn more about it.
-        </p>
-        <Spacer />
-        <TopicsList>
-          <TopicCard>
-            <TopicIcon>💰</TopicIcon>
-            <TopicTitle>Investments</TopicTitle>
-          </TopicCard>
-          <TopicCard>
-            <TopicIcon>📊</TopicIcon>
-            <TopicTitle>Budgeting</TopicTitle>
-          </TopicCard>
-          <TopicCard>
-            <TopicIcon>🛡️</TopicIcon>
-            <TopicTitle>Protection</TopicTitle>
-          </TopicCard>
-          <TopicCard>
-            <TopicIcon>🏠</TopicIcon>
-            <TopicTitle>GI</TopicTitle>
-          </TopicCard>
-          <TopicCard>
-            <TopicIcon>💼</TopicIcon>
-            <TopicTitle>Pensions - Paying In</TopicTitle>
-          </TopicCard>
-          <TopicCard>
-            <TopicIcon>🏦</TopicIcon>
-            <TopicTitle>Pensions - Getting Out</TopicTitle>
-          </TopicCard>
-        </TopicsList>
+        <Section>
+          <SubTitle>Links to Tutorials</SubTitle>
+          <FilterButtons>
+            <FilterButton
+              active={activeFilter === 'all'}
+              onClick={() => handleFilterChange('all')}
+            >
+              All
+            </FilterButton>
+            <FilterButton
+              active={activeFilter === 'react'}
+              onClick={() => handleFilterChange('react')}
+            >
+              React
+            </FilterButton>
+            <FilterButton
+              active={activeFilter === 'javascript'}
+              onClick={() => handleFilterChange('javascript')}
+            >
+              JavaScript
+            </FilterButton>
+          </FilterButtons>
+          <p>Use the following tutorials to learn how to make a simple game.</p>
+          {filteredTutorials.map((tutorial, index) => (
+            <Tutorial key={index}>
+              <ResourceTitle
+                href={tutorial.link}
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                {tutorial.title}
+              </ResourceTitle>
+            </Tutorial>
+          ))}
+        </Section>
       </Wrapper>
     </PageContainer>
   );
@@ -245,12 +262,45 @@ const Wrapper = styled.div`
   margin: auto;
 `;
 
-const Spacer = styled.div`
-  margin-bottom: 3rem;
+const TemplateSection = styled.div`
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 2rem;
+  max-width: 500px;
+  margin: auto;
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin-bottom: 1.5rem;
+  }
 `;
 
-const CardTitle = styled.h3`
+const TemplateRepoButton = styled.a`
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: ${({ theme }) => theme.colors.turquoiseShade};
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+
+  &:hover {
+    background-color: ${({ theme }) => theme.colors.lilacShade};
+    transform: translateY(-3px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
 `;
+
+const CardTitle = styled.h3``;
 
 const ResourcesWrapper = styled.div`
   display: grid;
@@ -323,37 +373,27 @@ const FilterButton = styled.button<{ active: boolean }>`
   }
 `;
 
-const TopicsList = styled.div`
-  display: flex;
-  flex-wrap: wrap;
+const TopicsGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-  justify-content: center;
   margin: auto;
+  margin-top: 2rem;
   max-width: 600px;
-  margin-top: 3rem;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
-    align-items: center;
+    grid-template-columns: 1fr;
   }
 `;
 
 const TopicCard = styled.div`
-  background: linear-gradient(
-    135deg,
-    ${({ theme }) => theme.colors.turquoiseShade} 0%,
-    ${({ theme }) => theme.colors.lilac} 100%
-  );
-  color: white;
+  background: white;
+  border: 1px solid ${({ theme }) => theme.colors.turquoiseShade};
+  border-radius: 8px;
   padding: 1rem;
-  border-radius: 12px;
-  width: 150px;
-  height: 150px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  text-align: center;
-  font-size: 1rem;
+  gap: 1rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s, box-shadow 0.2s;
 
@@ -362,20 +402,24 @@ const TopicCard = styled.div`
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
     cursor: pointer;
   }
-
-  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
-    width: 100px;
-    height: 100px;
-  }
 `;
 
-const TopicIcon = styled.div`
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
+const TopicNumber = styled.h3`
+  width: 30px;
+  height: 30px;
+  font-weight: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: ${({ theme }) => theme.colors.turquoiseShade};
+  border-radius: 50%;
+  margin: 0;
+  color: white;
 `;
 
-const TopicTitle = styled.div`
-  font-size: 1rem;
+const TopicTitle = styled.h3`
+  color: ${({ theme }) => theme.colors.turquoiseShade};
+  margin: 0;
 `;
 
 const Tutorial = styled.div`
@@ -383,5 +427,54 @@ const Tutorial = styled.div`
   flex-direction: column;
   gap: 0.5rem;
   padding: 1rem 1.2rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid ${({ theme }) => theme.colors.lilacShade};
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+`;
+
+///
+
+export const Content = styled.div`
+  color: #333;
+  line-height: 1.6;
+  max-width: 1000px;
+  margin: auto;
+  padding: 2.5rem;
+`;
+
+export const Section = styled.div`
+  padding: 1.5rem;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+    padding: 0;
+    margin-bottom: 5rem;
+  }
+`;
+
+export const Title = styled.h1`
+  margin-bottom: 1.5rem;
+  text-align: center;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+    font-size: 1.8rem;
+  }
+`;
+
+export const SubTitle = styled.h2`
+  margin-top: 1.5rem;
+  margin-bottom: 1.2rem;
+  font-weight: bold;
+`;
+
+export const Paragraph = styled.p`
+  font-size: 1rem;
+  margin-bottom: 1rem;
 `;
