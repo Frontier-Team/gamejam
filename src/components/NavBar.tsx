@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 import {
   CloseIcon,
   HamburgerIcon,
@@ -10,19 +10,19 @@ import {
   SidebarItem,
   SidebarLink,
   SidebarList,
-} from "./NavBar.styled";
-import NavLink from "./NavLink";
+} from './NavBar.styled';
+import NavLink from './NavLink';
 
 export const NavBar: React.FC = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const [activeTab, setActiveTab] = useState("");
+  const [activeTab, setActiveTab] = useState('');
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
 
   const getLinkCls = (pathname: string) => {
-    return activeTab === pathname ? "active-link" : "";
+    return activeTab === pathname ? 'active-link' : '';
   };
 
   useEffect(() => {
@@ -34,16 +34,16 @@ export const NavBar: React.FC = () => {
     };
 
     const updateActiveTab = () => {
-      const currentPath = window.location.hash.replace("#", "") || "/";
+      const currentPath = window.location.hash.replace('#', '') || '/';
       setActiveTab(currentPath);
     };
 
-    window.addEventListener("hashchange", updateActiveTab);
-    window.addEventListener("pageshow", handlePageShow);
+    window.addEventListener('hashchange', updateActiveTab);
+    window.addEventListener('pageshow', handlePageShow);
     updateActiveTab();
     return () => {
-      window.removeEventListener("hashchange", updateActiveTab);
-      window.removeEventListener("pageshow", handlePageShow);
+      window.removeEventListener('hashchange', updateActiveTab);
+      window.removeEventListener('pageshow', handlePageShow);
     };
   }, []);
 
@@ -61,8 +61,8 @@ export const NavBar: React.FC = () => {
 
   return (
     <NavContainer>
-      {activeTab !== "/" && (
-        <HomeIcon href="/gamejam/" onClick={() => setActiveTab("/")}>
+      {activeTab !== '/' && (
+        <HomeIcon href='/gamejam/' onClick={() => setActiveTab('/')}>
           &#8962;
         </HomeIcon>
       )}
