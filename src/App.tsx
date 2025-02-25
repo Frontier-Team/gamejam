@@ -10,6 +10,7 @@ import MapPage from "./pages/MapPage";
 import { SchedulePage } from "./pages/SchedulePage";
 import { SpeakerPage } from "./pages/SpeakerPage";
 import { AppThemeProvider } from "./providers/ThemeProvider";
+import ResourcesPage from "./pages/ResourcesPage";
 
 export const App = () => {
   return (
@@ -26,6 +27,7 @@ export const App = () => {
           <Route path="/map" element={<MapPage />} />
           <Route path="/game" element={<GamePage />} />
           <Route path="/jammers" element={<JammerPage />} />
+          <Route path="/resources" element={<ResourcesPage />} />
         </Routes>
       </HashRouter>
     </AppThemeProvider>

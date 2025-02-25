@@ -353,5 +353,190 @@
         ]
       }
     }
+  ],
+  "resources": [
+    {
+      "id": "r1",
+      "title": "Unity Engine",
+      "type": "game-engine",
+      "description": "A versatile and widely-used game engine suitable for both 2D and 3D games development.",
+      "link": "https://unity.com/download"
+    },
+    {
+      "id": "r2",
+      "title": "Unreal Engine",
+      "type": "game-engine",
+      "description": "Known for its high-quality graphics and powerful tools, ideal for 3D games.",
+      "link": "https://www.unrealengine.com/en-US/download"
+    },
+    {
+      "id": "r3",
+      "title": "Game Maker Studio",
+      "type": "game-engine",
+      "description": "Great for 2D game development with a user-friendly interface.",
+      "link": "https://gamemaker.io/en/download"
+    },
+    {
+      "id": "r4",
+      "title": "Godot",
+      "type": "game-engine",
+      "description": "An open-source game engine that supports both 2D and 3D game development.",
+      "link": "https://godotengine.org/"
+    },
+    {
+      "id": "r5",
+      "title": "Aseprite",
+      "type": "art",
+      "description": "A pixel art tool for creating 2D sprites and animations.",
+      "link": "https://www.aseprite.org/"
+    },
+    {
+      "id": "r6",
+      "title": "GIMP",
+      "type": "art",
+      "description": "A free and open-source image editor, similar to Adobe Photoshop.",
+      "link": "https://www.gimp.org/downloads/"
+    },
+    {
+      "id": "r7",
+      "title": "Krita",
+      "type": "art",
+      "description": "A professional, free and open-source painting program.",
+      "link": "https://krita.org/en/download/"
+    },
+    {
+      "id": "r8",
+      "title": "Blender",
+      "type": "art",
+      "description": "A free and open-source 3D modelling, sculpting and animation software.",
+      "link": "https://www.blender.org/download/"
+    },
+    {
+      "id": "r9",
+      "title": "Audacity",
+      "type": "audio",
+      "description": "A free, open-source audio editor and recorder.",
+      "link": "https://www.audacityteam.org/download/"
+    },
+    {
+      "id": "r10",
+      "title": "Bfxr",
+      "type": "audio",
+      "description": "A tool for creating sound effects, especially for retro style games.",
+      "link": "https://www.bfxr.net/"
+    },
+    {
+      "id": "r11",
+      "title": "LMMS",
+      "type": "audio",
+      "description": "A free digital audio workstation for music production.",
+      "link": "https://lmms.io/download#windows"
+    },
+    {
+      "id": "r12",
+      "title": "Visual Studio Code",
+      "type": "scripting",
+      "description": "A popular code editor with support for many programming languages.",
+      "link": "https://code.visualstudio.com/download"
+    },
+    {
+      "id": "r13",
+      "title": "Sublime Text",
+      "type": "scripting",
+      "description": "A sophisticated text editor for code, markup and prose.",
+      "link": "https://www.sublimetext.com/download"
+    },
+    {
+      "id": "r14",
+      "title": "Github",
+      "type": "scripting",
+      "description": "A platform for version control and collaboration on code.",
+      "link": "https://github.com/"
+    },
+    {
+      "id": "r15",
+      "title": "Kenney.nl",
+      "type": "assets",
+      "description": "Offers a wide range of free game assets, incuding sprites, audio and 3D models.",
+      "link": "https://kenney.nl/"
+    },
+    {
+      "id": "r16",
+      "title": "OpenGameArt",
+      "type": "assets",
+      "description": "A repository of free game art, including sprites, textures and sound effects.",
+      "link": "https://opengameart.org/"
+    },
+    {
+      "id": "r17",
+      "title": "Trello",
+      "type": "additional",
+      "description": "A project management tool to help organise tasks and collaborate with team members.",
+      "link": "https://trello.com/"
+    },
+    {
+      "id": "r18",
+      "title": "Tiled",
+      "type": "additional",
+      "description": "A map editor for creating tile-based levels.",
+      "link": "http://www.mapeditor.org/"
+    },
+    {
+      "id": "r19",
+      "title": "Inkscape",
+      "type": "additional",
+      "description": "A free and open-source vector graphics editor.",
+      "link": "https://inkscape.org/"
+    }
+  ],
+  "tutorials": [
+    {
+      "id": "t1",
+      "title": "Tic-Tac-Toe in React",
+      "type": "react",
+      "link": "https://react.dev/learn/tutorial-tic-tac-toe"
+    },
+    {
+      "id": "t2",
+      "title": "Get Started With React By Building A Whac-A-Mole Game",
+      "type": "react",
+      "link": "https://www.smashingmagazine.com/2021/05/get-started-whac-a-mole-react-game/"
+    },
+    {
+      "id": "t3",
+      "title": "Create a Snake Game in React",
+      "type": "react",
+      "link": "https://www.geeksforgeeks.org/create-a-snake-game-in-react/"
+    },
+    {
+      "id": "t4",
+      "title": "How to Build Tetris in React (with React Hooks!)",
+      "type": "react",
+      "link": "https://www.classcentral.com/classroom/freecodecamp-how-to-build-tetris-in-react-gamedev-tutorial-with-react-hooks-105031"
+    },
+    {
+      "id": "t5",
+      "title": "2D breakout game using pure JavaScript",
+      "type": "javascript",
+      "link": "https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_Breakout_game_pure_JavaScript"
+    },
+    {
+      "id": "t6",
+      "title": "Introduction to Game Development with Javascript",
+      "type": "javascript",
+      "link": "https://daily.dev/blog/introduction-to-game-development-with-javascript"
+    },
+    {
+      "id": "t7",
+      "title": "JavaScript Game Development Course for Beginners",
+      "type": "javascript",
+      "link": "https://www.youtube.com/watch?v=GFO_txvwK_c"
+    },
+    {
+      "id": "t8",
+      "title": "Building a simple JavaScript game - A basic Game Engine",
+      "type": "javascript",
+      "link": "https://bengsfort.github.io/articles/making-a-js-game-part-1-game-engine/"
+    }
   ]
 }
