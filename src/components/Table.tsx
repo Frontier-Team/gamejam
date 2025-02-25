@@ -30,10 +30,10 @@ export const Table = <T,>({
         <tbody>
           {rows.map((row, rowIndex) => (
             <tr key={rowIndex}>
-              {fieldsToDisplay.map((field, fieldIndex) => {
+              {fieldsToDisplay.map((field) => {
                 const isLarge = largeFields.includes(field);
                 return (
-                  <td key={fieldIndex} className={isLarge ? 'large' : ''}>
+                  <td key={field.toString()} className={isLarge ? 'large' : ''}>
                     {Array.isArray(row[field]) ? row[field].join(', ') : String(row[field])}
                   </td>
                 )}

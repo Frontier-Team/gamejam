@@ -4,10 +4,10 @@ import { GameContainer } from "./Game.styled";
 export const Game = () => {
   const { unityProvider, isLoaded, loadingProgression, initialisationError } =
     useUnityContext({
-      loaderUrl: "/gamejam/build/mock/unity-react-test.loader.js",
-      dataUrl: "/gamejam/build/mock/unity-react-test.data",
-      frameworkUrl: "/gamejam/build/mock/unity-react-test.framework.js",
-      codeUrl: "/gamejam/build/mock/unity-react-test.wasm",
+      loaderUrl: "/gamejam/build/game/game-jam.loader.js",
+      dataUrl: "/gamejam/build/game/game-jam.data",
+      frameworkUrl: "/gamejam/build/game/game-jam.framework.js",
+      codeUrl: "/gamejam/build/game/game-jam.wasm",
     });
 
   if (initialisationError) {

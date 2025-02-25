@@ -22,24 +22,21 @@ export const SpeakerPage = () => {
     'speakers'
   ];
 
+  const uniqueLocations = Array.from(new Set(data.talks.map((talk) => talk.location)));
+
   return (
     <PageContainer>
-      <Heading>Talk Schedule</Heading>
-      <Table
-        heading='Talk Room 1'
-        headers={headers}
-        rows={data.events.filter((event) => event.location === 'Talk Room 1')}
-        fieldsToDisplay={fieldsToDisplay}
-        largeFields={['description']}
-      />
-
-      <Table
-        heading='Talk Room 2'
-        headers={headers}
-        rows={data.events.filter((event) => event.location === 'Talk Room 2')}
-        fieldsToDisplay={fieldsToDisplay}
-        largeFields={['description']}
-      />
+      <Heading>Talk Agenda</Heading>
+      {uniqueLocations.map((location) => (
+        <Table
+          key={location}
+          heading={location}
+          headers={headers}
+          rows={data.talks.filter((talk) => talk.location === location)}
+          fieldsToDisplay={fieldsToDisplay}
+          largeFields={['description']}
+        />
+      ))}
     </PageContainer>
   );
 };
