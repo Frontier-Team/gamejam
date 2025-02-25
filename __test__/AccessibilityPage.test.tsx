@@ -6,7 +6,7 @@ import { AccessibilityPage } from '../src/pages/AccessibilityPage';
 describe('Accessibility tests', () => {
   it('renders page with right heading and subheading', () => {
     renderWithProviders(<AccessibilityPage />);
-    expect(screen.getByText('V&A Accessibility')).toBeInTheDocument();
+    expect(screen.getByText('V&A Museum Accessibility')).toBeInTheDocument();
     expect(screen.getByText('1 Riverside Esplanade, Dundee, DD1 4EZ, Scotland')).toBeInTheDocument();
   });
 
