@@ -43,8 +43,10 @@ export default function HeroComponent() {
         }
       };
 
-      window.addEventListener('scroll', handleScroll);
-      return () => window.removeEventListener('scroll', handleScroll);
+      if (typeof window !== 'undefined') {
+        (window as Window).addEventListener('scroll', handleScroll);
+        return () => (window as Window).removeEventListener('scroll', handleScroll);
+      }
     }
   }, []);
 
