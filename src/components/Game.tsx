@@ -1,8 +1,10 @@
 import { Unity, useUnityContext } from "react-unity-webgl";
+import { PacmanLoader } from "react-spinners";
 import { GameContainer } from "./Game.styled";
 
+
 export const Game = () => {
-  const { unityProvider, isLoaded, loadingProgression, initialisationError } =
+  const { unityProvider, isLoaded, initialisationError } =
     useUnityContext({
       loaderUrl: "/gamejam/build/game/game-jam.loader.js",
       dataUrl: "/gamejam/build/game/game-jam.data",
@@ -10,26 +12,33 @@ export const Game = () => {
       codeUrl: "/gamejam/build/game/game-jam.wasm",
     });
 
+
   if (initialisationError) {
     return <div>Error loading the game!</div>;
   }
-  const loadingPercentage = Math.round(loadingProgression * 100);
+
+  const viewWidth = window.innerWidth;
+  console.log("view width:  ", viewWidth);
+  const viewHeight = window.innerHeight;
 
   return (
     <>
       {isLoaded === false && (
-        <div className="container">
-          <h3>
-            Loading...{loadingPercentage ? `(${loadingPercentage}%)` : null}
-          </h3>
+        <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100vh" }}>
+          <PacmanLoader color="#B061FF" />
+
         </div>
       )}
+
       <GameContainer>
         <Unity
           unityProvider={unityProvider}
-          style={{ width: "100%", height: "100%" }}
+          style={{
+            width: viewWidth - 50, height: viewHeight * 0.8,
+          }}
         />
       </GameContainer>
+
     </>
   );
 };

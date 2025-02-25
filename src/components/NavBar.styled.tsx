@@ -137,7 +137,7 @@ export const SidebarLink = styled(Link)`
   color: ${({ theme }) => theme.colors.white};
   text-decoration: none;
   font-family: "Pixelify Sans", sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 0.5rem 1rem;
   border-radius: 5px;
 

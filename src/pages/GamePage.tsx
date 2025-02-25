@@ -1,25 +1,14 @@
-import { useState } from 'react';
 import { Game } from '../components/Game';
-import { Overlay } from '../components/Overlay';
+import { CenteredParagraph, Heading, PageContainer } from '../styles/sharedStyles';
 
 export default function GamePage() {
-  const [showGame, setShowGame] = useState<boolean | null>(null);
 
-  const handlePlayGame = () => {
-    setShowGame(true);
-  };
-
-  const handleSkipGame = () => {
-    setShowGame(false);
-  };
 
   return (
-    <>
-      {showGame === null && (
-        <Overlay onPlayGame={handlePlayGame} onSkipGame={handleSkipGame} />
-      )}
-      {showGame && <Game />}
-      {!showGame && <div>Other information for the homepage</div>}
-    </>
+    <PageContainer>
+      <Heading>Game</Heading>
+      <CenteredParagraph>Here is an example of a game we built using Unity and React Unity WebGL for integrating into a web application. </CenteredParagraph>
+      <Game />
+    </PageContainer>
   );
 }
