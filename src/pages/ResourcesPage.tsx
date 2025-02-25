@@ -162,7 +162,8 @@ export default function ResourcesPage() {
           <TemplateSection>
             <SubTitle>Template Repo</SubTitle>
             <Paragraph>
-              The Game Jam Dundee team have put together a template Github repo
+              The Game Jam Dundee team have put together a{' '}
+              <strong>template Github repo </strong>
               to help you get started!{' '}
             </Paragraph>
 
@@ -265,6 +266,7 @@ const Wrapper = styled.div`
 const TemplateSection = styled.div`
   padding: 2rem;
   border-radius: 12px;
+  background-color: ${({ theme }) => theme.colors.teal};
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   margin-bottom: 2rem;
@@ -272,10 +274,13 @@ const TemplateSection = styled.div`
   margin: auto;
 
   h2 {
+    margin-top: 0;
     margin-bottom: 1rem;
+    color: white;
   }
 
   p {
+    color: white;
     margin-bottom: 1.5rem;
   }
 `;
@@ -283,7 +288,7 @@ const TemplateSection = styled.div`
 const TemplateRepoButton = styled.a`
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  background-color: ${({ theme }) => theme.colors.turquoiseShade};
+  background-color: ${({ theme }) => theme.colors.lilacShade};
   color: white;
   font-size: 1.2rem;
   font-weight: bold;
@@ -397,11 +402,13 @@ const TopicCard = styled.div`
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s, box-shadow 0.2s;
 
+  /*
   &:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
     cursor: pointer;
   }
+    */
 `;
 
 const TopicNumber = styled.h3`
@@ -442,15 +449,7 @@ const Tutorial = styled.div`
 
 ///
 
-export const Content = styled.div`
-  color: #333;
-  line-height: 1.6;
-  max-width: 1000px;
-  margin: auto;
-  padding: 2.5rem;
-`;
-
-export const Section = styled.div`
+const Section = styled.div`
   padding: 1.5rem;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
@@ -459,7 +458,7 @@ export const Section = styled.div`
   }
 `;
 
-export const Title = styled.h1`
+const Title = styled.h1`
   margin-bottom: 1.5rem;
   text-align: center;
 
@@ -468,13 +467,13 @@ export const Title = styled.h1`
   }
 `;
 
-export const SubTitle = styled.h2`
+const SubTitle = styled.h2`
   margin-top: 1.5rem;
   margin-bottom: 1.2rem;
   font-weight: bold;
 `;
 
-export const Paragraph = styled.p`
+const Paragraph = styled.p`
   font-size: 1rem;
   margin-bottom: 1rem;
 `;
