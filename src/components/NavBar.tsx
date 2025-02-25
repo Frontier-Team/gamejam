@@ -56,6 +56,7 @@ export const NavBar: React.FC = () => {
     { to: "/map", label: "Map" },
     { to: "/game", label: "Game" },
     { to: "/accessibility", label: "Accessibility" },
+    { to: "/resources", label: "Resources" },
   ];
 
   return (
