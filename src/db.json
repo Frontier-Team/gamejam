@@ -184,12 +184,12 @@
       "id": 9,
       "date": "March 4, 2025",
       "time": "14:30 - 15:00",
-      "title": "AI - Dundee University",
+      "title": "AI",
       "description": "A short description about talk 8",
       "startTime": "14:30",
       "endTime": "15:00",
       "location": "Robertson Learning Studio",
-      "speakers": [""]
+      "speakers": ["Dundee University"]
     },
     {
       "id": 10,
@@ -206,12 +206,12 @@
       "id": 11,
       "date": "March 4, 2025",
       "time": "15:30 - 16:30",
-      "title": "Presenting back - Colleagues",
+      "title": "Presenting back",
       "description": "Back again after a break",
       "startTime": "15:30",
       "endTime": "16:30",
       "location": "Robertson Learning Studio",
-      "speakers": [""]
+      "speakers": ["Colleagues"]
     },
     {
       "id": 12,
