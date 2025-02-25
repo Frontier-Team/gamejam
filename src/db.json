@@ -91,204 +91,270 @@
       "description": "Exhibits and speakers pack up. Venue closes."
     }
   ],
-  "events": [
+  "talks": [
     {
       "id": 1,
-      "date": "March 3, 2025",
+      "date": "March 4, 2025",
       "time": "10:15 - 10:45",
-      "title": "Talk 1",
+      "title": "(Fun)ctionality - Brian Baglow",
       "description": "A very interesting talk about talking which covers different aspects of talking",
       "startTime": "10:15",
       "endTime": "10:45",
-      "location": "Talk Room 1",
-      "speakers": ["John Doe"]
+      "location": "Robertson Learning Studio",
+      "speakers": ["Brian Baglow"]
     },
     {
       "id": 2,
-      "date": "March 3, 2025",
+      "date": "March 4, 2025",
       "time": "10:45 - 11:15",
-      "title": "Talk 2",
+      "title": "Engagement with Games - Katy Lynch and Robert Cochran",
       "description": "Another important talk",
       "startTime": "10:45",
       "endTime": "11:15",
-      "location": "Talk Room 1",
-      "speakers": ["Jack Doe", "Alice Doe"]
+      "location": "Robertson Learning Studio",
+      "speakers": ["Katy Lynch", "Robert Cochran"]
     },
     {
       "id": 3,
-      "date": "March 3, 2025",
+      "date": "March 4, 2025",
       "time": "11:15 - 11:30",
-      "title": "Talk 3",
+      "title": "Abertay Showcase - Clare Brennan",
       "description": "As the third talk of the day, this takes a deep dive into the world of talking",
       "startTime": "11:15",
       "endTime": "11:30",
-      "location": "Talk Room 1",
-      "speakers": ["Jane Doe"]
+      "location": "Robertson Learning Studio",
+      "speakers": ["Clare Brennan"]
     },
     {
       "id": 4,
-      "date": "March 3, 2025",
+      "date": "March 4, 2025",
       "time": "11:30 - 12:00",
-      "title": "Talk 4",
+      "title": "Stick to the Script",
       "description": "Yet another deep talk",
       "startTime": "11:30",
       "endTime": "12:00",
-      "location": "Talk Room 1",
-      "speakers": ["Bob Doe", "Jimmy Doe"]
+      "location": "Robertson Learning Studio",
+      "speakers": ["Dave Cook"]
     },
     {
       "id": 5,
-      "date": "March 3, 2025",
+      "date": "March 4, 2025",
       "time": "12:00 - 12:30",
-      "title": "Talk 5",
+      "title": "FinTech Innovation and Gamification",
       "description": "A deeper talk than all the previous ones",
       "startTime": "12:00",
       "endTime": "12:30",
-      "location": "Talk Room 1",
-      "speakers": ["Jane Doe"]
+      "location": "Robertson Learning Studio",
+      "speakers": ["James Macfarlane"]
     },
     {
       "id": 6,
-      "date": "March 3, 2025",
+      "date": "March 4, 2025",
       "time": "12:30 - 13:30",
-      "title": "Break",
+      "title": "LUNCH",
       "description": "A break from all the talks",
       "startTime": "12:30",
       "endTime": "13:30",
-      "location": "Talk Room 1",
+      "location": "Robertson Learning Studio",
       "speakers": []
     },
     {
       "id": 7,
-      "date": "March 3, 2025",
+      "date": "March 4, 2025",
       "time": "13:30 - 14:00",
-      "title": "Talk 6",
+      "title": "25 Years of GameMaker - Russell Kay",
       "description": "Back to talking",
       "startTime": "13:30",
       "endTime": "14:00",
-      "location": "Talk Room 1",
-      "speakers": ["Alice Doe"]
+      "location": "Robertson Learning Studio",
+      "speakers": ["Russell Kay"]
     },
     {
       "id": 8,
-      "date": "March 3, 2025",
+      "date": "March 4, 2025",
       "time": "14:00 - 14:30",
-      "title": "Talk 7",
+      "title": "Designing with Disability in Mind",
       "description": "This is the seventh talk of the day",
       "startTime": "14:00",
       "endTime": "14:30",
-      "location": "Talk Room 1",
-      "speakers": ["Emma Doe"]
+      "location": "Robertson Learning Studio",
+      "speakers": [""]
     },
     {
       "id": 9,
-      "date": "March 3, 2025",
+      "date": "March 4, 2025",
       "time": "14:30 - 15:00",
-      "title": "Talk 8",
+      "title": "AI - Dundee University",
       "description": "A short description about talk 8",
       "startTime": "14:30",
       "endTime": "15:00",
-      "location": "Talk Room 1",
-      "speakers": ["Bob Doe", "Alice Doe"]
+      "location": "Robertson Learning Studio",
+      "speakers": [""]
     },
     {
       "id": 10,
-      "date": "March 3, 2025",
+      "date": "March 4, 2025",
       "time": "15:00 - 15:30",
       "title": "Break",
       "description": "A short break",
       "startTime": "15:00",
       "endTime": "15:30",
-      "location": "Talk Room 1",
+      "location": "Robertson Learning Studio",
       "speakers": []
     },
     {
       "id": 11,
-      "date": "March 3, 2025",
+      "date": "March 4, 2025",
       "time": "15:30 - 16:30",
-      "title": "Talk 9",
+      "title": "Presenting back - Colleagues",
       "description": "Back again after a break",
       "startTime": "15:30",
       "endTime": "16:30",
-      "location": "Talk Room 1",
-      "speakers": ["Jimmy Doe"]
+      "location": "Robertson Learning Studio",
+      "speakers": [""]
     },
     {
       "id": 12,
-      "date": "March 3, 2025",
+      "date": "March 4, 2025",
       "time": "16:45 - 17:00",
-      "title": "Final announcements",
+      "title": "Winners announces",
       "description": "",
       "startTime": "16:45",
       "endTime": "17:00",
-      "location": "Talk Room 1",
+      "location": "Robertson Learning Studio",
       "speakers": []
     },
     {
       "id": 13,
-      "date": "March 3, 2025",
+      "date": "March 4, 2025",
       "time": "10:15 - 10:45",
-      "title": "Talk 1",
+      "title": "The future of Scottish Widows app - Andrew and Lilly",
       "description": "First talk of the day in this room",
       "startTime": "10:15",
       "endTime": "10:45",
-      "location": "Talk Room 2",
-      "speakers": ["Ava Doe"]
+      "location": "Weston Learning Studio",
+      "speakers": ["Andrew and Lilly"]
     },
     {
       "id": 14,
-      "date": "March 3, 2025",
+      "date": "March 4, 2025",
       "time": "10:45 - 11:15",
-      "title": "Talk 2",
+      "title": "Bad Gamification",
       "description": "The second talk of the day covers all the details covered yesterday",
       "startTime": "10:45",
       "endTime": "11:15",
-      "location": "Talk Room 2",
-      "speakers": ["Ethan Doe"]
+      "location": "Weston Learning Studio",
+      "speakers": ["Amy Rodger"]
     },
     {
       "id": 15,
-      "date": "March 3, 2025",
+      "date": "March 4, 2025",
       "time": "11:15 - 11:30",
-      "title": "Talk 3",
+      "title": "From Fitness Plans to Function Calls - Toby Keech",
       "description": "As we warm up, let's talk about what we are interested in",
       "startTime": "11:15",
       "endTime": "11:30",
-      "location": "Talk Room 2",
-      "speakers": ["Albert Doe"]
+      "location": "Weston Learning Studio",
+      "speakers": ["Toby Keech"]
     },
     {
       "id": 16,
-      "date": "March 3, 2025",
+      "date": "March 4, 2025",
       "time": "11:30 - 12:00",
-      "title": "Talk 4",
+      "title": "Microsoft CoPilot",
       "description": "This is a description for the fourth talk of the day",
       "startTime": "11:30",
       "endTime": "12:00",
-      "location": "Talk Room 2",
-      "speakers": ["Ava Doe"]
+      "location": "Weston Learning Studio",
+      "speakers": ["Chris Green"]
     },
     {
       "id": 17,
-      "date": "March 3, 2025",
-      "time": "12:00 - 13:00",
-      "title": "Break",
+      "date": "March 4, 2025",
+      "time": "12:00 - 12:30",
+      "title": "Investment from Eye Catching Ambition - Jake McCullagh",
       "description": "",
       "startTime": "12:00",
       "endTime": "12:30",
-      "location": "Talk Room 2",
-      "speakers": []
+      "location": "Weston Learning Studio",
+      "speakers": ["Jake McCullagh"]
     },
     {
       "id": 18,
-      "date": "March 3, 2025",
-      "time": "13:00 - 14:00",
-      "title": "Talk 5",
+      "date": "March 4, 2025",
+      "time": "12:30 - 13:30",
+      "title": "LUNCH",
       "description": "Final talk of the day",
       "startTime": "12:30",
-      "endTime": "13:00",
-      "location": "Talk Room 2",
-      "speakers": ["All the Does"]
+      "endTime": "13:30",
+      "location": "Weston Learning Studio",
+      "speakers": [""]
+    },
+    {
+      "id": 19,
+      "date": "March 4, 2025",
+      "time": "13:30 - 13:45",
+      "title": "Go Fish! - Phoebe Andreson",
+      "description": "",
+      "startTime": "13:30",
+      "endTime": "13:45",
+      "location": "Weston Learning Studio",
+      "speakers": ["Phoebe Andreson"]
+    },
+    {
+      "id": 20,
+      "date": "March 4, 2025",
+      "time": "13:45 - 14:30",
+      "title": "Games Industry Panel",
+      "description": "",
+      "startTime": "13:45",
+      "endTime": "14:30",
+      "location": "Weston Learning Studio",
+      "speakers": [""]
+    },
+    {
+      "id": 21,
+      "date": "March 4, 2025",
+      "time": "14:30 - 15:00",
+      "title": "Charity Art Auction",
+      "description": "",
+      "startTime": "14:30",
+      "endTime": "15:00",
+      "location": "Weston Learning Studio",
+      "speakers": [""]
+    },
+    {
+      "id": 22,
+      "date": "March 4, 2025",
+      "time": "15:00 - 15:30",
+      "title": "",
+      "description": "",
+      "startTime": "15:00",
+      "endTime": "15:30",
+      "location": "Weston Learning Studio",
+      "speakers": [""]
+    },
+    {
+      "id": 23,
+      "date": "March 4, 2025",
+      "time": "15:30 - 16:30",
+      "title": "Game Jam Presentations - University Teams",
+      "description": "",
+      "startTime": "15:30",
+      "endTime": "16:30",
+      "location": "Weston Learning Studio",
+      "speakers": [""]
+    },
+    {
+      "id": 24,
+      "date": "March 4, 2025",
+      "time": "16:45 - 17:00",
+      "title": "Winners announces",
+      "description": "",
+      "startTime": "12:00",
+      "endTime": "12:30",
+      "location": "Weston Learning Studio",
+      "speakers": [""]
     }
   ],
   "jammers": [
