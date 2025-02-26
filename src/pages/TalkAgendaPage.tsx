@@ -5,7 +5,6 @@ import { Event } from '../types';
 
 export const TalkAgendaPage = () => {
   const headers = [
-    'Date',
     'Start',
     'End',
     'Title',
@@ -14,7 +13,6 @@ export const TalkAgendaPage = () => {
   ];
 
   const fieldsToDisplay: (keyof Event)[] = [
-    'date',
     'startTime',
     'endTime',
     'title',
@@ -28,6 +26,7 @@ export const TalkAgendaPage = () => {
     <PageContainer>
       <Heading>Talk Agenda</Heading>
       <CenteredParagraph>Each of the studios only holds 35 people, so they will be first come first serve. If you'd like to attend the talk please make sure you're on time to secure a space.</CenteredParagraph>
+      <CenteredParagraph>All talks will be held on March 4, 2025.</CenteredParagraph>
       {uniqueLocations.map((location) => (
         <Table
           key={location}
