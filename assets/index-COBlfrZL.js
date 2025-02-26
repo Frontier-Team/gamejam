@@ -528,6 +528,8 @@ Please change the parent <Route path="${D}"> to <Route path="${D==="/"?"*":`${D}
   outline: none;
   transition: background 0.3s ease;
 
+  &:focus {
+    color: ${({theme:t})=>t.colors.lilacShade};
   &:hover {
     color: ${({theme:t})=>t.colors.lilac};
 
