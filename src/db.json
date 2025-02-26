@@ -1,52 +1,57 @@
 {
   "auctionWorks": [
     {
-      "name": "Jack Doe",
+      "name": "Colin Plaice",
       "occupation": "Student",
-      "details": "Studying animation at University of Eednud",
-      "contact": ["https://jackdoe.com"]
+      "details": "Studying Experience Design (BDes Hons) at University of Dundee",
+      "contact": [
+        "Website - https://illustrationtoxic.wixsite.com/illustration-toxic",
+        "Instagram - https://www.instagram.com/illustrations.toxic",
+        "LinkedIn - https://www.linkedin.com/in/colin-plaice-51b46927b"
+      ]
     },
     {
-      "name": "Jill Doe",
-      "occupation": "Graphic Designer",
-      "details": "Working at Jill Doe Inc.",
-      "contact": ["in/jilldoe203"]
-    },
-    {
-      "name": "Alice Doe",
+      "name": "Daria Naidonova",
       "occupation": "Student",
-      "details": "Studying History at Yatreba University",
-      "contact": ["in/alicedoe203"]
+      "details": "Studying Experience Design (BDes Hons) at University of Dundee",
+      "contact": ["Instagram - https://www.instagram.com/naidenovka007"]
     },
     {
-      "name": "Bob Doe",
-      "occupation": "Software Engineer",
-      "details": "Working at Tech Solutions",
-      "contact": ["https://bobdoe.com"]
+      "name": "Kayley Campbell",
+      "occupation": "Student",
+      "details": "Studying Product Design (MSc) at University of Dundee",
+      "contact": [
+        "Linktree - https://linktr.ee/GingerGhouls",
+        "LinkedIn - https://www.linkedin.com/in/kayley-campbell-7631a4219",
+        "Instagram - https://www.instagram.com/gingerghouls"
+      ]
     },
     {
-      "name": "Emma Doe",
-      "occupation": "Data Scientist",
-      "details": "Researching at Data Corp",
-      "contact": ["https://emmadatacorp.com"]
+      "name": "Anna Rae",
+      "occupation": "Jeweller",
+      "details": "Working at G&A Jewellers",
+      "contact": [
+        "Instagram - https://www.instagram.com/jewel_a_rae",
+        "Email - araejewellery@gmail.com"
+      ]
     },
     {
-      "name": "John Doe",
-      "occupation": "Product Manager",
-      "details": "Managing products at Innovate Inc.",
-      "contact": ["https://johndoe.com"]
+      "name": "Amy Rodger",
+      "occupation": "Design Researcher",
+      "details": "Researching at Scottish Widows",
+      "contact": ["LinkedIn - https://www.linkedin.com/in/amyrodgercs"]
     },
     {
-      "name": "Jane Doe",
-      "occupation": "UX Designer",
-      "details": "Designing at Creative Minds",
-      "contact": ["https://janedoe.com"]
+      "name": "Yi Han",
+      "occupation": "Interaction Designer",
+      "details": "Designing at Scottish Widows",
+      "contact": ["LinkedIn - https://www.linkedin.com/in/yiiihan"]
     },
     {
-      "name": "Ethan Doe",
-      "occupation": "DevOps Engineer",
-      "details": "Ensuring smooth operations at Cloud Services",
-      "contact": ["https://ethandoe.com"]
+      "name": "Rachel White",
+      "occupation": "Junior Designer",
+      "details": "Designing at Scottish Widows",
+      "contact": ["LinkedIn - https://www.linkedin.com/in/rachel-white-ba4078198"]
     }
   ],
   "schedule": [
