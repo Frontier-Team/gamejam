@@ -26,8 +26,11 @@ describe('SchedulePage', () => {
   test('renders the timeline component with schedule data', () => {
     renderWithProviders(<SchedulePage />);
     data.schedule.forEach((item) => {
-      const timelineItem = screen.getByText(item.description);
-      expect(timelineItem).toBeInTheDocument();
+      const strings = item.description.split('\n\n');
+      strings.forEach((string) => {
+        const timelineStr = screen.getAllByText(string);
+        timelineStr.forEach((str) => expect(str).toBeInTheDocument());
+      })
     });
   });
 });

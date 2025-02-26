@@ -27,7 +27,7 @@ export const AuctionPage = () => {
         headers={headers}
         rows={data.auctionWorks}
         fieldsToDisplay={fieldsToDisplay}
-        largeFields={['details']}
+        largeFields={['contact']}
       />
     </PageContainer>
   );

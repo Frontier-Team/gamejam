@@ -8,7 +8,7 @@ import { HomePage } from "./pages/HomePage";
 import { JammerPage } from "./pages/JammerPage";
 import MapPage from "./pages/MapPage";
 import { SchedulePage } from "./pages/SchedulePage";
-import { SpeakerPage } from "./pages/SpeakerPage";
+import { TalkAgendaPage } from "./pages/TalkAgendaPage";
 import { AppThemeProvider } from "./providers/ThemeProvider";
 import ResourcesPage from "./pages/ResourcesPage";
 
@@ -22,7 +22,7 @@ export const App = () => {
           <Route path="/conduct" element={<ConductPage />} />
           <Route path="/schedule" element={<SchedulePage />} />
           <Route path="/accessibility" element={<AccessibilityPage />} />
-          <Route path="/speakers" element={<SpeakerPage />} />
+          <Route path="/speakers" element={<TalkAgendaPage />} />
           <Route path="/auction" element={<AuctionPage />} />
           <Route path="/map" element={<MapPage />} />
           <Route path="/game" element={<GamePage />} />

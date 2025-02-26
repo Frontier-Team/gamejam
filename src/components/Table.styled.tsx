@@ -7,6 +7,7 @@ export const Heading = styled.div`
 export const TableContainer = styled.div`
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+  border-radius: 2rem;
 
   .table-heading, .info-text {
     position: sticky;
@@ -19,15 +20,34 @@ export const TableContainer = styled.div`
 
   table {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
     min-width: 60rem;
     margin-bottom: 4rem;
+    overflow: hidden;
   }
 
   th, td {
     padding: 2rem;
     text-align: left;
     border-bottom: ${({ theme }) => `1px solid ${theme.colors.teal}`};
+  }
+
+  thead tr:first-child th:first-child {
+    border-top-left-radius: 1rem;
+  }
+
+  thead tr:first-child th:last-child {
+    border-top-right-radius: 1rem;
+  }
+
+  tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 1rem;
+  }
+
+  tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 1rem;
   }
 
   td:first-of-type {
@@ -56,3 +76,4 @@ export const TableContainer = styled.div`
     }
   }
 `;
+

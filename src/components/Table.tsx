@@ -1,4 +1,4 @@
-import { TableContainer } from "./StyledTable.styled";
+import { TableContainer } from "./Table.styled";
 
 interface TableProps<T> {
   heading?: string;
@@ -15,6 +15,38 @@ export const Table = <T,>({
   largeFields = [],
   rows,
 }: TableProps<T>) => {
+
+  const renderContent = (value: any) => {
+    if (typeof value === 'string') {
+      return formatTextWithLinks(value);
+    }
+  
+    if (Array.isArray(value)) {
+      return value.map((item, index) => (
+        <span key={index}>
+          {formatTextWithLinks(item)}
+          <br />
+        </span>
+      ));
+    }
+  
+    return String(value);
+  };
+
+  const formatTextWithLinks = (text: string) => {
+    const parts = text.split(/(https?:\/\/\S+)/g);
+  
+    return parts.map((part, index) =>
+      part.startsWith('http') ? (
+        <a key={index} href={part} target='_blank' rel='noopener noreferrer'>
+          {part}
+        </a>
+      ) : (
+        part
+      )
+    );
+  };
+
   return (
     <TableContainer>
       {heading && <h2 className='table-heading'>{heading}</h2>}
@@ -34,7 +66,7 @@ export const Table = <T,>({
                 const isLarge = largeFields.includes(field);
                 return (
                   <td key={field.toString()} className={isLarge ? 'large' : ''}>
-                    {Array.isArray(row[field]) ? row[field].join(', ') : String(row[field])}
+                    {renderContent(row[field])}
                   </td>
                 )}
               )}
