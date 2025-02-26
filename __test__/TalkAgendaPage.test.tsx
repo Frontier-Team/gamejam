@@ -1,17 +1,17 @@
 import React from 'react';
 import { screen } from '@testing-library/react';
-import { SpeakerPage } from '../src/pages/SpeakerPage';
+import { TalkAgendaPage } from '../src/pages/TalkAgendaPage';
 import { renderWithProviders } from './test-utils'; 
 
-describe('SpeakerPage component', () => {
+describe('TalkAgendaPage component', () => {
   it('renders the page title', () => {
-    renderWithProviders(<SpeakerPage />);
+    renderWithProviders(<TalkAgendaPage />);
     const titleElement = screen.getByText(/Talk Agenda/i);
     expect(titleElement).toBeInTheDocument();
   });
 
   it('renders tables for Robertson Learning Studio and Weston Learning Studio', () => {
-    renderWithProviders(<SpeakerPage />);
+    renderWithProviders(<TalkAgendaPage />);
     const talkRoom1Heading = screen.getByText(/Robertson Learning Studio/i);
     const talkRoom2Heading = screen.getByText(/Weston Learning Studio/i);
     expect(talkRoom1Heading).toBeInTheDocument();

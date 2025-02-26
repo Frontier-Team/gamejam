@@ -29,21 +29,26 @@ export const Timeline = ({
   return (
     <TimelineContainer>
       <Line />
-      {schedule.length > 0 && schedule.map((event, index) => (
-        <TimelineItem
-          key={event.description || index}
-          side={index % 2 === 0 ? 'left' : 'right'}
-          variants={timelineVariants}
-          initial='hidden'
-          animate='visible'
-        >
-          <Connector side={index % 2 === 0 ? 'left' : 'right'} />
-          <Card>
-            <Paragraph>{event.time}</Paragraph>
-            <Paragraph>{event.description}</Paragraph>
-          </Card>
-        </TimelineItem>
-      ))}
+      {schedule.length > 0 && schedule.map((event, index) => {
+        const formattedDescription = event.description.split('\n\n').map((text, i) => (
+          <Paragraph key={i}>{text}</Paragraph>
+        ));
+        return (
+          <TimelineItem
+            key={event.description || index}
+            side={index % 2 === 0 ? 'left' : 'right'}
+            variants={timelineVariants}
+            initial='hidden'
+            animate='visible'
+          >
+            <Connector side={index % 2 === 0 ? 'left' : 'right'} />
+            <Card>
+              <Paragraph>{event.time}</Paragraph>
+              {formattedDescription}
+            </Card>
+          </TimelineItem>
+        )
+      })}
     </TimelineContainer>
   );
 };

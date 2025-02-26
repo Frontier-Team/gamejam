@@ -51,44 +51,44 @@
   ],
   "schedule": [
     {
-      "time": "9.00am",
-      "description": "Door open for General Registration. Tea, coffee and pastries served."
+      "time": "9:00",
+      "description": "Door open for General Registration - game jam participants and experience ticket.\n\nTea, Coffee and Pastries served in Tatha Canteen, Upper Foyer."
     },
     {
-      "time": "9.30am",
-      "description": "Welcome and announcements"
+      "time": "9:30",
+      "description": "Welcome from Rose, opening remarks from Chira and Maria. Announcements in the Juniper Auditorium."
     },
     {
-      "time": "10.15am",
-      "description": "Talk schedule begins. Game Jam continues. Judges can walk around and chat."
+      "time": "10:15",
+      "description": "Talk schedule begins in Robertson and Weston Learning Studios.\n\nGame Jam continues in Juniper Auditorium. Coaches will support participants.\n\nJudges can walk around and chat to participants."
     },
     {
-      "time": "12.30pm",
-      "description": "Lunch is served"
+      "time": "12:30",
+      "description": "Lunch is served in Tatha Canteen, Upper Foyer."
     },
     {
-      "time": "1.30pm",
-      "description": "Talk schedule continues"
+      "time": "13:30",
+      "description": "Talk schedule continues in Robertson and Weston Learning Studio.\n\nGame Jam continues in Juniper Auditorium.\n\nJudges can walk around and chat to participants."
     },
     {
-      "time": "3.00pm",
-      "description": "Tea, coffee and snacks served. Judges gather for judging."
+      "time": "15:00",
+      "description": "Tea, coffee and snacks served in Tatha Canteen, Upper Foyer.\n\nJudging panel gather in Robertson and Weston Learning Studio for presentations. Participants test technical set up."
     },
     {
-      "time": "3.30pm",
-      "description": "Time to present"
+      "time": "15:20",
+      "description": "All teams present across two different rooms.\n\nRobertson Learning Studio - Internal Challenge play back.\n\nWeston Learning Studio - external Challenge playback."
     },
     {
-      "time": "4.45pm",
-      "description": "Winners announced. Closing speech."
+      "time": "16:45",
+      "description": "Winners announced and prizes presented by Rose Ulldemolins in Juniper Auditorium.\n\nClosing remarks from Amit from a Tech perspective and Lee from Design point of view."
     },
     {
-      "time": "5.00pm",
-      "description": "Networking"
+      "time": "17:00",
+      "description": "Networking drinks in Tatha Canteen, Upper Foyer."
     },
     {
-      "time": "7.00pm",
-      "description": "Exhibits and speakers pack up. Venue closes."
+      "time": "19:00",
+      "description": "Event concludes.\n\nExhibits and Speakers pack up.\n\nVenue closes."
     }
   ],
   "talks": [

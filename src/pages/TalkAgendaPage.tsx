@@ -1,9 +1,9 @@
 import { Table } from '../components/Table';
 import data from '../db.json';
-import { Heading, PageContainer } from '../styles/sharedStyles';
+import { CenteredParagraph, Heading, PageContainer, SubHeading } from '../styles/sharedStyles';
 import { Event } from '../types';
 
-export const SpeakerPage = () => {
+export const TalkAgendaPage = () => {
   const headers = [
     'Date',
     'Start',
@@ -27,6 +27,7 @@ export const SpeakerPage = () => {
   return (
     <PageContainer>
       <Heading>Talk Agenda</Heading>
+      <CenteredParagraph>Each of the studios only holds 35 people, so they will be first come first serve. If you'd like to attend the talk please make sure you're on time to secure a space.</CenteredParagraph>
       {uniqueLocations.map((location) => (
         <Table
           key={location}
