@@ -50,7 +50,7 @@ const AccordionContent = styled.div<{ isOpen: boolean }>`
   padding: ${({ isOpen }) => (isOpen ? "1rem" : "0 1rem")};
   background: ${({ theme }) => theme.colors.grey};
   display: ${({ isOpen }) =>
-    isOpen ? "block" : "none"}; /* Ensure content is hidden initially */
+    isOpen ? "block" : "none"};
 `;
 
 interface AccordionProps {

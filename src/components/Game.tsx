@@ -25,7 +25,7 @@ export const Game = () => {
     <>
       {isLoaded === false && (
         <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100vh" }}>
-          <PacmanLoader color="#B061FF" />
+          <PacmanLoader color="#B061FF" data-testid="pacman-loader" />
 
         </div>
       )}
