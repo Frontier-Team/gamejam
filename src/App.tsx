@@ -3,7 +3,7 @@ import { NavBar } from "./components/NavBar";
 import { AccessibilityPage } from "./pages/AccessibilityPage";
 import { AuctionPage } from "./pages/AuctionPage";
 import { ConductPage } from "./pages/ConductPage";
-import GamePage from "./pages/GamePage";
+import { GamePage } from "./pages/GamePage";
 import { HomePage } from "./pages/HomePage";
 import { JammerPage } from "./pages/JammerPage";
 import MapPage from "./pages/MapPage";

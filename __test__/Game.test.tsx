@@ -1,7 +1,8 @@
 /* eslint-disable @typescript-eslint/no-require-imports */
-import { render, screen, waitFor } from "@testing-library/react";
+import { screen, waitFor } from "@testing-library/react";
 import React from "react";
 import { Game } from "../src/components/Game";
+import { renderWithProviders } from "./test-utils";
 
 jest.mock("react-unity-webgl", () => ({
   Unity: jest.fn(),
@@ -9,15 +10,15 @@ jest.mock("react-unity-webgl", () => ({
 }));
 
 describe("Game component", () => {
-  it("should display message while game is loading", () => {
+  it("should display loading spinner while game is loading", () => {
     require("react-unity-webgl").useUnityContext.mockImplementationOnce(() => ({
       unityProvider: {},
       isLoaded: false,
-      error: null,
+      initialisationError: null,
     }));
 
-    render(<Game />);
-    expect(screen.getByText("Loading...")).toBeInTheDocument();
+    renderWithProviders(<Game />);
+    expect(screen.getByTestId("pacman-loader")).toBeInTheDocument();
   });
 
   it("should show game content when loaded", async () => {
@@ -27,11 +28,23 @@ describe("Game component", () => {
     require("react-unity-webgl").useUnityContext.mockImplementationOnce(() => ({
       unityProvider: {},
       isLoaded: true,
-      error: null,
+      initialisationError: null,
     }));
-    render(<Game />);
+
+    renderWithProviders(<Game />);
     await waitFor(() => {
       expect(screen.getByText("Mocked Unity component")).toBeInTheDocument();
     });
+  });
+
+  it("should display error message if initialisation fails", () => {
+    require("react-unity-webgl").useUnityContext.mockImplementationOnce(() => ({
+      unityProvider: {},
+      isLoaded: false,
+      initialisationError: true,
+    }));
+
+    renderWithProviders(<Game />);
+    expect(screen.getByText("Oops, sorry! There was an error loading the game!")).toBeInTheDocument();
   });
 });
