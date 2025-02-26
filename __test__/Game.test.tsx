@@ -1,7 +1,8 @@
 /* eslint-disable @typescript-eslint/no-require-imports */
-import { render, screen, waitFor } from "@testing-library/react";
+import { screen, waitFor } from "@testing-library/react";
 import React from "react";
 import { Game } from "../src/components/Game";
+import { renderWithProviders } from "./test-utils";
 
 jest.mock("react-unity-webgl", () => ({
   Unity: jest.fn(),
@@ -16,7 +17,7 @@ describe("Game component", () => {
       initialisationError: null,
     }));
 
-    render(<Game />);
+    renderWithProviders(<Game />);
     expect(screen.getByTestId("pacman-loader")).toBeInTheDocument();
   });
 
@@ -30,7 +31,7 @@ describe("Game component", () => {
       initialisationError: null,
     }));
 
-    render(<Game />);
+    renderWithProviders(<Game />);
     await waitFor(() => {
       expect(screen.getByText("Mocked Unity component")).toBeInTheDocument();
     });
@@ -43,7 +44,7 @@ describe("Game component", () => {
       initialisationError: true,
     }));
 
-    render(<Game />);
-    expect(screen.getByText("Error loading the game!")).toBeInTheDocument();
+    renderWithProviders(<Game />);
+    expect(screen.getByText("Oops, sorry! There was an error loading the game!")).toBeInTheDocument();
   });
 });
