@@ -50,7 +50,7 @@ export const NavBar: React.FC = () => {
   const links = [
     { to: "/schedule", label: "Schedule" },
     { to: "/jammers", label: "Jammers" },
-    { to: "/speakers", label: "Speakers" },
+    { to: "/speakers", label: "Talk Agenda" },
     { to: "/auction", label: "Auction" },
     { to: "/conduct", label: "Conduct" },
     { to: "/map", label: "Map" },
