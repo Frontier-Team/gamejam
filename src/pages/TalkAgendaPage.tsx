@@ -1,6 +1,6 @@
 import { Table } from '../components/Table';
 import data from '../db.json';
-import { CenteredParagraph, Heading, PageContainer, SubHeading } from '../styles/sharedStyles';
+import { CenteredParagraph, Heading, PageContainer } from '../styles/sharedStyles';
 import { Event } from '../types';
 
 export const TalkAgendaPage = () => {
