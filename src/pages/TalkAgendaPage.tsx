@@ -9,7 +9,8 @@ export const TalkAgendaPage = () => {
     'End',
     'Title',
     'Description',
-    'Speaker(s)'
+    'Speaker(s)',
+    'Company',
   ];
 
   const fieldsToDisplay: (keyof Event)[] = [
@@ -17,7 +18,8 @@ export const TalkAgendaPage = () => {
     'endTime',
     'title',
     'description',
-    'speakers'
+    'speakers',
+    'company',
   ];
 
   const uniqueLocations = Array.from(new Set(data.talks.map((talk) => talk.location)));

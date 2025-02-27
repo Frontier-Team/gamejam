@@ -8,6 +8,7 @@ export interface Event {
   endTime: string;
   location: string;
   speakers: string[];
+  company: string;
 };
 
 export interface Portfolio {
