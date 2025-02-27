@@ -168,7 +168,7 @@ export default function ResourcesPage() {
             </Paragraph>
 
             <TemplateRepoButton
-              href='https://github.com/your-template-repo'
+              href='https://github.com/ross-kirk/gamejam-template'
               target='_blank'
               rel='noopener noreferrer'
             >
