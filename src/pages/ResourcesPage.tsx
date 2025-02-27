@@ -198,15 +198,15 @@ export default function ResourcesPage() {
             </TopicCard>
             <TopicCard>
               <TopicNumber>4</TopicNumber>
-              <TopicTitle>GI</TopicTitle>
+              <TopicTitle>General Insurance</TopicTitle>
             </TopicCard>
             <TopicCard>
               <TopicNumber>5</TopicNumber>
-              <TopicTitle>Pensions - Paying In</TopicTitle>
+              <TopicTitle>Building Your Pension</TopicTitle>
             </TopicCard>
             <TopicCard>
               <TopicNumber>6</TopicNumber>
-              <TopicTitle>Pensions - Getting Out</TopicTitle>
+              <TopicTitle>Accessing your Pension</TopicTitle>
             </TopicCard>
           </TopicsGrid>
         </Section>
