@@ -1,20 +1,47 @@
-import { TableContainer } from "./Table.styled";
+import { useEffect, useState } from "react";
+import { StyledTableHeadingButton, TableContainer } from "./Table.styled";
 
-interface TableProps<T> {
+interface TableProps<T extends { id: number }> {
   heading?: string;
   headers: string[];
   fieldsToDisplay: (keyof T)[];
   rows: T[];
   largeFields?: (keyof T)[];
+  showFavoritesFilter?: boolean;
 }
 
-export const Table = <T,>({
+export const Table = <T extends { id: number; },>({
   heading,
   headers,
   fieldsToDisplay,
   largeFields = [],
   rows,
+  showFavoritesFilter = false,
 }: TableProps<T>) => {
+
+  const [favorites, setFavorites] = useState(new Set());
+  const [showFavorites, setShowFavorites] = useState(false);
+
+  useEffect(() => {
+    const storedFavorites = JSON.parse(localStorage.getItem('favorites') || '[]');
+    setFavorites(new Set(storedFavorites));
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem('favorites', JSON.stringify([...favorites]));
+  }, [favorites]);
+
+  const toggleFavorite = (id: number) => {
+    setFavorites((prev) => {
+      const newFavorites = new Set(prev);
+      newFavorites.has(id) ? newFavorites.delete(id) : newFavorites.add(id);
+      return newFavorites;
+    });
+  };
+
+  const filteredData = showFavorites
+    ? rows.filter((row) => favorites.has(row.id))
+    : rows;
 
   const renderContent = (value: any) => {
     if (typeof value === 'string') {
@@ -54,14 +81,32 @@ export const Table = <T,>({
       <table>
         <thead>
           <tr>
-            {headers.map((header) => (
-              <th key={header}>{header}</th>
-            ))}
+            {headers.map((header) => {
+              if (header === '' && showFavoritesFilter) {
+                return (
+                  <th className='filter-heading-cell'>
+                    <StyledTableHeadingButton className='favorites-btn' onClick={() => setShowFavorites((prev) => !prev)}>
+                      {showFavorites ? 'Show All' : 'Show Favourites'}
+                    </StyledTableHeadingButton>
+                  </th>
+                )
+              }
+              return (<th key={header}>{header}</th>)
+            })}
           </tr>
         </thead>
         <tbody>
-          {rows.map((row, rowIndex) => (
+          {filteredData.map((row, rowIndex) => (
             <tr key={rowIndex}>
+              {showFavoritesFilter && (
+                <td className='checkbox-column'>
+                  <input
+                    type='checkbox'
+                    checked={favorites.has(row.id)}
+                    onChange={() => toggleFavorite(row.id)}
+                  />
+                </td>
+              )}
               {fieldsToDisplay.map((field) => {
                 const isLarge = largeFields.includes(field);
                 return (

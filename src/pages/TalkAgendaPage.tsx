@@ -5,6 +5,7 @@ import { Event } from '../types';
 
 export const TalkAgendaPage = () => {
   const headers = [
+    '',
     'Start',
     'End',
     'Title',
@@ -37,6 +38,7 @@ export const TalkAgendaPage = () => {
           rows={data.talks.filter((talk) => talk.location === location)}
           fieldsToDisplay={fieldsToDisplay}
           largeFields={['description']}
+          showFavoritesFilter={true}
         />
       ))}
     </PageContainer>
