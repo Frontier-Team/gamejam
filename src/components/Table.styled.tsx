@@ -37,8 +37,7 @@ export const TableContainer = styled.div`
   }
   
   .filter-heading-cell {
-    padding: none;
-    border-top-right-radius: none !important;
+    padding: 0;
   }
 
   .favorites-btn {
@@ -97,8 +96,8 @@ export const TableContainer = styled.div`
 export const StyledTableHeadingButton = styled.div`
   ${({ theme }) => buttonAndLinkStyles(theme)}
   border: none !important;
-  border-top-left-radius: 0 !important;
-  border-top-right-radius: 0 !important;
+  border-radius: 0 !important;
   text-align: center !important;
   box-shadow: none !important;
+  width: 100%;
 `;
