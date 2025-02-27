@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { buttonAndLinkStyles } from '../styles/sharedStyles';
 
 export const Heading = styled.div`
   text-align: center;
@@ -8,6 +9,7 @@ export const TableContainer = styled.div`
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   border-radius: 2rem;
+  max-width: 1200px;
 
   .table-heading, .info-text {
     position: sticky;
@@ -33,16 +35,26 @@ export const TableContainer = styled.div`
     text-align: left;
     border-bottom: ${({ theme }) => `1px solid ${theme.colors.teal}`};
   }
+  
+  .filter-heading-cell {
+    padding: none;
+    border-top-right-radius: none !important;
+  }
 
-  thead tr:first-child th:first-child {
+  .favorites-btn {
+    ${({ theme }) => buttonAndLinkStyles(theme)}
+    padding: 0;
+  }
+
+  thead tr:first-of-type th:first-of-type {
     border-top-left-radius: 1rem;
   }
 
-  thead tr:first-child th:last-child {
+  thead tr:first-of-type th:last-child {
     border-top-right-radius: 1rem;
   }
 
-  tbody tr:last-child td:first-child {
+  tbody tr:last-child td:first-of-type {
     border-bottom-left-radius: 1rem;
   }
 
@@ -64,6 +76,10 @@ export const TableContainer = styled.div`
   td, th {
     width: 20rem;
   }
+  
+  .checkbox-column {
+    text-align: center;
+  }
 
   .large {
     width: 40rem;
@@ -77,3 +93,11 @@ export const TableContainer = styled.div`
   }
 `;
 
+export const StyledTableHeadingButton = styled.th`
+  ${({ theme }) => buttonAndLinkStyles(theme)}
+  border: none !important;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+  text-align: center !important;
+  box-shadow: none !important;
+`;

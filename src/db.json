@@ -1,6 +1,7 @@
 {
   "auctionWorks": [
     {
+      "id": 1,
       "name": "Colin Plaice",
       "occupation": "Student",
       "details": "Studying Experience Design (BDes Hons) at University of Dundee",
@@ -11,12 +12,14 @@
       ]
     },
     {
+      "id": 2,
       "name": "Daria Naidonova",
       "occupation": "Student",
       "details": "Studying Experience Design (BDes Hons) at University of Dundee",
       "contact": ["Instagram - https://www.instagram.com/naidenovka007"]
     },
     {
+      "id": 3,
       "name": "Kayley Campbell",
       "occupation": "Student",
       "details": "Studying Product Design (MSc) at University of Dundee",
@@ -27,6 +30,7 @@
       ]
     },
     {
+      "id": 4,
       "name": "Anna Rae",
       "occupation": "Jeweller",
       "details": "Working at G&A Jewellers",
@@ -36,18 +40,21 @@
       ]
     },
     {
+      "id": 5,
       "name": "Amy Rodger",
       "occupation": "Design Researcher",
       "details": "Researching at Scottish Widows",
       "contact": ["LinkedIn - https://www.linkedin.com/in/amyrodgercs"]
     },
     {
+      "id": 6,
       "name": "Yi Han",
       "occupation": "Interaction Designer",
       "details": "Designing at Scottish Widows",
       "contact": ["LinkedIn - https://www.linkedin.com/in/yiiihan"]
     },
     {
+      "id": 7,
       "name": "Rachel White",
       "occupation": "Junior Designer",
       "details": "Designing at Scottish Widows",
@@ -155,7 +162,7 @@
       "endTime": "13:30",
       "location": "Robertson Learning Studio",
       "company": "",
-      "speakers": ["James Macfarlane"]
+      "speakers": [""]
     },
     {
       "id": 6,
