@@ -56,7 +56,7 @@ const AccordionContent = styled.div<{ isOpen: boolean }>`
   background: ${({ theme }) => theme.colors.grey};
   display: ${({ isOpen }) => (isOpen ? "block" : "none")};
   color: inherit; 
-  text-decoration: none; /* Remove underline */
+  text-decoration: none; 
   -webkit-tap-highlight-color: transparent; 
 `;
 
