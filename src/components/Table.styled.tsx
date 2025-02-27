@@ -82,7 +82,8 @@ export const TableContainer = styled.div`
   }
 
   .large {
-    width: 40rem;
+    min-width: 10rem;
+    flex-grow: 2;
     word-wrap: break-word;
   }
 
