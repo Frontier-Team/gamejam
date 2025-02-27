@@ -17,6 +17,16 @@ export const AccessibilityPage = () => {
         Dundee City Council car parks nearby.
       </Paragraph>
 
+      <h2>Lanyards</h2>
+      <Paragraph>
+        At registration, Game Jam support staff will provide you with a lanyard for the day. This will include a QR code that will provide information
+        on the event.
+        <Paragraph>If you would prefer to wear your yellow sunflower lanyard, please bring this with you.
+          All our staff are aware of the significance of the sunflower lanyard.
+        </Paragraph>
+        We will also have red lanyards available for those who do not wish to be photographed. Please ask a member of the registration team and one will be issues to you.
+      </Paragraph>
+
       <h2>Assistance dogs</h2>
       <Paragraph>
         You are welcome to bring guide dogs and other recognised assistance dogs into the museum.
@@ -61,5 +71,5 @@ export const AccessibilityPage = () => {
         portable stools available for you to borrow in the gallery spaces.
       </Paragraph>
     </PageContainer>
-  ); 
+  );
 };

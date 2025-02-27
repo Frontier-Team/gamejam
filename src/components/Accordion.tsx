@@ -23,9 +23,14 @@ const AccordionTitle = styled.button`
   align-items: center;
   outline: none;
   transition: background 0.3s ease;
+  color: inherit; 
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent; 
 
   &:focus {
     color: ${({ theme }) => theme.colors.lilacShade};
+  }
+
   &:hover {
     color: ${({ theme }) => theme.colors.lilac};
 
@@ -49,8 +54,10 @@ const AccordionContent = styled.div<{ isOpen: boolean }>`
   transition: max-height 0.3s ease, padding 0.3s ease;
   padding: ${({ isOpen }) => (isOpen ? "1rem" : "0 1rem")};
   background: ${({ theme }) => theme.colors.grey};
-  display: ${({ isOpen }) =>
-    isOpen ? "block" : "none"};
+  display: ${({ isOpen }) => (isOpen ? "block" : "none")};
+  color: inherit; /* Ensure text color is inherited */
+  text-decoration: none; /* Remove underline */
+  -webkit-tap-highlight-color: transparent; /* Remove tap highlight color on iOS */
 `;
 
 interface AccordionProps {
