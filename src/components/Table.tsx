@@ -81,10 +81,10 @@ export const Table = <T extends { id: number; },>({
       <table>
         <thead>
           <tr>
-            {headers.map((header) => {
+            {headers.map((header, index) => {
               if (header === '' && showFavoritesFilter) {
                 return (
-                  <th className='filter-heading-cell'>
+                  <th className='filter-heading-cell' key={index}>
                     <StyledTableHeadingButton className='favorites-btn' onClick={() => setShowFavorites((prev) => !prev)}>
                       {showFavorites ? 'Show All' : 'Show Favourites'}
                     </StyledTableHeadingButton>
