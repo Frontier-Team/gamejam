@@ -9,7 +9,7 @@ export const SchedulePage = () => {
         Schedule of the Day
       </Heading>
       <CenteredParagraph>
-        March 3 2025 - GameJam for participating teams
+        March 3, 2025 - Game Jam for participating teams
       </CenteredParagraph>
       <CenteredParagraph>
         Find below the running order for March 4, 2025.

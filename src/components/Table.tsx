@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
-import { StyledTableHeadingButton, TableContainer } from "./Table.styled";
+import { useEffect, useState } from 'react';
+import { StyledTableHeadingButton, TableContainer } from './Table.styled';
 
-interface TableProps<T extends { id: number }> {
+interface TableProps<T extends { id: number, isFilterable: boolean }> {
   heading?: string;
   headers: string[];
   fieldsToDisplay: (keyof T)[];
@@ -10,7 +10,7 @@ interface TableProps<T extends { id: number }> {
   showFavoritesFilter?: boolean;
 }
 
-export const Table = <T extends { id: number; },>({
+export const Table = <T extends { id: number; isFilterable: boolean; },>({
   heading,
   headers,
   fieldsToDisplay,
@@ -27,14 +27,11 @@ export const Table = <T extends { id: number; },>({
     setFavorites(new Set(storedFavorites));
   }, []);
 
-  useEffect(() => {
-    localStorage.setItem('favorites', JSON.stringify([...favorites]));
-  }, [favorites]);
-
   const toggleFavorite = (id: number) => {
     setFavorites((prev) => {
       const newFavorites = new Set(prev);
       newFavorites.has(id) ? newFavorites.delete(id) : newFavorites.add(id);
+      localStorage.setItem('favorites', JSON.stringify([...newFavorites]))
       return newFavorites;
     });
   };
@@ -65,7 +62,13 @@ export const Table = <T extends { id: number; },>({
   
     return parts.map((part, index) =>
       part.startsWith('http') ? (
-        <a key={index} href={part} target='_blank' rel='noopener noreferrer'>
+        <a
+          key={index}
+          href={part}
+          target='_blank'
+          rel='noopener noreferrer'
+          className='table-link'
+        >
           {part}
         </a>
       ) : (
@@ -98,7 +101,7 @@ export const Table = <T extends { id: number; },>({
         <tbody>
           {filteredData.map((row, rowIndex) => (
             <tr key={rowIndex}>
-              {showFavoritesFilter && (
+              {row.isFilterable ? (showFavoritesFilter && (
                 <td className='checkbox-column'>
                   <input
                     type='checkbox'
@@ -106,7 +109,7 @@ export const Table = <T extends { id: number; },>({
                     onChange={() => toggleFavorite(row.id)}
                   />
                 </td>
-              )}
+              )): <td className='checkbox-column'></td>}
               {fieldsToDisplay.map((field) => {
                 const isLarge = largeFields.includes(field);
                 return (

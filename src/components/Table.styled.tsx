@@ -40,6 +40,10 @@ export const TableContainer = styled.div`
     padding: 0;
   }
 
+  .table-link {
+    color: ${({ theme }) => theme.colors.lilac};
+  }
+
   .favorites-btn {
     ${({ theme }) => buttonAndLinkStyles(theme)}
     padding: 0;
