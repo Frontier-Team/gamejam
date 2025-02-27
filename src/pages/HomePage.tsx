@@ -53,12 +53,28 @@ export const HomePage: React.FC = () => {
             Games Departments and much more!
           </Paragraph>
         </Section>
+        <Section>
+          <Subtitle>
+            Look out for our helpers and support team
+          </Subtitle>
+          <Paragraph>
+            Our event organisers and support team will be wearing t-shirts with the 
+            game jam logo. You'll see them at the front desk and around the event.
+          </Paragraph>
+        </Section>
         <Subtitle style={{ textAlign: 'center' }}>
           Let's make this Game Jam an unforgettable experience!
         </Subtitle>
         <Subtitle style={{ textAlign: 'center' }}>
           Ready, Set, Create! 🚀
         </Subtitle>
+        <Footer>
+          <FooterContent>
+            <Paragraph>
+              If you need to make any adjustments or have any specific requests, please contact us at: <a href="mailto:IPIEvents@lloydsbanking.com">IPIEvents@lloydsbanking.com</a>
+            </Paragraph>
+          </FooterContent>
+        </Footer>
       </Content>
     </Wrapper>
   );
@@ -104,4 +120,22 @@ const Subtitle = styled.h2`
   font-size: 1.6rem;
   margin-bottom: 2rem;
   line-height: 1.8;
+`;
+
+const Footer = styled.div`
+  display: flex;
+  text-align: center;
+  padding: 10px;
+  background-color: ${({ theme }) => theme.colors.teal};
+  border-radius: 10px;
+  margin-top: 1rem;
+`;
+
+const FooterContent = styled.div`
+  color: white;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
 `;
