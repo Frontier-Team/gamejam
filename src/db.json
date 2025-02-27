@@ -384,6 +384,7 @@
       "startTime": "15:00",
       "endTime": "15:30",
       "location": "Weston Learning Studio",
+      "company": "",
       "speakers": [
         ""
       ]
@@ -397,6 +398,7 @@
       "startTime": "15:30",
       "endTime": "16:30",
       "location": "Weston Learning Studio",
+      "company": "",
       "speakers": [
         "University Teams"
       ]
@@ -410,6 +412,7 @@
       "startTime": "16:45",
       "endTime": "17:00",
       "location": "Weston Learning Studio",
+      "company": "",
       "speakers": [
         ""
       ]
