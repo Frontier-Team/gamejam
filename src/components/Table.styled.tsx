@@ -94,7 +94,7 @@ export const TableContainer = styled.div`
   }
 `;
 
-export const StyledTableHeadingButton = styled.th`
+export const StyledTableHeadingButton = styled.div`
   ${({ theme }) => buttonAndLinkStyles(theme)}
   border: none !important;
   border-top-left-radius: 0 !important;
