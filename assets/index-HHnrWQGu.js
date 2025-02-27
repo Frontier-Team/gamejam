@@ -414,15 +414,17 @@ Venue closes.`}],jS=[{id:1,date:"March 4, 2025",time:"10:15 - 10:40",title:"(Fun
   justify-content: center;
   align-items: center;
 `,QS=W(Jg.Unity)`
+width: 400px;
+ aspect-ratio: 9 / 13;
 
-  aspect-ratio: 9 / 16;
-  max-width: 900px;
 
   @media (max-width: ${({theme:t})=>t.breakpoints.md}) {
+    aspect-ratio: 9 / 16;
     max-width: 400px;
   }
 
   @media (max-width: ${({theme:t})=>t.breakpoints.sm}) {
+    aspect-ratio: 9 / 16;
     max-width: 300px;
   }
 `,XS=W.div`
