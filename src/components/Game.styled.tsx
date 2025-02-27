@@ -8,15 +8,17 @@ export const GameContainer = styled.div`
 `;
 
 export const UnityCanvas = styled(Unity)`
-max-height: 1000px;
-  aspect-ratio: 9 / 16;
-  width: 100%;
+width: 425px;
+ aspect-ratio: 9 / 13;
+
 
   @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
+
     max-width: 400px;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+
     max-width: 300px;
   }
 `;
