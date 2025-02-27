@@ -28,7 +28,7 @@ export const PacmanContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-margin-top: 2rem;
-padding: 2rem;
+  margin-top: 2rem;
+  padding: 2rem;
 
 `;
