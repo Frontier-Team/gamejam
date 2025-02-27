@@ -1,4 +1,4 @@
-import { Paragraph } from '../styles/sharedStyles';
+import { Heading, Paragraph } from '../styles/sharedStyles';
 import {
   Content,
   Highlight,
@@ -11,7 +11,7 @@ export const ConductPage: React.FC = () => {
   return (
     <Content>
       <Section>
-        <Title>Code of Conduct</Title>
+        <Heading>Code of Conduct</Heading>
         <Paragraph>
           At Game Jam Dundee we aim to provide a friendly and supportive
           environment for colleagues. Please follow this Code of Conduct to
