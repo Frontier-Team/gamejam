@@ -8,7 +8,6 @@ import {
   Paragraph,
   StyledCard,
   SubHeading,
-  Title,
 } from "../styles/sharedStyles";
 import { JudgingContainer, PrizesContainer } from "./JammerPage.styled";
 
@@ -19,21 +18,55 @@ export const JammerPage: React.FC = () => {
     <PageContainer>
       <>
         <Heading>{jammer.welcome}</Heading>
-        <Paragraph>{jammer.welcomeDescription}</Paragraph>
+        <CenteredParagraph>{jammer.welcomeDescription}</CenteredParagraph>
 
-        <Title>{jammer.challengeTitle}</Title>
+        <h2>{jammer.challengeTitle}</h2>
         <Paragraph>{jammer.challengeDescription}</Paragraph>
-        <StyledCard>
-          <SubHeading>{jammer.internalColleagues}</SubHeading>
-          <CenteredParagraph>{jammer.challengeInternal}</CenteredParagraph>
-        </StyledCard>
 
-        <StyledCard>
-          <SubHeading>{jammer.externalColleagues}</SubHeading>
+        <Accordion title={jammer.internalColleagues}>
+          <CenteredParagraph>{jammer.challengeInternal}</CenteredParagraph>
+          <CenteredParagraph>{jammer.challengeInternalDescriptor}</CenteredParagraph>
+          <CenteredParagraph>
+            {jammer.internalTopics.split("\n").map((line, index) => (
+              <React.Fragment key={index}>
+                {line}
+                <br />
+              </React.Fragment>
+            ))}
+          </CenteredParagraph>
+        </Accordion>
+
+        <Accordion title={jammer.externalColleagues}>
           <CenteredParagraph>{jammer.challengeExternal}</CenteredParagraph>
-        </StyledCard>
-        <Title>{jammer.judgingTitle}</Title>
-        <CenteredParagraph>{jammer.judgingDescription}</CenteredParagraph>
+          <CenteredParagraph>
+            {jammer.externalTopics.split("\n").map((line, index) => (
+              <React.Fragment key={index}>
+                {line}
+                <br />
+              </React.Fragment>
+            ))}
+          </CenteredParagraph>
+          <CenteredParagraph>{jammer.externalDescriptor}</CenteredParagraph>
+
+        </Accordion>
+
+        <h2>{jammer.Pitches.title}</h2>
+        <Paragraph>{jammer.Pitches.description}</Paragraph>
+        <Paragraph>{jammer.Pitches.presentation}</Paragraph>
+        <CenteredParagraph>{jammer.Pitches.time}</CenteredParagraph>
+        <PrizesContainer>
+          <StyledCard>
+            <SubHeading>Internal Teams</SubHeading>
+            <CenteredParagraph>{jammer.Pitches.locationInternal}</CenteredParagraph>
+          </StyledCard>
+          <StyledCard>
+            <SubHeading>Student Teams</SubHeading>
+            <CenteredParagraph>{jammer.Pitches.locationExternal}</CenteredParagraph>
+          </StyledCard>
+        </PrizesContainer>
+
+        <h2>{jammer.judgingTitle}</h2>
+        <Paragraph>{jammer.judgingDescription}</Paragraph>
         <JudgingContainer>
           {jammer.judgingCriteria.criteria.map((criteria, index) => (
             <Accordion key={index} title={criteria.title}>
@@ -43,7 +76,7 @@ export const JammerPage: React.FC = () => {
         </JudgingContainer>
       </>
       <>
-        <Title>Awards</Title>
+        <h2>Awards</h2>
         <PrizesContainer>
           {jammer.Awards.awards.map((award, index) => (
             <StyledCard key={index}>
@@ -61,7 +94,7 @@ export const JammerPage: React.FC = () => {
               {award.prizes.Internal && (
                 <>
                   <SubHeading style={{ marginBottom: "0" }}>
-                    Internal{" "}
+                    For Internal Teams{" "}
                   </SubHeading>
                   <CenteredParagraph style={{ marginTop: "0" }}>
                     {award.prizes.Internal}
@@ -71,7 +104,7 @@ export const JammerPage: React.FC = () => {
               {award.prizes.External && (
                 <>
                   <SubHeading style={{ marginBottom: "0" }}>
-                    External{" "}
+                    For Student Teams{" "}
                   </SubHeading>
                   <CenteredParagraph style={{ marginTop: "0" }}>
                     {award.prizes.External}

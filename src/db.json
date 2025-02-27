@@ -16,7 +16,9 @@
       "name": "Daria Naidonova",
       "occupation": "Student",
       "details": "Studying Experience Design (BDes Hons) at University of Dundee",
-      "contact": ["Instagram - https://www.instagram.com/naidenovka007"]
+      "contact": [
+        "Instagram - https://www.instagram.com/naidenovka007"
+      ]
     },
     {
       "id": 3,
@@ -44,21 +46,27 @@
       "name": "Amy Rodger",
       "occupation": "Design Researcher",
       "details": "Researching at Scottish Widows",
-      "contact": ["LinkedIn - https://www.linkedin.com/in/amyrodgercs"]
+      "contact": [
+        "LinkedIn - https://www.linkedin.com/in/amyrodgercs"
+      ]
     },
     {
       "id": 6,
       "name": "Yi Han",
       "occupation": "Interaction Designer",
       "details": "Designing at Scottish Widows",
-      "contact": ["LinkedIn - https://www.linkedin.com/in/yiiihan"]
+      "contact": [
+        "LinkedIn - https://www.linkedin.com/in/yiiihan"
+      ]
     },
     {
       "id": 7,
       "name": "Rachel White",
       "occupation": "Junior Designer",
       "details": "Designing at Scottish Widows",
-      "contact": ["LinkedIn - https://www.linkedin.com/in/rachel-white-ba4078198"]
+      "contact": [
+        "LinkedIn - https://www.linkedin.com/in/rachel-white-ba4078198"
+      ]
     }
   ],
   "schedule": [
@@ -114,7 +122,9 @@
       "endTime": "10:45",
       "location": "Robertson Learning Studio",
       "company": "Scottish Games Network Ltd.",
-      "speakers": ["Brian Baglow"]
+      "speakers": [
+        "Brian Baglow"
+      ]
     },
     {
       "id": 2,
@@ -126,7 +136,9 @@
       "endTime": "11:15",
       "location": "Robertson Learning Studio",
       "company": "Lloyds Banking Group",
-      "speakers": ["Toby Keech"]
+      "speakers": [
+        "Toby Keech"
+      ]
     },
     {
       "id": 3,
@@ -138,7 +150,9 @@
       "endTime": "11:50",
       "location": "Robertson Learning Studio",
       "company": "Opera",
-      "speakers": ["Russell Kay"]
+      "speakers": [
+        "Russell Kay"
+      ]
     },
     {
       "id": 4,
@@ -150,7 +164,9 @@
       "endTime": "12:30",
       "location": "Robertson Learning Studio",
       "company": "",
-      "speakers": [""]
+      "speakers": [
+        ""
+      ]
     },
     {
       "id": 5,
@@ -162,7 +178,9 @@
       "endTime": "13:30",
       "location": "Robertson Learning Studio",
       "company": "",
-      "speakers": [""]
+      "speakers": [
+        ""
+      ]
     },
     {
       "id": 6,
@@ -174,7 +192,10 @@
       "endTime": "13:55",
       "location": "Robertson Learning Studio",
       "company": "Lloyds Banking Group",
-      "speakers": ["Katy Lynch", "Robert Cochran"]
+      "speakers": [
+        "Katy Lynch",
+        "Robert Cochran"
+      ]
     },
     {
       "id": 7,
@@ -186,7 +207,9 @@
       "endTime": "14:30",
       "location": "Robertson Learning Studio",
       "company": "University of Dundee",
-      "speakers": ["Fin Tams-Gray"]
+      "speakers": [
+        "Fin Tams-Gray"
+      ]
     },
     {
       "id": 8,
@@ -198,7 +221,9 @@
       "endTime": "15:00",
       "location": "Robertson Learning Studio",
       "company": "University of Dundee",
-      "speakers": ["University of Dundee"]
+      "speakers": [
+        "University of Dundee"
+      ]
     },
     {
       "id": 9,
@@ -222,7 +247,9 @@
       "endTime": "16:30",
       "location": "Robertson Learning Studio",
       "company": "",
-      "speakers": ["Colleagues"]
+      "speakers": [
+        "Colleagues"
+      ]
     },
     {
       "id": 11,
@@ -246,7 +273,9 @@
       "endTime": "10:45",
       "location": "Weston Learning Studio",
       "company": "Lloyds Banking Group",
-      "speakers": ["Andrew Smith and Lilly McNally"]
+      "speakers": [
+        "Andrew Smith and Lilly McNally"
+      ]
     },
     {
       "id": 13,
@@ -258,7 +287,9 @@
       "endTime": "11:15",
       "location": "Weston Learning Studio",
       "company": "Eclectic Synthesis Limited",
-      "speakers": ["Jake McCullagh"]
+      "speakers": [
+        "Jake McCullagh"
+      ]
     },
     {
       "id": 14,
@@ -270,7 +301,9 @@
       "endTime": "11:50",
       "location": "Weston Learning Studio",
       "company": "Microsoft",
-      "speakers": ["Chris Green"]
+      "speakers": [
+        "Chris Green"
+      ]
     },
     {
       "id": 15,
@@ -282,7 +315,9 @@
       "endTime": "12:25",
       "location": "Weston Learning Studio",
       "company": "Lloyds Banking Group",
-      "speakers": ["Amy Rodger"]
+      "speakers": [
+        "Amy Rodger"
+      ]
     },
     {
       "id": 16,
@@ -294,7 +329,9 @@
       "endTime": "13:30",
       "location": "Weston Learning Studio",
       "company": "",
-      "speakers": [""]
+      "speakers": [
+        ""
+      ]
     },
     {
       "id": 17,
@@ -306,7 +343,9 @@
       "endTime": "13:55",
       "location": "Weston Learning Studio",
       "company": "Lloyds Banking Group",
-      "speakers": ["Dave Cook"]
+      "speakers": [
+        "Dave Cook"
+      ]
     },
     {
       "id": 18,
@@ -318,7 +357,9 @@
       "endTime": "14:30",
       "location": "Weston Learning Studio",
       "company": "Lloyds Banking Group",
-      "speakers": ["James Macfarlane"]
+      "speakers": [
+        "James Macfarlane"
+      ]
     },
     {
       "id": 19,
@@ -330,7 +371,9 @@
       "endTime": "15:00",
       "location": "Weston Learning Studio",
       "company": "Hyper Luminal Games",
-      "speakers": ["Phoebe Anderson"]
+      "speakers": [
+        "Phoebe Anderson"
+      ]
     },
     {
       "id": 20,
@@ -341,7 +384,9 @@
       "startTime": "15:00",
       "endTime": "15:30",
       "location": "Weston Learning Studio",
-      "speakers": [""]
+      "speakers": [
+        ""
+      ]
     },
     {
       "id": 21,
@@ -352,7 +397,9 @@
       "startTime": "15:30",
       "endTime": "16:30",
       "location": "Weston Learning Studio",
-      "speakers": ["University Teams"]
+      "speakers": [
+        "University Teams"
+      ]
     },
     {
       "id": 22,
@@ -363,7 +410,9 @@
       "startTime": "16:45",
       "endTime": "17:00",
       "location": "Weston Learning Studio",
-      "speakers": [""]
+      "speakers": [
+        ""
+      ]
     }
   ],
   "jammers": [
@@ -373,10 +422,13 @@
       "challengeTitle": "The Challenge",
       "challengeDescription": "Your team will create a game based on a theme that will be announced at the start of the game jam. You can use any tools or technology you like.",
       "internalColleagues": "For internal employee teams",
-      "challengeInternal": "To build a game or gamified app to help promote and educate customers on a particular topic (this will be allocated to your team at random). You must focus on a relevant age group",
-      "challengeTopics": "Investments, Budgeting, Protections, General Insurance, Building Your Pension, Taking out your pension",
+      "challengeInternal": "Make learning about what Scottish Widows offers engaging and interactive by using games or gamification to captivate the right generation at the right time.",
+      "challengeInternalDescriptor": "On the 3rd March you'll be randomly given one of the following topics:",
+      "internalTopics": " • Investments\n • Budgeting\n • Protection\n • General Insurance\n • Building Your Pension \n • Accessing your Pension",
       "externalColleagues": "For external student teams",
-      "challengeExternal": "PLACEHOLDER",
+      "challengeExternal": "Make a 'Game for Good' to help tackle something that matters to you. Choose from : ",
+      "externalTopics": " • Social Justice, Inclusion and Equality\n • Skills and Talent Development\n • Environment and Climate Change",
+      "externalDescriptor": "We'd love to work together to bring these ideas to life alongside the Scottish Tech Army and really make a difference.",
       "judgingTitle": "Judging Criteria",
       "judgingDescription": "Our judges will be considering the following when casting their vote: ",
       "judgingCriteria": {
@@ -391,7 +443,7 @@
           },
           {
             "title": "Theme Interpretation & Creativity",
-            "description": "There is a challenge to solve, but it's up to you and your team on how you appreach it. Does your game fit with the theme? Is your concept unique?"
+            "description": "There is a challenge to solve, but it's up to you and your team on how you approach it. Does your game fit with the theme? Is your concept unique?"
           },
           {
             "title": "Learning & Adaptability",
@@ -403,26 +455,34 @@
           }
         ]
       },
+      "Pitches": {
+        "title": "Pitches",
+        "description": "All teams will have the opportunity to give a 5 minute pitch of their game to the judges.",
+        "time": "Pitches will start at 3:20pm in the :",
+        "locationInternal": "Robertson Learning Studio",
+        "locationExternal": "Weston Learning Studio",
+        "presentation": "You can use slides, a live demo, or any other format you like to present your game. Be creative and have fun!"
+      },
       "Awards": {
         "awards": [
           {
             "title": "🥇 1st Prize\n(Judge's Choice)",
             "prizes": {
-              "all": "A team Geek Crate with items to the value of £160 &",
-              "Internal": "a Microsoft trip",
-              "External": "a Game Maker License"
+              "all": "A team mystery Geek Crate with 10 - 15 items and :",
+              "Internal": " Microsoft Innovation Hub visit.",
+              "External": "Game Maker License for each team member."
             }
           },
           {
             "title": "🥈 2nd Prize\n(Audience Choice)",
             "prizes": {
-              "all": "A team will receive a Geek Crate with items to the value of £160"
+              "all": "A team mystery Geek Crate with 10 - 15 items."
             }
           },
           {
             "title": "🥉 3rd Prize\n(Judge's Choice)",
             "prizes": {
-              "all": "A Geek Crate with items to the value of £80"
+              "all": "A team mystery Geek Crate with 6 - 10 items."
             }
           }
         ]
