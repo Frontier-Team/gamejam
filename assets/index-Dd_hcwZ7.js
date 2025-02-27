@@ -318,8 +318,7 @@ Venue closes.`}],jS=[{id:1,date:"March 4, 2025",time:"10:15 - 10:40",title:"(Fun
   }
   
   .filter-heading-cell {
-    padding: none;
-    border-top-right-radius: none !important;
+    padding: 0;
   }
 
   .favorites-btn {
@@ -376,10 +375,10 @@ Venue closes.`}],jS=[{id:1,date:"March 4, 2025",time:"10:15 - 10:40",title:"(Fun
 `,_S=W.div`
   ${({theme:t})=>Aa(t)}
   border: none !important;
-  border-top-left-radius: 0 !important;
-  border-top-right-radius: 0 !important;
+  border-radius: 0 !important;
   text-align: center !important;
   box-shadow: none !important;
+  width: 100%;
 `,Yg=({heading:t,headers:r,fieldsToDisplay:i,largeFields:s=[],rows:l,showFavoritesFilter:c=!1})=>{const[d,p]=R.useState(new Set),[h,m]=R.useState(!1);R.useEffect(()=>{const P=JSON.parse(localStorage.getItem("favorites")||"[]");p(new Set(P))},[]),R.useEffect(()=>{localStorage.setItem("favorites",JSON.stringify([...d]))},[d]);const g=P=>{p(k=>{const S=new Set(k);return S.has(P)?S.delete(P):S.add(P),S})},y=h?l.filter(P=>d.has(P.id)):l,x=P=>typeof P=="string"?T(P):Array.isArray(P)?P.map((k,S)=>w.jsxs("span",{children:[T(k),w.jsx("br",{})]},S)):String(P),T=P=>P.split(/(https?:\/\/\S+)/g).map((S,E)=>S.startsWith("http")?w.jsx("a",{href:S,target:"_blank",rel:"noopener noreferrer",children:S},E):S);return w.jsxs(LS,{children:[t&&w.jsx("h2",{className:"table-heading",children:t}),w.jsx("h3",{className:"info-text",children:"Scroll horizontally for more information"}),w.jsxs("table",{children:[w.jsx("thead",{children:w.jsx("tr",{children:r.map((P,k)=>P===""&&c?w.jsx("th",{className:"filter-heading-cell",children:w.jsx(_S,{className:"favorites-btn",onClick:()=>m(S=>!S),children:h?"Show All":"Show Favourites"})},k):w.jsx("th",{children:P},P))})}),w.jsx("tbody",{children:y.map((P,k)=>w.jsxs("tr",{children:[c&&w.jsx("td",{className:"checkbox-column",children:w.jsx("input",{type:"checkbox",checked:d.has(P.id),onChange:()=>g(P.id)})}),i.map(S=>{const E=s.includes(S);return w.jsx("td",{className:E?"large":"",children:x(P[S])},S.toString())})]},k))})]})]})},MS=()=>{const t=["Name","Occupation","Details","Get in touch"],r=["name","occupation","details","contact"];return w.jsxs(fr,{children:[w.jsx(zn,{children:"Auction"}),w.jsx(de,{children:"During the event there will be an auction of several pieces from a select group of artists. All proceeds of the auction will go to support the V&A Museum."}),w.jsx(Yg,{heading:"Here are some details of the artists we are showcasing.",headers:t,rows:_t.auctionWorks,fieldsToDisplay:r,largeFields:["contact"]})]})},DS=W.div`
   line-height: 1.6;
   max-width: 1000px;
@@ -414,17 +413,15 @@ Venue closes.`}],jS=[{id:1,date:"March 4, 2025",time:"10:15 - 10:40",title:"(Fun
   justify-content: center;
   align-items: center;
 `,QS=W(Jg.Unity)`
-width: 425px;
- aspect-ratio: 9 / 13;
-
+max-height: 1000px;
+  aspect-ratio: 9 / 16;
+  width: 100%;
 
   @media (max-width: ${({theme:t})=>t.breakpoints.md}) {
-
     max-width: 400px;
   }
 
   @media (max-width: ${({theme:t})=>t.breakpoints.sm}) {
-
     max-width: 300px;
   }
 `,XS=W.div`
