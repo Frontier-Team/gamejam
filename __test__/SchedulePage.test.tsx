@@ -13,7 +13,7 @@ describe('SchedulePage', () => {
 
   test('renders the date paragraph', () => {
     renderWithProviders(<SchedulePage />);
-    const dateParagraph = screen.getByText(/March 3 2025 - GameJam for participating teams/i);
+    const dateParagraph = screen.getByText(/March 3, 2025 - Game Jam for participating teams/i);
     expect(dateParagraph).toBeInTheDocument();
   });
 

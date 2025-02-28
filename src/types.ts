@@ -5,6 +5,7 @@ export interface Event {
   title: string;
   description?: string;
   startTime: string;
+  isFilterable: boolean;
   endTime: string;
   location: string;
   speakers: string[];
