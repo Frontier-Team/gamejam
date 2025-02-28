@@ -118,11 +118,11 @@ export default function ResourcesPage() {
         </Section>
 
         <Section>
-          <SubTitle>Be Money Well Hub</SubTitle>
+          <SubTitle>Scottish Widows Be Money Well Hub</SubTitle>
           <Paragraph>
             There's lots of educational content on the{" "}
             <a
-              href='https://www.scottishwidows.co.uk/bemoneywell'
+              href='https://www.scottishwidowsbemoneywell.co.uk/'
               target='_blank'
               rel='noopener noreferrer'
             >
