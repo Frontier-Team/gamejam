@@ -99,7 +99,7 @@
     },
     {
       "time": "15:00",
-      "description": "Tea, coffee and snacks served in Tatha Canteen, Upper Foyer.\n\nJudging panel gather in Robertson and Weston Learning Studios for presentations. Participants test technical set up."
+      "description": "Tea, Coffee and Sweet Treats served in Tatha Canteen, Upper Foyer.\n\nJudging panel gather in Robertson and Weston Learning Studios for presentations. Participants test technical set up."
     },
     {
       "time": "15:20",
@@ -337,7 +337,7 @@
       "startTime": "12:00",
       "endTime": "12:30",
       "location": "Weston Learning Studio",
-      "company": "Lloyds Banking Group",
+      "company": "",
       "speakers": [
         "Carol Clark",
         "Cillin Farrell"
