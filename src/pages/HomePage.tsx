@@ -25,9 +25,9 @@ export const HomePage: React.FC = () => {
             from scratch - all within a limited time frame.
           </Paragraph>
           <Paragraph>
-            Whether you're a coding wizard, design guru, or just someone with a
+            Whether you're a coding wizard, a design guru, or just someone with a
             wild imagination and an interest in games, there's a place for you
-            in this adventure. In the game jam 60 attendees will work to solve
+            in this adventure! In the Game Jam, 60 attendees will work to solve
             challenges using games or gamification techniques over a 2-day
             period at the V&A Museum in Dundee.
           </Paragraph>
@@ -70,8 +70,8 @@ export const HomePage: React.FC = () => {
             Look out for our helpers and support team
           </Subtitle>
           <Paragraph>
-            Our event organisers and support team will be wearing t-shirts with the 
-            game jam logo. You'll see them at the front desk and around the event.
+            Our event organisers and support team will be wearing T-shirts with the  
+             Game Jam logo. You'll see them at the front desk and around the event.
           </Paragraph>
         </Section>
         <Subtitle style={{ textAlign: 'center' }}>
