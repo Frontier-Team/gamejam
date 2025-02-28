@@ -153,34 +153,49 @@
       "id": 3,
       "date": "March 4, 2025",
       "time": "11:25 - 11:50",
-      "title": "25 Years of GameMaker",
-      "description": "Join Russell Kay for a brief overview of his journey, the evolution of GameMaker, and its 25-year journey. Discover the milestones and innovations that have shaped this influential game development tool.",
+      "title": "M365 CoPilot: The Art of the Prompt",
+      "description": "In this session, we will explore what makes a good prompt when using Copilot. What are the elements you need to think about to get the most out of GenAI and the importance of remembering to say please!",
       "startTime": "11:25",
       "endTime": "11:50",
       "location": "Robertson Learning Studio",
-      "company": "Opera",
+      "company": "Microsoft",
       "speakers": [
-        "Russell Kay"
+        "Chris Green"
       ],
       "isFilterable": true
     },
     {
       "id": 4,
       "date": "March 4, 2025",
-      "time": "12:00 - 12:30",
-      "title": "Games Industry Panel",
-      "description": "A mixture of internal and external people who didn't follow a typical 'games career path' but entered the industry with other skills or use those skills elsewhere.",
+      "time": "12:00 - 12:10",
+      "title": "Go Fish!",
+      "description": "Getting over your fear of failure and finding inspiration to create in unlikely places.",
       "startTime": "12:00",
-      "endTime": "12:30",
+      "endTime": "12:10",
       "location": "Robertson Learning Studio",
-      "company": "",
+      "company": "Hyper Luminal Games",
       "speakers": [
-        ""
+        "Phoebe Anderson"
       ],
       "isFilterable": true
     },
     {
       "id": 5,
+      "date": "March 4, 2025",
+      "time": "12:20 - 12:30",
+      "title": "Volunteers Delivering Tech for Good",
+      "description": "Discover how the Scottish Tech Army mobilizes tech volunteers to deliver impactful digital solutions for charities.",
+      "startTime": "12:20",
+      "endTime": "12:30",
+      "location": "Robertson Learning Studio",
+      "company": "Scottish Tech Army",
+      "speakers": [
+        "Alistair Forbes"
+      ],
+      "isFilterable": true
+    },
+    {
+      "id": 6,
       "date": "March 4, 2025",
       "time": "12:30 - 13:30",
       "title": "LUNCH",
@@ -195,7 +210,7 @@
       "isFilterable": false
     },
     {
-      "id": 6,
+      "id": 7,
       "date": "March 4, 2025",
       "time": "13:30 - 13:55",
       "title": "Evolution of Engagement",
@@ -211,12 +226,12 @@
       "isFilterable": true
     },
     {
-      "id": 7,
+      "id": 8,
       "date": "March 4, 2025",
-      "time": "14:00 - 14:30",
-      "title": "Design as a mode of inquiry at Studio Ordinary",
+      "time": "14:05 - 14:30",
+      "title": "Designing with Disability in Mind",
       "description": "This talk will focus on the value of participatory co-design and how design can be leveraged as a mode of inquiry to change conversations about disability, using examples of collaborative work from Studio Ordinary",
-      "startTime": "14:00",
+      "startTime": "14:05",
       "endTime": "14:30",
       "location": "Robertson Learning Studio",
       "company": "University of Dundee",
@@ -226,22 +241,22 @@
       "isFilterable": true
     },
     {
-      "id": 8,
+      "id": 9,
       "date": "March 4, 2025",
       "time": "14:40 - 15:00",
-      "title": "AI",
-      "description": "",
+      "title": "Exploring Gamification in Academia",
+      "description": "This talk will examine the academic study of gamification, highlighting its potential benefits and limitations. We'll explore how academic research allows for critical examination of the 'dark side' of gamification and discuss how skills developed in this setting can be applied to industry development and research.",
       "startTime": "14:40",
       "endTime": "15:00",
       "location": "Robertson Learning Studio",
-      "company": "University of Dundee",
+      "company": "Lloyds Banking Group",
       "speakers": [
-        "University of Dundee"
+        "Amy Rodger"
       ],
       "isFilterable": true
     },
     {
-      "id": 9,
+      "id": 10,
       "date": "March 4, 2025",
       "time": "15:00 - 15:30",
       "title": "BREAK",
@@ -254,10 +269,10 @@
       "isFilterable": false
     },
     {
-      "id": 10,
+      "id": 11,
       "date": "March 4, 2025",
       "time": "15:30 - 16:30",
-      "title": "Presenting back",
+      "title": "Game Jam Teams Presenting back",
       "description": "",
       "startTime": "15:30",
       "endTime": "16:30",
@@ -266,19 +281,6 @@
       "speakers": [
         "Internal Lloyds Colleagues"
       ],
-      "isFilterable": true
-    },
-    {
-      "id": 11,
-      "date": "March 4, 2025",
-      "time": "16:45 - 17:00",
-      "title": "Winners announced",
-      "description": "",
-      "startTime": "16:45",
-      "endTime": "17:00",
-      "location": "Robertson Learning Studio",
-      "company": "",
-      "speakers": [],
       "isFilterable": true
     },
     {
@@ -315,29 +317,30 @@
       "id": 14,
       "date": "March 4, 2025",
       "time": "11:25 - 11:50",
-      "title": "M365 CoPilot: The Art of the Prompt",
-      "description": "In this session, we will explore what makes a good prompt when using Copilot. What are the elements you need to think about to get the most out of GenAI and the importance of remembering to say please!",
+      "title": "Stick to the Script: Building Coherent Narratives in Open World Spaces",
+      "description": "Writing narratives for open world games can be trickey when players have the freedom to progress through the story at any pace and in any order. How do game writers craft a satisfying plot for every player, regardless of their play style, and what can we learn about this from financial service journey design?",
       "startTime": "11:25",
       "endTime": "11:50",
       "location": "Weston Learning Studio",
-      "company": "Microsoft",
+      "company": "Lloyds Banking Group",
       "speakers": [
-        "Chris Green"
+        "Dave Cook"
       ],
       "isFilterable": true
     },
     {
       "id": 15,
       "date": "March 4, 2025",
-      "time": "12:00 - 12:25",
-      "title": "Exploring Gamification in Academia",
-      "description": "This talk will examine the academic study of gamification, highlighting its potential benefits and limitations. We'll explore how academic research allows for critical examination of the 'dark side' of gamification and discuss how skills developed in this setting can be applied to industry development and research.",
+      "time": "12:00 - 12:30",
+      "title": "A Panel of Expertise and Innovation",
+      "description": "Join Carol Clark, a game production and leadership expert with 17+ years of experience, and Cillin Farrell, a civil engineer turned game developer, as they share their unique journeys and insights into the game development industry.",
       "startTime": "12:00",
-      "endTime": "12:25",
+      "endTime": "12:30",
       "location": "Weston Learning Studio",
       "company": "Lloyds Banking Group",
       "speakers": [
-        "Amy Rodger"
+        "Carol Clark",
+        "Cillin Farrell"
       ],
       "isFilterable": true
     },
@@ -360,14 +363,14 @@
       "id": 17,
       "date": "March 4, 2025",
       "time": "13:30 - 13:55",
-      "title": "Stick to the Script: Building coherent narratives in open world spaces",
-      "description": "The story at any pace and in any order. How do game writers craft a satisfying plot for every player, regardless of their play style, and what can we learn about this from financial service journey design?",
+      "title": "25 Years of GameMaker",
+      "description": "Join Russell Kay for a brief overview of his journey, the evolution of GameMaker and its 25-year history. Discover the milestones and innovations that have shaped this influential game development tool.",
       "startTime": "13:30",
       "endTime": "13:55",
       "location": "Weston Learning Studio",
-      "company": "Lloyds Banking Group",
+      "company": "Opera",
       "speakers": [
-        "Dave Cook"
+        "Russell Kay"
       ],
       "isFilterable": true
     },
@@ -382,22 +385,22 @@
       "location": "Weston Learning Studio",
       "company": "Lloyds Banking Group",
       "speakers": [
-        "James Macfarlane"
+        "Dave Mcleay"
       ],
       "isFilterable": true
     },
     {
       "id": 19,
       "date": "March 4, 2025",
-      "time": "14:40 - 14:50",
-      "title": "Go Fish!",
-      "description": "Getting over your fear of failure and finding inspiration to create in unlikely places.",
+      "time": "14:40 - 15:00",
+      "title": "How we got millions of views on TikTok promoting our game",
+      "description": "Hear the strategies that led to the game's viral success on TikTok by learning how they captured millions of views and built a loyal following before the game's launch.",
       "startTime": "14:40",
       "endTime": "14:50",
       "location": "Weston Learning Studio",
-      "company": "Hyper Luminal Games",
+      "company": "Peaty Turf",
       "speakers": [
-        "Phoebe Anderson"
+        "Cillin Farrell"
       ],
       "isFilterable": true
     },
@@ -428,21 +431,6 @@
       "company": "",
       "speakers": [
         "University Teams"
-      ],
-      "isFilterable": true
-    },
-    {
-      "id": 22,
-      "date": "March 4, 2025",
-      "time": "16:45 - 17:00",
-      "title": "Winners announced",
-      "description": "",
-      "startTime": "16:45",
-      "endTime": "17:00",
-      "location": "Weston Learning Studio",
-      "company": "",
-      "speakers": [
-        ""
       ],
       "isFilterable": true
     }
