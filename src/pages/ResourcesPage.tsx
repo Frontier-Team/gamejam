@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import { SetStateAction, useState } from "react";
 import data from "../db.json";
-import { pageContainerStyles } from "../styles/sharedStyles";
+import { pageContainerStyles, Paragraph, Heading } from "../styles/sharedStyles";
 
 export default function ResourcesPage() {
   const [activeFilter, setActiveFilter] = useState("all");
@@ -19,7 +19,7 @@ export default function ResourcesPage() {
       [topicId]: !prev[topicId],
     }));
   };
-
+ 
   const filteredTutorials = data.tutorials.filter((tutorial) => {
     if (activeFilter === "all") return true;
     return tutorial.type === activeFilter;
@@ -32,7 +32,7 @@ export default function ResourcesPage() {
   return (
     <PageContainer>
       <Wrapper>
-        <Title>Resources</Title>
+        <Heading>Resources</Heading>
 
         <Section>
           <SubTitle>Free tools for making games</SubTitle>
@@ -154,7 +154,9 @@ export default function ResourcesPage() {
               JavaScript
             </FilterButton>
           </FilterButtons>
-          <p>Use the following tutorials to learn how to make a simple game.</p>
+          <Paragraph>
+            Use the following tutorials to learn how to make a simple game.
+          </Paragraph>
           {filteredTutorials.map((tutorial, index) => (
             <Tutorial key={index}>
               <ResourceTitle
@@ -264,7 +266,7 @@ const Resource = styled.div`
   gap: 0.5rem;
   margin-bottom: 1rem;
   flex-grow: 1;
-  min-height: 140px;
+  min-height: 160px;
   padding-right: 1rem;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
@@ -286,6 +288,7 @@ const ResourceTitle = styled.a`
 `;
 
 const ResourceDescription = styled.p`
+  font-size: 1.2rem;
   margin: 0;
 `;
 
@@ -416,15 +419,6 @@ const Section = styled.div`
   }
 `;
 
-const Title = styled.h1`
-  margin-bottom: 1.5rem;
-  text-align: center;
-
-  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
-    font-size: 1.8rem;
-  }
-`;
-
 const SubTitle = styled.h2`
   margin-top: 1.5rem;
   margin-bottom: 1.2rem;
@@ -436,7 +430,3 @@ const SubTitle = styled.h2`
   }
 `;
 
-const Paragraph = styled.p`
-  font-size: 1rem;
-  margin-bottom: 1rem;
-`;
