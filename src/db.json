@@ -496,133 +496,133 @@
     {
       "id": "r1",
       "title": "Unity Engine",
-      "type": "game-engine",
+      "type": "Game Engines",
       "description": "A versatile and widely-used game engine suitable for both 2D and 3D games development.",
       "link": "https://unity.com/download"
     },
     {
       "id": "r2",
       "title": "Unreal Engine",
-      "type": "game-engine",
+      "type": "Game Engines",
       "description": "Known for its high-quality graphics and powerful tools, ideal for 3D games.",
       "link": "https://www.unrealengine.com/en-US/download"
     },
     {
       "id": "r3",
       "title": "Game Maker Studio",
-      "type": "game-engine",
+      "type": "Game Engines",
       "description": "Great for 2D game development with a user-friendly interface.",
       "link": "https://gamemaker.io/en/download"
     },
     {
       "id": "r4",
       "title": "Godot",
-      "type": "game-engine",
+      "type": "Game Engines",
       "description": "An open-source game engine that supports both 2D and 3D game development.",
       "link": "https://godotengine.org/"
     },
     {
       "id": "r5",
       "title": "Aseprite",
-      "type": "art",
+      "type": "Art Tools",
       "description": "A pixel art tool for creating 2D sprites and animations.",
       "link": "https://www.aseprite.org/"
     },
     {
       "id": "r6",
       "title": "GIMP",
-      "type": "art",
+      "type": "Art Tools",
       "description": "A free and open-source image editor, similar to Adobe Photoshop.",
       "link": "https://www.gimp.org/downloads/"
     },
     {
       "id": "r7",
       "title": "Krita",
-      "type": "art",
+      "type": "Art Tools",
       "description": "A professional, free and open-source painting program.",
       "link": "https://krita.org/en/download/"
     },
     {
       "id": "r8",
       "title": "Blender",
-      "type": "art",
+      "type": "Art Tools",
       "description": "A free and open-source 3D modelling, sculpting and animation software.",
       "link": "https://www.blender.org/download/"
     },
     {
       "id": "r9",
       "title": "Audacity",
-      "type": "audio",
+      "type": "Audio",
       "description": "A free, open-source audio editor and recorder.",
       "link": "https://www.audacityteam.org/download/"
     },
     {
       "id": "r10",
       "title": "Bfxr",
-      "type": "audio",
+      "type": "Audio",
       "description": "A tool for creating sound effects, especially for retro style games.",
       "link": "https://www.bfxr.net/"
     },
     {
       "id": "r11",
       "title": "LMMS",
-      "type": "audio",
+      "type": "Audio",
       "description": "A free digital audio workstation for music production.",
       "link": "https://lmms.io/download#windows"
     },
     {
       "id": "r12",
       "title": "Visual Studio Code",
-      "type": "scripting",
+      "type": "Programming & Scripting",
       "description": "A popular code editor with support for many programming languages.",
       "link": "https://code.visualstudio.com/download"
     },
     {
       "id": "r13",
       "title": "Sublime Text",
-      "type": "scripting",
+      "type": "Programming & Scripting",
       "description": "A sophisticated text editor for code, markup and prose.",
       "link": "https://www.sublimetext.com/download"
     },
     {
       "id": "r14",
       "title": "Github",
-      "type": "scripting",
+      "type": "Programming & Scripting",
       "description": "A platform for version control and collaboration on code.",
       "link": "https://github.com/"
     },
     {
       "id": "r15",
       "title": "Kenney.nl",
-      "type": "assets",
+      "type": "Assets Resources",
       "description": "Offers a wide range of free game assets, incuding sprites, audio and 3D models.",
       "link": "https://kenney.nl/"
     },
     {
       "id": "r16",
       "title": "OpenGameArt",
-      "type": "assets",
+      "type": "Assets Resources",
       "description": "A repository of free game art, including sprites, textures and sound effects.",
       "link": "https://opengameart.org/"
     },
     {
       "id": "r17",
       "title": "Trello",
-      "type": "additional",
+      "type": "Additional Tools",
       "description": "A project management tool to help organise tasks and collaborate with team members.",
       "link": "https://trello.com/"
     },
     {
       "id": "r18",
       "title": "Tiled",
-      "type": "additional",
+      "type": "Additional Tools",
       "description": "A map editor for creating tile-based levels.",
       "link": "http://www.mapeditor.org/"
     },
     {
       "id": "r19",
       "title": "Inkscape",
-      "type": "additional",
+      "type": "Additional Tools",
       "description": "A free and open-source vector graphics editor.",
       "link": "https://inkscape.org/"
     }
