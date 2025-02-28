@@ -5,9 +5,19 @@ import { pageContainerStyles } from "../styles/sharedStyles";
 
 export default function ResourcesPage() {
   const [activeFilter, setActiveFilter] = useState("all");
+  const [expandedTopics, setExpandedTopics] = useState<{
+    [key: string]: boolean;
+  }>({});
 
   const handleFilterChange = (filter: SetStateAction<string>) => {
     setActiveFilter(filter);
+  };
+
+  const handleTopicToggle = (topicId: string) => {
+    setExpandedTopics((prev) => ({
+      ...prev,
+      [topicId]: !prev[topicId],
+    }));
   };
 
   const filteredTutorials = data.tutorials.filter((tutorial) => {
@@ -30,9 +40,7 @@ export default function ResourcesPage() {
           <ResourcesWrapper>
             {resourceTypes.map((type) => (
               <ResourceWrapper key={type}>
-                <CardTitle>
-                  {type}
-                </CardTitle>
+                <CardTitle>{type}</CardTitle>
                 <ResourceContainer>
                   {data.resources
                     .filter((resource) => resource.type === type)
@@ -82,31 +90,46 @@ export default function ResourcesPage() {
             below.
           </Paragraph>
           <TopicsGrid>
-            <TopicCard>
-              <TopicNumber>1</TopicNumber>
-              <TopicTitle>Investments</TopicTitle>
-            </TopicCard>
-            <TopicCard>
-              <TopicNumber>2</TopicNumber>
-              <TopicTitle>Budgeting</TopicTitle>
-            </TopicCard>
-            <TopicCard>
-              <TopicNumber>3</TopicNumber>
-              <TopicTitle>Protection</TopicTitle>
-            </TopicCard>
-            <TopicCard>
-              <TopicNumber>4</TopicNumber>
-              <TopicTitle>General Insurance</TopicTitle>
-            </TopicCard>
-            <TopicCard>
-              <TopicNumber>5</TopicNumber>
-              <TopicTitle>Building Your Pension</TopicTitle>
-            </TopicCard>
-            <TopicCard>
-              <TopicNumber>6</TopicNumber>
-              <TopicTitle>Accessing your Pension</TopicTitle>
-            </TopicCard>
+            {data.topics.map((topic, index) => (
+              <TopicWrapper key={topic.id}>
+                <TopicCard onClick={() => handleTopicToggle(topic.id)}>
+                  <TopicNumber>{index + 1}</TopicNumber>
+                  <TopicTitle>{topic.title}</TopicTitle>
+                  <Arrow>{expandedTopics[topic.id] ? "▲" : "▼"}</Arrow>
+                </TopicCard>
+                {expandedTopics[topic.id] && (
+                  <LinksList>
+                    {topic.links.map((link, linkIndex) => (
+                      <LinkItem key={linkIndex}>
+                        <a
+                          href={link.link}
+                          target='_blank'
+                          rel='noopener noreferrer'
+                        >
+                          {link.title}
+                        </a>
+                      </LinkItem>
+                    ))}
+                  </LinksList>
+                )}
+              </TopicWrapper>
+            ))}
           </TopicsGrid>
+        </Section>
+
+        <Section>
+          <SubTitle>Be Money Well Hub</SubTitle>
+          <Paragraph>
+            There's lots of educational content on the{" "}
+            <a
+              href='https://www.scottishwidows.co.uk/bemoneywell'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              Scottish Widows Be Money Well Hub
+            </a>
+            .
+          </Paragraph>
         </Section>
 
         <Section>
@@ -203,7 +226,9 @@ const TemplateRepoButton = styled.a`
   }
 `;
 
-const CardTitle = styled.h3``;
+const CardTitle = styled.h3`
+  margin-bottom: 1rem;
+`;
 
 const ResourcesWrapper = styled.div`
   display: grid;
@@ -287,27 +312,38 @@ const FilterButton = styled.button<{ active: boolean }>`
 
 const TopicsGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   margin: auto;
   margin-top: 2rem;
-  max-width: 600px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
     grid-template-columns: 1fr;
   }
 `;
 
+const TopicWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+`;
+
 const TopicCard = styled.div`
   background: white;
-  border: 1px solid ${({ theme }) => theme.colors.turquoiseShade};
   border-radius: 8px;
+  border: 1px solid ${({ theme }) => theme.colors.turquoiseShade};
   padding: 1rem;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 1rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
 `;
 
 const TopicNumber = styled.h3`
@@ -326,6 +362,31 @@ const TopicNumber = styled.h3`
 const TopicTitle = styled.h3`
   color: ${({ theme }) => theme.colors.turquoiseShade};
   margin: 0;
+`;
+
+const Arrow = styled.span`
+  font-size: 1.5rem;
+  color: ${({ theme }) => theme.colors.turquoiseShade};
+`;
+
+const LinksList = styled.ul`
+  list-style: none;
+  padding: 0;
+  margin: 0;
+`;
+
+const LinkItem = styled.p`
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+
+  a {
+    color: ${({ theme }) => theme.colors.lilacShade};
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 `;
 
 const Tutorial = styled.div`

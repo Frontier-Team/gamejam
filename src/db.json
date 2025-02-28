@@ -705,5 +705,115 @@
       "type": "javascript",
       "link": "https://bengsfort.github.io/articles/making-a-js-game-part-1-game-engine/"
     }
+  ],
+  "topics": [
+    {
+      "id": "topic1",
+      "title": "Investments",
+      "links": [
+        {
+          "title": "Investments",
+          "link": "https://www.scottishwidows.co.uk/investments.html"
+        },
+        {
+          "title": "Investing Basics",
+          "link": "https://www.scottishwidowsbemoneywell.co.uk/financial-essentials/investing-basics.html"
+        },
+        {
+          "title": "Options",
+          "link": "https://www.scottishwidows.co.uk/investments/options.html"
+        },
+        {
+          "title": "Ready Made Investments",
+          "link": "https://www.lloydsbank.com/investing/ways-to-invest/ready-made-investments.html"
+        }
+      ]
+    },
+    {
+      "id": "topic2",
+      "title": "Budgeting and Financial Essentials",
+      "links": [
+        {
+          "title": "Budgeting",
+          "link": "https://www.scottishwidowsbemoneywell.co.uk/financial-essentials/budgeting.html"
+        },
+        {
+          "title": "Scottish Widows Be Money Well",
+          "link": "https://www.scottishwidowsbemoneywell.co.uk/financial-essentials.html"
+        },
+        {
+          "title": "Teaching Children About Money",
+          "link": "https://www.lloydsbank.com/help-guidance/family-finances/teaching-children-about-money.html"
+        },
+        {
+          "title": "Budget Calculator",
+          "link": "https://www.lloydsbank.com/help-guidance/support-and-wellbeing/managing-your-money/budget-calculator.html"
+        }
+      ]
+    },
+    {
+      "id": "topic3",
+      "title": "Life Insurance or Critical Illness",
+      "links": [
+        {
+          "title": "Life Insurance",
+          "link": "https://www.scottishwidows.co.uk/life-insurance.html"
+        },
+        {
+          "title": "Critical Illness",
+          "link": "https://www.scottishwidows.co.uk/life-insurance/critical-illness-cover.html"
+        }
+      ]
+    },
+    {
+      "id": "topic4",
+      "title": "Insurance - Pet, Car or Home",
+      "links": [
+        {
+          "title": "Insurance Quotes in Minutes",
+          "link": "https://www.lloydsbank.com/insurance.html"
+        }
+      ]
+    },
+    {
+      "id": "topic5",
+      "title": "Building Your Pension",
+      "links": [
+        {
+          "title": "Pension Transfer & Consolidation",
+          "link": "https://www.scottishwidows.co.uk/retirement/pension-transfers.html"
+        },
+        {
+          "title": "Taking on your Pension",
+          "link": "https://www.scottishwidowsbemoneywell.co.uk/taking-on-your-pension.html"
+        },
+        {
+          "title": "Open a Ready-Made Pension",
+          "link": "https://www.lloydsbank.com/pensions/ready-made-pension.html"
+        }
+      ]
+    },
+    {
+      "id": "topic6",
+      "title": "Accessing Your Pension",
+      "links": [
+        {
+          "title": "Your Retirement Options",
+          "link": "https://www.scottishwidowsbemoneywell.co.uk/taking-on-your-pension/retirement-options.html"
+        },
+        {
+          "title": "Cashing in your Pension",
+          "link": "https://take-my-pension.scottishwidows.co.uk"
+        },
+        {
+          "title": "Retirement Calculator",
+          "link": "https://www.scottishwidows.co.uk/retirement/calculators-tools.html"
+        },
+        {
+          "title": "Retirement Explained",
+          "link": "https://www.scottishwidows.co.uk/retirement/retirement-explained.html"
+        }
+      ]
+    }
   ]
 }
