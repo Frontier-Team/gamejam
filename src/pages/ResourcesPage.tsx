@@ -121,13 +121,13 @@ export default function ResourcesPage() {
           <SubTitle>Scottish Widows Be Money Well Hub</SubTitle>
           <Paragraph>
             There's lots of educational content on the{" "}
-            <a
+            <Link
               href='https://www.scottishwidowsbemoneywell.co.uk/'
               target='_blank'
               rel='noopener noreferrer'
             >
               Scottish Widows Be Money Well Hub
-            </a>
+            </Link>
             .
           </Paragraph>
         </Section>
@@ -389,6 +389,15 @@ const LinkItem = styled.p`
     &:hover {
       text-decoration: underline;
     }
+  }
+`;
+
+const Link = styled.a`
+  color: ${({ theme }) => theme.colors.lilacShade};
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
   }
 `;
 
