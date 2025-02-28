@@ -55,6 +55,18 @@ export const HomePage: React.FC = () => {
         </Section>
         <Section>
           <Subtitle>
+            V&A Wi-Fi
+          </Subtitle>
+          <Paragraph>
+          Please connect to the Wi-Fi network using the credentials below.
+          <br></br>
+          <strong>Network Name: </strong>vadevent
+          <br></br>
+          <strong>Password: </strong>rivertay
+          </Paragraph>
+        </Section>
+        <Section>
+          <Subtitle>
             Look out for our helpers and support team
           </Subtitle>
           <Paragraph>
