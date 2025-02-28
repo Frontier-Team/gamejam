@@ -25,20 +25,19 @@ export const Table = <T extends { isFilterable: boolean; },>({
   const [showFavorites, setShowFavorites] = useState(false);
 
   useEffect(() => {
-    const storedFavorites = JSON.parse(localStorage.getItem('favorites') || '[]');
+    const storedFavorites = JSON.parse(localStorage.getItem(`favorites-for-${heading}`) || '[]');
     setFavorites([...storedFavorites]);
   }, []);
 
-  const toggleFavorite = (fieldToSave: string) => {
+  const toggleFavorite = (favorite: string) => {
     setFavorites((prev) => {
       let newFavorites = [];
-      if (prev.includes(fieldToSave)) {
-        newFavorites = prev.filter((elem) => elem !== fieldToSave);
+      if (prev.includes(favorite)) {
+        newFavorites = prev.filter((elem) => elem !== favorite);
       } else {
-        newFavorites = prev.map((elem) => elem);
-        newFavorites.push(fieldToSave);
+        newFavorites = [...prev, favorite];
       }
-      localStorage.setItem('favorites', JSON.stringify([...newFavorites]))
+      localStorage.setItem(`favorites-for-${heading}`, JSON.stringify([...newFavorites]))
       return newFavorites;
     });
   };
