@@ -223,6 +223,7 @@ const ResourceWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  align-items: stretch;
 `;
 
 const ResourceContainer = styled.div`
@@ -237,6 +238,14 @@ const Resource = styled.div`
   flex-direction: column;
   gap: 0.5rem;
   margin-bottom: 1rem;
+  flex-grow: 1;
+  min-height: 140px;
+  padding-right: 1rem;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+    min-height: auto;
+    padding-right: 0;
+  }
 `;
 
 const ResourceTitle = styled.a`
@@ -359,6 +368,11 @@ const SubTitle = styled.h2`
   margin-top: 1.5rem;
   margin-bottom: 1.2rem;
   font-weight: bold;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+    font-size: 1.3rem;
+    overflow: hidden;
+  }
 `;
 
 const Paragraph = styled.p`
