@@ -1,43 +1,49 @@
 import { useEffect, useState } from 'react';
 import { StyledTableHeadingButton, TableContainer } from './Table.styled';
 
-interface TableProps<T extends { id: number, isFilterable: boolean }> {
+interface TableProps<T extends { isFilterable: boolean }> {
   heading?: string;
   headers: string[];
   fieldsToDisplay: (keyof T)[];
   rows: T[];
   largeFields?: (keyof T)[];
   showFavoritesFilter?: boolean;
+  fieldToSave?: keyof T;
 }
 
-export const Table = <T extends { id: number; isFilterable: boolean; },>({
+export const Table = <T extends { isFilterable: boolean; },>({
   heading,
   headers,
   fieldsToDisplay,
   largeFields = [],
   rows,
   showFavoritesFilter = false,
+  fieldToSave,
 }: TableProps<T>) => {
 
-  const [favorites, setFavorites] = useState(new Set());
+  const [favorites, setFavorites] = useState<string[]>([]);
   const [showFavorites, setShowFavorites] = useState(false);
 
   useEffect(() => {
-    const storedFavorites = JSON.parse(localStorage.getItem('favorites') || '[]');
-    setFavorites(new Set(storedFavorites));
+    const storedFavorites = JSON.parse(localStorage.getItem(`favorites-for-${heading}`) || '[]');
+    setFavorites([...storedFavorites]);
   }, []);
 
-  const toggleFavorite = (id: number) => {
+  const toggleFavorite = (favorite: string) => {
     setFavorites((prev) => {
-      const newFavorites = new Set(prev);
-      newFavorites.has(id) ? newFavorites.delete(id) : newFavorites.add(id);
-      localStorage.setItem('favorites', JSON.stringify([...newFavorites]))
+      let newFavorites = [];
+      if (prev.includes(favorite)) {
+        newFavorites = prev.filter((elem) => elem !== favorite);
+      } else {
+        newFavorites = [...prev, favorite];
+      }
+      localStorage.setItem(`favorites-for-${heading}`, JSON.stringify([...newFavorites]))
       return newFavorites;
     });
   };
 
   const filteredData = showFavorites
-    ? rows.filter((row) => favorites.has(row.id))
+    ? rows.filter((row) => fieldToSave && favorites.includes(row[fieldToSave] as string))
     : rows;
 
   const renderContent = (value: any) => {
@@ -89,7 +95,7 @@ export const Table = <T extends { id: number; isFilterable: boolean; },>({
                 return (
                   <th className='filter-heading-cell' key={index}>
                     <StyledTableHeadingButton className='favorites-btn' onClick={() => setShowFavorites((prev) => !prev)}>
-                      {showFavorites ? 'Show All' : 'Show Favourites'}
+                      {showFavorites ? 'Click to view all' : 'Click to view favourites'}
                     </StyledTableHeadingButton>
                   </th>
                 )
@@ -105,8 +111,12 @@ export const Table = <T extends { id: number; isFilterable: boolean; },>({
                 <td className='checkbox-column'>
                   <input
                     type='checkbox'
-                    checked={favorites.has(row.id)}
-                    onChange={() => toggleFavorite(row.id)}
+                    checked={fieldToSave ? favorites.includes(row[fieldToSave] as string) : false}
+                    onChange={() => {
+                      if (fieldToSave) {
+                        toggleFavorite(row[fieldToSave] as string)
+                      }
+                    }}
                   />
                 </td>
               )): <td className='checkbox-column'></td>}
