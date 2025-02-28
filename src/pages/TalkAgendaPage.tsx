@@ -39,6 +39,7 @@ export const TalkAgendaPage = () => {
           fieldsToDisplay={fieldsToDisplay}
           largeFields={['description']}
           showFavoritesFilter={true}
+          fieldToSave='title'
         />
       ))}
     </PageContainer>
