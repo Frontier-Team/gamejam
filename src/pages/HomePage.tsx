@@ -60,9 +60,9 @@ export const HomePage: React.FC = () => {
           <Paragraph>
           Please connect to the Wi-Fi network using the credentials below.
           <br></br>
-          <strong>Network Name: </strong>vadevent
+          <strong>Network Name: </strong>Game Jam
           <br></br>
-          <strong>Password: </strong>rivertay
+          <strong>Password: </strong>GameJam2025
           </Paragraph>
         </Section>
         <Section>
